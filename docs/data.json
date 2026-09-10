@@ -1,0 +1,14 @@
+{
+  "base_date": "2026-09-10",
+  "captured_at": "2026-09-10T16:40:04",
+  "history": [
+    {
+      "date": "2026-09-10",
+      "index": 100.0,
+      "products": 4314,
+      "daily": null,
+      "monthly": null
+    }
+  ],
+  "movers": []
+}
