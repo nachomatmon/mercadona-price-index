@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-10T16:40:04",
+  "captured_at": "2026-09-11T09:47:51",
   "history": [
     {
       "date": "2026-09-10",
@@ -8,7 +8,99 @@
       "products": 4314,
       "daily": null,
       "monthly": null
+    },
+    {
+      "date": "2026-09-11",
+      "index": 99.9871,
+      "products": 4313,
+      "daily": -0.0129,
+      "monthly": null
     }
   ],
-  "movers": []
+  "movers": [
+    {
+      "name": "Cerveza especial San Miguel",
+      "category": "Cerveza",
+      "old_price": 6.84,
+      "new_price": 4.8,
+      "change": -29.824561403508774
+    },
+    {
+      "name": "Aperitivo de patata sabor crema agria y cebolla Pringles",
+      "category": "Patatas fritas y snacks",
+      "old_price": 2.65,
+      "new_price": 2.0,
+      "change": -24.52830188679245
+    },
+    {
+      "name": "Aperitivo de patata sabor original Pringles",
+      "category": "Patatas fritas y snacks",
+      "old_price": 2.65,
+      "new_price": 2.0,
+      "change": -24.52830188679245
+    },
+    {
+      "name": "Sangría Rosé Casón Histórico",
+      "category": "Tinto de verano y sangría",
+      "old_price": 0.9,
+      "new_price": 0.7,
+      "change": -22.222222222222232
+    },
+    {
+      "name": "Frizzante blanco verdejo DulZ.Ze",
+      "category": "Vino lambrusco y espumoso",
+      "old_price": 0.95,
+      "new_price": 0.75,
+      "change": -21.052631578947366
+    },
+    {
+      "name": "Boquerón limpio sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 0.99,
+      "new_price": 1.19,
+      "change": 20.2020202020202
+    },
+    {
+      "name": "Compresa normal Deliplus con alas",
+      "category": "Higiene íntima",
+      "old_price": 1.0,
+      "new_price": 1.2,
+      "change": 19.999999999999996
+    },
+    {
+      "name": "Sardina limpia sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 1.19,
+      "new_price": 1.39,
+      "change": 16.806722689075638
+    },
+    {
+      "name": "Sardina sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 1.19,
+      "new_price": 1.39,
+      "change": 16.806722689075638
+    },
+    {
+      "name": "Frizzante sabor mango Piccolo Giovanni",
+      "category": "Vino lambrusco y espumoso",
+      "old_price": 2.35,
+      "new_price": 2.0,
+      "change": -14.893617021276595
+    },
+    {
+      "name": "Compresa noche Deliplus con alas",
+      "category": "Higiene íntima",
+      "old_price": 1.15,
+      "new_price": 1.3,
+      "change": 13.043478260869579
+    },
+    {
+      "name": "Maquinillas de afeitar desechables Gillette Sensor Comfort 3 hojas",
+      "category": "Afeitado y cuidado para hombre",
+      "old_price": 5.75,
+      "new_price": 5.0,
+      "change": -13.043478260869568
+    }
+  ]
 }
