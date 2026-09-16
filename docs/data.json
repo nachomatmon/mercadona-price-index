@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-15T10:08:46",
+  "captured_at": "2026-09-16T10:00:41",
   "history": [
     {
       "date": "2026-09-10",
@@ -43,92 +43,99 @@
       "products": 4287,
       "daily": -0.0367,
       "monthly": null
+    },
+    {
+      "date": "2026-09-16",
+      "index": 100.0538,
+      "products": 4290,
+      "daily": 0.0475,
+      "monthly": null
     }
   ],
   "movers": [
     {
-      "name": "Refresco Coca-Cola zero azúcar zero cafeína",
-      "category": "Refresco de cola",
-      "old_price": 1.0,
-      "new_price": 1.55,
-      "change": 55.00000000000001
-    },
-    {
-      "name": "Detergente ropa Ariel líquido",
+      "name": "Detergente ropa todo en 1 frescor floral Ariel Pods en cápsulas",
       "category": "Detergente y suavizante ropa",
-      "old_price": 7.95,
-      "new_price": 5.95,
-      "change": -25.15723270440251
+      "old_price": 4.95,
+      "new_price": 6.9,
+      "change": 39.393939393939405
     },
     {
-      "name": "Cerveza Estrella Damm",
-      "category": "Cerveza",
-      "old_price": 10.44,
-      "new_price": 8.28,
-      "change": -20.68965517241379
-    },
-    {
-      "name": "Cerveza suave Xibeca Damm",
-      "category": "Cerveza",
-      "old_price": 1.73,
-      "new_price": 1.41,
-      "change": -18.497109826589597
-    },
-    {
-      "name": "Cerveza suave Xibeca Damm",
-      "category": "Cerveza",
-      "old_price": 10.38,
-      "new_price": 8.46,
-      "change": -18.497109826589597
-    },
-    {
-      "name": "Cerveza Estrella Damm",
-      "category": "Cerveza",
-      "old_price": 0.89,
-      "new_price": 0.75,
-      "change": -15.73033707865169
-    },
-    {
-      "name": "Sardina limpia sin cabeza",
+      "name": "Boquerón limpio sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 1.39,
-      "new_price": 1.19,
-      "change": -14.388489208633093
+      "old_price": 1.19,
+      "new_price": 0.79,
+      "change": -33.613445378151255
     },
     {
-      "name": "Sardina sin limpiar",
-      "category": "Pescado fresco",
-      "old_price": 1.39,
-      "new_price": 1.19,
-      "change": -14.388489208633093
+      "name": "Helado bombón almendrado Hacendado sabor vainilla",
+      "category": "Helados",
+      "old_price": 2.7,
+      "new_price": 3.3,
+      "change": 22.22222222222221
     },
     {
-      "name": "Ciruela roja",
-      "category": "Fruta",
-      "old_price": 0.46,
-      "new_price": 0.42,
-      "change": -8.695652173913048
+      "name": "Fluido protección solar facial Deliplus FPS 50+",
+      "category": "Protector solar y aftersun",
+      "old_price": 6.0,
+      "new_price": 7.0,
+      "change": 16.666666666666675
     },
     {
-      "name": "Pimiento verde freír",
-      "category": "Verdura",
-      "old_price": 0.23,
-      "new_price": 0.25,
-      "change": 8.695652173913038
+      "name": "Super helado sándwich sabor nata Hacendado",
+      "category": "Helados",
+      "old_price": 2.9,
+      "new_price": 3.3,
+      "change": 13.793103448275868
     },
     {
-      "name": "Manzana roja dulce",
-      "category": "Fruta",
-      "old_price": 0.5,
-      "new_price": 0.46,
-      "change": -7.9999999999999964
+      "name": "Ginebra London Dry Gin Larios",
+      "category": "Licores",
+      "old_price": 10.95,
+      "new_price": 12.45,
+      "change": 13.698630136986312
     },
     {
-      "name": "Corvina a filetes",
-      "category": "Pescado fresco",
-      "old_price": 13.46,
-      "new_price": 12.54,
-      "change": -6.835066864784556
+      "name": "Mini helado bombón surtido Hacendado",
+      "category": "Helados",
+      "old_price": 3.0,
+      "new_price": 3.4,
+      "change": 13.33333333333333
+    },
+    {
+      "name": "Helado de vainilla Hacendado",
+      "category": "Helados",
+      "old_price": 2.15,
+      "new_price": 2.4,
+      "change": 11.627906976744185
+    },
+    {
+      "name": "Helado cucurucho sabor choco nata Hacendado",
+      "category": "Helados",
+      "old_price": 2.2,
+      "new_price": 2.45,
+      "change": 11.363636363636353
+    },
+    {
+      "name": "Helado cucurucho sabor fresa nata Hacendado",
+      "category": "Helados",
+      "old_price": 2.2,
+      "new_price": 2.45,
+      "change": 11.363636363636353
+    },
+    {
+      "name": "Helado cucurucho sabor nata Hacendado",
+      "category": "Helados",
+      "old_price": 2.2,
+      "new_price": 2.45,
+      "change": 11.363636363636353
+    },
+    {
+      "name": "Helado cucurucho sabor vainilla Hacendado",
+      "category": "Helados",
+      "old_price": 2.2,
+      "new_price": 2.45,
+      "change": 11.363636363636353
     }
   ]
 }
