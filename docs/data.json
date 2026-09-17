@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-16T10:00:41",
+  "captured_at": "2026-09-17T10:03:25",
   "history": [
     {
       "date": "2026-09-10",
@@ -50,92 +50,99 @@
       "products": 4290,
       "daily": 0.0475,
       "monthly": null
+    },
+    {
+      "date": "2026-09-17",
+      "index": 100.0087,
+      "products": 4287,
+      "daily": -0.0448,
+      "monthly": null
     }
   ],
   "movers": [
     {
-      "name": "Detergente ropa todo en 1 frescor floral Ariel Pods en cápsulas",
-      "category": "Detergente y suavizante ropa",
-      "old_price": 4.95,
-      "new_price": 6.9,
-      "change": 39.393939393939405
-    },
-    {
       "name": "Boquerón limpio sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 0.79,
-      "change": -33.613445378151255
+      "old_price": 0.79,
+      "new_price": 0.99,
+      "change": 25.31645569620253
     },
     {
-      "name": "Helado bombón almendrado Hacendado sabor vainilla",
-      "category": "Helados",
-      "old_price": 2.7,
-      "new_price": 3.3,
-      "change": 22.22222222222221
+      "name": "Salsa Original Ligeresa",
+      "category": "Mayonesa, ketchup y mostaza",
+      "old_price": 2.5,
+      "new_price": 2.0,
+      "change": -19.999999999999996
     },
     {
-      "name": "Fluido protección solar facial Deliplus FPS 50+",
-      "category": "Protector solar y aftersun",
-      "old_price": 6.0,
-      "new_price": 7.0,
-      "change": 16.666666666666675
+      "name": "Merluza a rodajas",
+      "category": "Pescado fresco",
+      "old_price": 19.44,
+      "new_price": 15.87,
+      "change": -18.364197530864214
     },
     {
-      "name": "Super helado sándwich sabor nata Hacendado",
-      "category": "Helados",
-      "old_price": 2.9,
-      "new_price": 3.3,
-      "change": 13.793103448275868
+      "name": "Merluza abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 19.44,
+      "new_price": 15.87,
+      "change": -18.364197530864214
     },
     {
-      "name": "Ginebra London Dry Gin Larios",
-      "category": "Licores",
-      "old_price": 10.95,
-      "new_price": 12.45,
-      "change": 13.698630136986312
+      "name": "Merluza sin aletas y sin escamas",
+      "category": "Pescado fresco",
+      "old_price": 19.44,
+      "new_price": 15.87,
+      "change": -18.364197530864214
     },
     {
-      "name": "Mini helado bombón surtido Hacendado",
-      "category": "Helados",
-      "old_price": 3.0,
-      "new_price": 3.4,
-      "change": 13.33333333333333
+      "name": "Postre de soja sabor arándanos Alpro",
+      "category": "Postres de soja",
+      "old_price": 2.0,
+      "new_price": 2.3,
+      "change": 14.999999999999991
     },
     {
-      "name": "Helado de vainilla Hacendado",
-      "category": "Helados",
-      "old_price": 2.15,
-      "new_price": 2.4,
-      "change": 11.627906976744185
+      "name": "Postre de soja sabor lima limón Alpro",
+      "category": "Postres de soja",
+      "old_price": 2.0,
+      "new_price": 2.3,
+      "change": 14.999999999999991
     },
     {
-      "name": "Helado cucurucho sabor choco nata Hacendado",
-      "category": "Helados",
-      "old_price": 2.2,
-      "new_price": 2.45,
-      "change": 11.363636363636353
+      "name": "Postre de soja sabor natural con coco Alpro",
+      "category": "Postres de soja",
+      "old_price": 2.0,
+      "new_price": 2.3,
+      "change": 14.999999999999991
     },
     {
-      "name": "Helado cucurucho sabor fresa nata Hacendado",
-      "category": "Helados",
-      "old_price": 2.2,
-      "new_price": 2.45,
-      "change": 11.363636363636353
+      "name": "Postre de coco natural Alpro sin azúcares añadidos",
+      "category": "Postres de soja",
+      "old_price": 2.3,
+      "new_price": 2.6,
+      "change": 13.043478260869579
     },
     {
-      "name": "Helado cucurucho sabor nata Hacendado",
-      "category": "Helados",
-      "old_price": 2.2,
-      "new_price": 2.45,
-      "change": 11.363636363636353
+      "name": "Postre de soja sabor mango Alpro sin azúcares añadidos",
+      "category": "Postres de soja",
+      "old_price": 2.3,
+      "new_price": 2.6,
+      "change": 13.043478260869579
     },
     {
-      "name": "Helado cucurucho sabor vainilla Hacendado",
-      "category": "Helados",
-      "old_price": 2.2,
-      "new_price": 2.45,
-      "change": 11.363636363636353
+      "name": "Pera Conferencia",
+      "category": "Fruta",
+      "old_price": 0.47,
+      "new_price": 0.52,
+      "change": 10.63829787234043
+    },
+    {
+      "name": "Ciruela roja",
+      "category": "Fruta",
+      "old_price": 0.42,
+      "new_price": 0.46,
+      "change": 9.523809523809534
     }
   ]
 }
