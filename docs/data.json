@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-17T10:03:25",
+  "captured_at": "2026-09-18T09:50:54",
   "history": [
     {
       "date": "2026-09-10",
@@ -57,92 +57,99 @@
       "products": 4287,
       "daily": -0.0448,
       "monthly": null
+    },
+    {
+      "date": "2026-09-18",
+      "index": 100.0,
+      "products": 4288,
+      "daily": -0.0086,
+      "monthly": null
     }
   ],
   "movers": [
     {
       "name": "Boquerón limpio sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 0.79,
-      "new_price": 0.99,
-      "change": 25.31645569620253
+      "old_price": 0.99,
+      "new_price": 1.19,
+      "change": 20.2020202020202
     },
     {
-      "name": "Salsa Original Ligeresa",
-      "category": "Mayonesa, ketchup y mostaza",
-      "old_price": 2.5,
-      "new_price": 2.0,
-      "change": -19.999999999999996
-    },
-    {
-      "name": "Merluza a rodajas",
+      "name": "Sardina limpia sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 19.44,
-      "new_price": 15.87,
-      "change": -18.364197530864214
+      "old_price": 1.19,
+      "new_price": 1.39,
+      "change": 16.806722689075638
     },
     {
-      "name": "Merluza abierta en libro sin cabeza y sin espina",
+      "name": "Sardina sin limpiar",
       "category": "Pescado fresco",
-      "old_price": 19.44,
-      "new_price": 15.87,
-      "change": -18.364197530864214
+      "old_price": 1.19,
+      "new_price": 1.39,
+      "change": 16.806722689075638
     },
     {
-      "name": "Merluza sin aletas y sin escamas",
-      "category": "Pescado fresco",
-      "old_price": 19.44,
-      "new_price": 15.87,
-      "change": -18.364197530864214
-    },
-    {
-      "name": "Postre de soja sabor arándanos Alpro",
-      "category": "Postres de soja",
-      "old_price": 2.0,
-      "new_price": 2.3,
-      "change": 14.999999999999991
-    },
-    {
-      "name": "Postre de soja sabor lima limón Alpro",
-      "category": "Postres de soja",
-      "old_price": 2.0,
-      "new_price": 2.3,
-      "change": 14.999999999999991
-    },
-    {
-      "name": "Postre de soja sabor natural con coco Alpro",
-      "category": "Postres de soja",
-      "old_price": 2.0,
-      "new_price": 2.3,
-      "change": 14.999999999999991
-    },
-    {
-      "name": "Postre de coco natural Alpro sin azúcares añadidos",
-      "category": "Postres de soja",
-      "old_price": 2.3,
-      "new_price": 2.6,
-      "change": 13.043478260869579
-    },
-    {
-      "name": "Postre de soja sabor mango Alpro sin azúcares añadidos",
-      "category": "Postres de soja",
-      "old_price": 2.3,
-      "new_price": 2.6,
-      "change": 13.043478260869579
-    },
-    {
-      "name": "Pera Conferencia",
+      "name": "Mandarina",
       "category": "Fruta",
-      "old_price": 0.47,
-      "new_price": 0.52,
-      "change": 10.63829787234043
+      "old_price": 0.29,
+      "new_price": 0.32,
+      "change": 10.344827586206918
     },
     {
-      "name": "Ciruela roja",
+      "name": "Apio cortado lavado",
+      "category": "Verdura",
+      "old_price": 1.15,
+      "new_price": 1.24,
+      "change": 7.826086956521738
+    },
+    {
+      "name": "Merluza media pieza a rodajas",
+      "category": "Pescado fresco",
+      "old_price": 8.86,
+      "new_price": 8.17,
+      "change": -7.787810383747173
+    },
+    {
+      "name": "Merluza media pieza abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 8.86,
+      "new_price": 8.17,
+      "change": -7.787810383747173
+    },
+    {
+      "name": "Merluza media pieza sin aletas y sin escamas",
+      "category": "Pescado fresco",
+      "old_price": 8.86,
+      "new_price": 8.17,
+      "change": -7.787810383747173
+    },
+    {
+      "name": "Manzana Granny Smith",
       "category": "Fruta",
-      "old_price": 0.42,
-      "new_price": 0.46,
-      "change": 9.523809523809534
+      "old_price": 0.4,
+      "new_price": 0.43,
+      "change": 7.499999999999996
+    },
+    {
+      "name": "Batata",
+      "category": "Verdura",
+      "old_price": 0.99,
+      "new_price": 1.05,
+      "change": 6.060606060606055
+    },
+    {
+      "name": "Limón",
+      "category": "Fruta",
+      "old_price": 0.51,
+      "new_price": 0.54,
+      "change": 5.882352941176472
+    },
+    {
+      "name": "Lubina a filetes sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 3.98,
+      "new_price": 3.78,
+      "change": -5.025125628140703
     }
   ]
 }
