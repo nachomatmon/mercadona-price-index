@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-18T09:50:54",
+  "captured_at": "2026-09-19T09:35:34",
   "history": [
     {
       "date": "2026-09-10",
@@ -64,92 +64,99 @@
       "products": 4288,
       "daily": -0.0086,
       "monthly": null
+    },
+    {
+      "date": "2026-09-19",
+      "index": 99.9978,
+      "products": 4281,
+      "daily": -0.0022,
+      "monthly": null
     }
   ],
   "movers": [
     {
-      "name": "Boquerón limpio sin cabeza",
-      "category": "Pescado fresco",
-      "old_price": 0.99,
-      "new_price": 1.19,
-      "change": 20.2020202020202
+      "name": "Barritas con proteínas sabor coco y chocolate Enervit Sport",
+      "category": "Fitoterapia",
+      "old_price": 3.6,
+      "new_price": 2.95,
+      "change": -18.055555555555557
     },
     {
-      "name": "Sardina limpia sin cabeza",
-      "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 1.39,
-      "change": 16.806722689075638
-    },
-    {
-      "name": "Sardina sin limpiar",
-      "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 1.39,
-      "change": 16.806722689075638
-    },
-    {
-      "name": "Mandarina",
-      "category": "Fruta",
-      "old_price": 0.29,
-      "new_price": 0.32,
-      "change": 10.344827586206918
-    },
-    {
-      "name": "Apio cortado lavado",
+      "name": "Pimiento verde freír",
       "category": "Verdura",
-      "old_price": 1.15,
-      "new_price": 1.24,
-      "change": 7.826086956521738
+      "old_price": 0.25,
+      "new_price": 0.23,
+      "change": -7.9999999999999964
     },
     {
-      "name": "Merluza media pieza a rodajas",
-      "category": "Pescado fresco",
-      "old_price": 8.86,
-      "new_price": 8.17,
-      "change": -7.787810383747173
-    },
-    {
-      "name": "Merluza media pieza abierta en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 8.86,
-      "new_price": 8.17,
-      "change": -7.787810383747173
-    },
-    {
-      "name": "Merluza media pieza sin aletas y sin escamas",
-      "category": "Pescado fresco",
-      "old_price": 8.86,
-      "new_price": 8.17,
-      "change": -7.787810383747173
-    },
-    {
-      "name": "Manzana Granny Smith",
-      "category": "Fruta",
-      "old_price": 0.4,
-      "new_price": 0.43,
-      "change": 7.499999999999996
-    },
-    {
-      "name": "Batata",
+      "name": "Patata",
       "category": "Verdura",
-      "old_price": 0.99,
-      "new_price": 1.05,
-      "change": 6.060606060606055
+      "old_price": 0.36,
+      "new_price": 0.38,
+      "change": 5.555555555555558
     },
     {
       "name": "Limón",
       "category": "Fruta",
-      "old_price": 0.51,
-      "new_price": 0.54,
-      "change": 5.882352941176472
+      "old_price": 0.54,
+      "new_price": 0.57,
+      "change": 5.555555555555536
     },
     {
-      "name": "Lubina a filetes sin cabeza y sin espina",
+      "name": "Manzana Granny Smith",
+      "category": "Fruta",
+      "old_price": 0.43,
+      "new_price": 0.45,
+      "change": 4.651162790697683
+    },
+    {
+      "name": "Rama de Tomates",
+      "category": "Verdura",
+      "old_price": 1.61,
+      "new_price": 1.68,
+      "change": 4.347826086956519
+    },
+    {
+      "name": "Trucha abierta en libro con cabeza",
       "category": "Pescado fresco",
-      "old_price": 3.98,
-      "new_price": 3.78,
-      "change": -5.025125628140703
+      "old_price": 6.2,
+      "new_price": 5.96,
+      "change": -3.8709677419354827
+    },
+    {
+      "name": "Trucha abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 6.2,
+      "new_price": 5.96,
+      "change": -3.8709677419354827
+    },
+    {
+      "name": "Trucha sin aletas",
+      "category": "Pescado fresco",
+      "old_price": 6.2,
+      "new_price": 5.96,
+      "change": -3.8709677419354827
+    },
+    {
+      "name": "Papaya",
+      "category": "Fruta",
+      "old_price": 3.1,
+      "new_price": 3.2,
+      "change": 3.2258064516129004
+    },
+    {
+      "name": "Piña",
+      "category": "Fruta",
+      "old_price": 4.3,
+      "new_price": 4.42,
+      "change": 2.7906976744185963
+    },
+    {
+      "name": "Brócoli",
+      "category": "Verdura",
+      "old_price": 1.2,
+      "new_price": 1.23,
+      "change": 2.5000000000000133
     }
   ]
 }
