@@ -2,3 +2,12 @@
 __pycache__/
 *.py[cod]
 .env
+
+# Herramientas del editor
+.continue/
+
+# Estado temporal de SQLite (el histórico versionado es data/mercadona.sqlite3)
+*.sqlite3-wal
+*.sqlite3-shm
+tests/tmp.sqlite3*
+tests/tmp-out/

@@ -2,7 +2,7 @@ name: Captura diaria del índice
 
 on:
   schedule:
-    - cron: '15 7 * * *'
+    - cron: '15 7,13,19 * * *'
       timezone: Europe/Madrid
   workflow_dispatch:
 
@@ -19,6 +19,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Comprobar el código antes de capturar
+        run: python -m unittest discover -s tests -p "test_*.py"
       - run: python src/run.py
       - name: Guardar histórico y sitio
         run: |
