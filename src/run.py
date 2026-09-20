@@ -435,59 +435,154 @@ def price_movers(conn: sqlite3.Connection, previous: str | None, current: str) -
 # --------------------------------------------------------------------------- #
 # Dashboard estático
 # --------------------------------------------------------------------------- #
+# --------------------------------------------------------------------------- #
+# Análisis adicional: 7 días, categorías y productos
+# --------------------------------------------------------------------------- #
+def week_reference(conn: sqlite3.Connection, current: str) -> str | None:
+    """Última captura con al menos 7 días de antigüedad respecto a la actual."""
+    row = conn.execute(
+        "SELECT max(snapshot_date) FROM snapshots WHERE date(snapshot_date) <= date(?, '-7 days')",
+        (current[:10],),
+    ).fetchone()[0]
+    return row
+
+
+def category_changes(conn: sqlite3.Connection, base: str, current: str, limit: int = 10) -> list[dict[str, Any]]:
+    """Variación acumulada por categoría usando solo productos comparables."""
+    rows = conn.execute("""
+      SELECT c.category, count(*), (sum(c.price)/sum(p.price)-1)*100.0
+      FROM prices p JOIN prices c
+        ON p.product_id=c.product_id AND p.snapshot_date=? AND c.snapshot_date=?
+      WHERE p.price > 0
+      GROUP BY c.category
+      ORDER BY abs((sum(c.price)/sum(p.price)-1)) DESC
+      LIMIT ?
+    """, (base, current, limit)).fetchall()
+    return [{"category": r[0], "count": int(r[1]), "change": float(r[2])} for r in rows]
+
+
+def product_changes(conn: sqlite3.Connection, base: str, current: str) -> list[list[Any]]:
+    """Variación acumulada por producto para toda la cesta comparable.
+
+    Formato compacto [id, nombre, categoría, precio_base, precio_actual, %]
+    para que el HTML siga siendo ligero con miles de productos.
+    """
+    rows = conn.execute("""
+      SELECT c.product_id, c.name, c.category, p.price, c.price,
+             (c.price/p.price-1)*100.0
+      FROM prices p JOIN prices c
+        ON p.product_id=c.product_id AND p.snapshot_date=? AND c.snapshot_date=?
+      WHERE p.price > 0
+      ORDER BY abs((c.price/p.price-1)) DESC, c.name
+    """, (base, current)).fetchall()
+    return [[r[0], r[1], r[2], round(r[3], 4), round(r[4], 4), round(r[5], 4)] for r in rows]
+
+
+# --------------------------------------------------------------------------- #
+# Dashboard estático
+# --------------------------------------------------------------------------- #
 DASHBOARD_TEMPLATE = """<!doctype html>
-<html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Índice Mercadona</title>
+<meta name="description" content="Índice de precios independiente de la tienda online de Mercadona.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f7f3">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d1512">
+<meta property="og:title" content="Índice Mercadona">
+<meta property="og:description" content="Seguimiento independiente de precios: índice, inflación y variación por producto.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230d6b4e'/%3E%3Ctext x='8' y='12.5' font-size='11' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3E%E2%82%AC%3C/text%3E%3C/svg%3E">
 <style>
-:root{color-scheme:light dark;--ink:#173b32;--muted:#5e716b;--surface:#fff;--paper:#f5f7f3;--green:#0d6b4e;--red:#bb3c35;--line:#dce4df}
+:root{color-scheme:light dark;--ink:#173b32;--muted:#5e716b;--surface:#fff;--paper:#f5f7f3;--green:#0d6b4e;--red:#bb3c35;--line:#dce4df;--blue:#2563eb;--amber:#d97706}
 *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px system-ui,-apple-system,Segoe UI,sans-serif}
-main{max-width:1120px;margin:auto;padding:32px 20px 56px}
+main{max-width:1120px;margin:auto;padding:32px 20px 40px}
 header{display:flex;justify-content:space-between;gap:20px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:22px}
-h1{font-size:clamp(28px,5vw,45px);margin:0 0 6px;letter-spacing:-.04em}h2{font-size:20px;margin:0 0 16px}
+h1{font-size:clamp(28px,5vw,45px);margin:0 0 6px;letter-spacing:-.04em}h2{font-size:20px;margin:0 0 16px}h3{font-size:15px;margin:0 0 10px;color:var(--muted);font-weight:600}
 p{margin:0;color:var(--muted)}.tag{color:var(--green);font-weight:700;text-transform:uppercase;font-size:12px;letter-spacing:.09em}
 .updated{text-align:right;font-size:14px;white-space:nowrap}
+
 .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0}
 .metric,.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px}.metric{padding:18px}
-.metric span{display:block;color:var(--muted);font-size:13px}.metric strong{display:block;font-size:30px;letter-spacing:-.04em;margin-top:7px}
+.metric span{display:block;color:var(--muted);font-size:13px}.metric strong{display:block;font-size:30px;letter-spacing:-.04em;margin-top:7px;font-variant-numeric:tabular-nums}
+.spark{display:block;width:100%;height:28px;margin-top:10px;opacity:.9}
+.spark polyline{fill:none;stroke:var(--green);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .positive{color:var(--red)}.negative{color:var(--green)}
 .layout{display:grid;grid-template-columns:1.45fr .9fr;gap:18px}.panel{padding:22px}
+#chartPanel{position:relative}
 #chart{display:block;width:100%;height:auto;overflow:visible}
-.axis{stroke:var(--line);stroke-width:1}
-.chart-intraday{fill:none;stroke:var(--green);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
-.chart-monthly{fill:none;stroke:#2563eb;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
-.chart-annual{fill:none;stroke:#d97706;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.axis{stroke:var(--line);stroke-width:1}.grid{stroke:var(--line);stroke-width:.6;opacity:.6;stroke-dasharray:2 4}
+.chart-week{fill:none;stroke:var(--green);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.chart-monthly{fill:none;stroke:var(--blue);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.chart-annual{fill:none;stroke:var(--amber);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.area-annual{fill:var(--amber);opacity:.10;stroke:none}
+.end-dot.c-week{fill:var(--green)}.end-dot.c-monthly{fill:var(--blue)}.end-dot.c-annual{fill:var(--amber)}
+.end-label{font-size:11px;font-weight:700}.end-label.c-week{fill:var(--green)}.end-label.c-monthly{fill:var(--blue)}.end-label.c-annual{fill:var(--amber)}
+.crosshair{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 3;opacity:.7}
 .chart-label{fill:var(--muted);font-size:12px}
-#legend{display:flex;gap:16px;flex-wrap:wrap;margin:0 0 12px;font-size:13px;color:var(--muted)}
-.legend-item{display:inline-flex;align-items:center;gap:6px}
+#legend{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 12px;font-size:13px;color:var(--muted)}
+.legend-item{display:inline-flex;align-items:center;gap:6px;cursor:pointer;user-select:none;padding:2px 4px;border-radius:6px}
+.legend-item.off{opacity:.35;text-decoration:line-through}
 .legend-item i{width:14px;height:3px;border-radius:2px;display:inline-block}
-i.chart-intraday{background:var(--green)}i.chart-monthly{background:#2563eb}i.chart-annual{background:#d97706}
+i.c-week{background:var(--green)}i.c-monthly{background:var(--blue)}i.c-annual{background:var(--amber)}
+#ranges{display:flex;gap:6px;margin:0 0 12px}
+#ranges button{font:inherit;font-size:13px;padding:4px 10px;border:1px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;cursor:pointer}
+#ranges button.on{background:var(--green);border-color:var(--green);color:#fff;font-weight:600}
+#tip{position:absolute;display:none;pointer-events:none;background:var(--ink);color:var(--paper);border-radius:8px;padding:8px 11px;font-size:12.5px;line-height:1.55;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:5;white-space:nowrap}
+#tip b{font-size:12px}
+
 table{width:100%;border-collapse:collapse;font-size:14px}
-th,td{padding:11px 5px;border-bottom:1px solid var(--line);text-align:left}
-th{color:var(--muted);font-weight:600}
+th,td{padding:11px 6px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--muted);font-weight:600}th.sortable{cursor:pointer}th.sortable:hover{color:var(--ink)}
 td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums;text-align:right}
 .up{color:var(--red);font-weight:700}.down{color:var(--green);font-weight:700}
+.pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:12.5px;font-weight:700}
+.pill.up{background:rgba(187,60,53,.12)}.pill.down{background:rgba(13,107,78,.12)}
+.mbar{height:3px;border-radius:2px;margin-top:5px;background:var(--line);overflow:hidden}
+.mbar i{display:block;height:100%;border-radius:2px}
+.mbar i.up{background:var(--red)}.mbar i.down{background:var(--green)}
+.catrow{display:grid;grid-template-columns:minmax(90px,34%) 1fr auto;gap:10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.catrow:last-child{border-bottom:0}
+.catbar{height:8px;border-radius:4px;background:var(--line);overflow:hidden}
+.catbar i{display:block;height:100%;border-radius:4px}
+.catbar i.up{background:var(--red)}.catbar i.down{background:var(--green)}
+.catpct{font-variant-numeric:tabular-nums;font-weight:700;min-width:64px;text-align:right}
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 14px;font-size:13.5px;color:var(--muted)}
+.controls input[type=search],.controls select{font:inherit;font-size:13.5px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.controls input[type=search]{min-width:220px}
+.controls label{display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.btn{font:inherit;font-size:13.5px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);cursor:pointer}
+.btn:hover{border-color:var(--muted)}
+#pager{display:flex;gap:8px;align-items:center;justify-content:flex-end;margin-top:12px;font-size:13px;color:var(--muted)}
+#pager button{font:inherit;padding:4px 10px;border:1px solid var(--line);background:var(--surface);border-radius:8px;cursor:pointer;color:var(--ink)}
+#pager button:disabled{opacity:.4;cursor:default}
 .method{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;line-height:1.5}
+footer{margin-top:26px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+footer a{color:var(--green);text-decoration:none}footer a:hover{text-decoration:underline}
+.empty{padding:34px 10px;text-align:center;color:var(--muted);font-size:14px}
 @media(max-width:760px){main{padding:22px 14px}header{display:block}.updated{text-align:left;margin-top:12px;white-space:normal}
-.metrics{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.metric strong{font-size:25px}}
-@media(prefers-color-scheme:dark){:root{--ink:#e6f0eb;--muted:#a7b7b0;--surface:#17221e;--paper:#0d1512;--green:#4bc090;--red:#ff8b83;--line:#304139}}
-</style>
+.metrics{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.metric strong{font-size:25px}.controls input[type=search]{min-width:0;flex:1}}
+@media(prefers-color-scheme:dark){:root{--ink:#e6f0eb;--muted:#a7b7b0;--surface:#17221e;--paper:#0d1512;--green:#4bc090;--red:#ff8b83;--line:#304139;--blue:#7aa2ff;--amber:#f0b35c}}
+</style></head>
+<body>
+
 <main>
 <header>
   <div><div class="tag">Seguimiento independiente</div><h1>Índice Mercadona</h1><p>Precios online · <span id="zone">__ZONE__</span></p></div>
   <p class="updated" id="updated"></p>
 </header>
 <section class="metrics" aria-label="Indicadores principales">
-  <div class="metric"><span>Índice base 100</span><strong id="index">—</strong></div>
-  <div class="metric"><span>Inflación intradía</span><strong id="intraday">—</strong></div>
-  <div class="metric"><span>Inflación mensual</span><strong id="monthly">—</strong></div>
-  <div class="metric"><span>Inflación anual acumulada</span><strong id="annual">—</strong></div>
+  <div class="metric"><span>Índice base 100</span><strong id="index">—</strong><svg class="spark" id="spark-index" viewBox="0 0 120 28" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+  <div class="metric"><span>Variación 7 días</span><strong id="week">—</strong><svg class="spark" id="spark-week" viewBox="0 0 120 28" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+  <div class="metric"><span>Inflación mensual</span><strong id="monthly">—</strong><svg class="spark" id="spark-monthly" viewBox="0 0 120 28" preserveAspectRatio="none" aria-hidden="true"></svg></div>
+  <div class="metric"><span>Inflación anual acumulada</span><strong id="annual">—</strong><svg class="spark" id="spark-annual" viewBox="0 0 120 28" preserveAspectRatio="none" aria-hidden="true"></svg></div>
 </section>
 <section class="layout">
-  <article class="panel">
+  <article class="panel" id="chartPanel">
     <h2>Evolución de la inflación</h2>
     <div id="legend"></div>
-    <svg id="chart" viewBox="0 0 680 280" role="img" aria-label="Evolución temporal de la inflación intradía, mensual y anual"></svg>
+    <div id="ranges"></div>
+    <svg id="chart" viewBox="0 0 680 300" role="img" aria-label="Evolución temporal de la inflación a 7 días, mensual y anual"></svg>
     <p id="chart-note"></p>
+    <div id="tip"></div>
   </article>
   <article class="panel">
     <h2>Mayores cambios desde la última captura</h2>
@@ -499,93 +594,247 @@ td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
     </div>
   </article>
 </section>
+<section class="panel" style="margin-top:18px">
+  <h2>Variación por categoría <small style="font-weight:400;color:var(--muted)">· acumulada desde la base</small></h2>
+  <div id="cats"></div>
+</section>
+<section class="panel" style="margin-top:18px" id="products-panel">
+  <h2>Inflación por producto <small style="font-weight:400;color:var(--muted)">· acumulada desde la base (<span id="pcount">0</span> productos)</small></h2>
+  <div class="controls">
+    <input type="search" id="q" placeholder="Buscar producto o categoría…">
+    <label><input type="checkbox" id="onlyChanges"> Solo cambios</label>
+    <select id="pageSize"><option>25</option><option selected>50</option><option>100</option></select>
+    <button class="btn" id="csv" type="button">Descargar CSV</button>
+  </div>
+  <div style="overflow-x:auto">
+    <table>
+      <thead><tr>
+        <th class="sortable" data-k="1">Producto</th>
+        <th class="sortable" data-k="2">Categoría</th>
+        <th class="sortable num" data-k="3">Precio base</th>
+        <th class="sortable num" data-k="4">Ahora</th>
+        <th class="sortable num" data-k="5">Variación</th>
+      </tr></thead>
+      <tbody id="productsBody"></tbody>
+    </table>
+  </div>
+  <div id="pager">
+    <button id="prev" type="button">‹ Anterior</button>
+    <span id="pageInfo"></span>
+    <button id="next" type="button">Siguiente ›</button>
+  </div>
+</section>
 <section class="panel method">
   <h2>Cómo se calcula</h2>
-  <p>Se realiza una captura al día. La inflación mensual compara cada captura con el último dato del mes anterior, y la anual con el último dato previo al 1 de enero. Cuando aún no hay historia del año anterior, la anual se calcula desde la primera captura disponible del año y se señala como parcial. El índice usa una cesta de peso igual por producto y formato de venta; no es un índice oficial.</p>
+  <p>Se realiza una captura diaria de la tienda online. La variación de 7 días compara con la última captura disponible de hace al menos una semana; la mensual con el último dato del mes anterior; y la anual con el último dato previo al 1 de enero (marcada como parcial si aún no hay historia del año anterior). El índice usa una cesta de peso igual por producto y formato de venta, comparando solo productos presentes en ambas fechas; no es un índice oficial.</p>
 </section>
+<footer>
+  <span>Datos: <a href="data.json" download>data.json</a> · Código y metodología en el repositorio.</span>
+  <span>Sin backend, sin CDN, sin cookies.</span>
+</footer>
 </main>
+
 <script>
 const data = __DATA__;
 const fmtEuro = n => new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(n);
 const fmtNum = n => new Intl.NumberFormat('es-ES',{minimumFractionDigits:2,maximumFractionDigits:2}).format(n);
 const fmtPct = n => n==null ? 'Sin dato' : ((n>=0?'+':'') + fmtNum(n) + '%');
-const ESCAPE = {'&':'&#38;','<':'&#60;','>':'&#62;','"':'&#34;',"'":'&#39;'};
-const escapeHtml = s => String(s==null?'':s).replace(/[&<>"']/g, c => ESCAPE[c]);
+const ESC = {'&':'&#38;','<':'&#60;','>':'&#62;','"':'&#34;',"'":'&#39;'};
+const esc = s => String(s==null?'':s).replace(/[&<>"']/g, c => ESC[c]);
+const $ = id => document.getElementById(id);
 function setMetric(id, value){
-  const el = document.getElementById(id);
+  const el = $(id);
   el.textContent = fmtPct(value);
   el.className = value>0 ? 'positive' : (value<0 ? 'negative' : '');
 }
+function sparkline(id, series){
+  const svg = $(id); if (!svg) return;
+  const vals = series.filter(v => v!=null);
+  if (vals.length < 2){ svg.innerHTML=''; return; }
+  const mn = Math.min.apply(null, vals), mx = Math.max.apply(null, vals);
+  const span = (mx-mn)||1;
+  const pts = [];
+  series.forEach((v,i)=>{ if(v!=null){ pts.push(((i/(series.length-1))*118+1).toFixed(1)+','+(27-((v-mn)/span)*24).toFixed(1)); } });
+  svg.innerHTML = '<polyline points="'+pts.join(' ')+'"/>';
+}
 const last = data.history[data.history.length-1];
-document.getElementById('zone').textContent = data.zone;
-document.getElementById('updated').textContent = 'Actualizado: ' + new Date(data.captured_at).toLocaleString('es-ES');
-document.getElementById('index').textContent = fmtNum(last.index);
-setMetric('intraday', last.intraday);
+$('zone').textContent = data.zone;
+$('updated').textContent = 'Actualizado: ' + new Date(data.captured_at).toLocaleString('es-ES');
+$('index').textContent = fmtNum(last.index);
+setMetric('week', data.week!=null ? data.week : (last.week!=null?last.week:null));
 setMetric('monthly', last.monthly);
 setMetric('annual', last.annual);
-const moversBody = document.getElementById('movers');
-if (data.movers && data.movers.length) {
-  moversBody.innerHTML = data.movers.map(function(m){
-    const cls = m.change>0 ? 'up' : 'down';
-    return '<tr><td><strong>'+escapeHtml(m.name)+'</strong><br><small>'+escapeHtml(m.category)+'</small></td>'
-      + '<td>'+fmtEuro(m.old_price)+'</td><td>'+fmtEuro(m.new_price)+'</td>'
-      + '<td class="'+cls+'">'+fmtPct(m.change)+'</td></tr>';
-  }).join('');
-} else {
-  moversBody.innerHTML = '<tr><td colspan="4">Aún no hay una captura anterior para comparar.</td></tr>';
-}
-const svg = document.getElementById('chart');
-const W=680, H=280, L=58, R=18, T=18, B=38;
-const defs = [
-  {key:'intraday', label:'Intradía', cls:'chart-intraday'},
-  {key:'monthly', label:'Mensual', cls:'chart-monthly'},
-  {key:'annual', label:'Anual', cls:'chart-annual'}
+sparkline('spark-index', data.history.map(h=>h.index));
+sparkline('spark-week', data.history.map(h=>h.week));
+sparkline('spark-monthly', data.history.map(h=>h.monthly));
+sparkline('spark-annual', data.history.map(h=>h.annual));
+
+const svg = $('chart'), tip = $('tip');
+const W=680,H=300,L=58,R=56,T=16,B=38;
+const SERIES = [
+  {key:'week', label:'7 días', cls:'chart-week', dot:'c-week'},
+  {key:'monthly', label:'Mensual', cls:'chart-monthly', dot:'c-monthly'},
+  {key:'annual', label:'Anual', cls:'chart-annual', dot:'c-annual'}
 ];
-const active = defs.filter(function(d){
-  return data.history.some(function(h){ return h[d.key]!=null; });
+const hidden = new Set();
+let rangeDays = null;
+const RANGES = [['Todo',null],['1 año',365],['90 días',90],['30 días',30]];
+$('ranges').innerHTML = RANGES.map((r,i)=>'<button type="button" data-i="'+i+'" class="'+(i===0?'on':'')+'">'+r[0]+'</button>').join('');
+$('ranges').addEventListener('click', e=>{
+  const b = e.target.closest('button'); if(!b) return;
+  rangeDays = RANGES[+b.dataset.i][1];
+  document.querySelectorAll('#ranges button').forEach(x=>x.classList.toggle('on', x===b));
+  render();
 });
-document.getElementById('legend').innerHTML = active.map(function(d){
-  return '<span class="legend-item"><i class="'+d.cls+'"></i>'+d.label+'</span>';
-}).join('');
-const values = [];
-active.forEach(function(d){ data.history.forEach(function(h){ if (h[d.key]!=null) values.push(h[d.key]); }); });
-let lo, hi;
-if (values.length) {
-  const mn = Math.min.apply(null, values), mx = Math.max.apply(null, values);
-  if (mn === mx) { lo = mn - 1; hi = mx + 1; }
-  else { const pad = Math.max(0.1, (mx-mn)*0.15); lo = mn - pad; hi = mx + pad; }
-} else { lo = -1; hi = 1; }
-const N = data.history.length;
-const X = i => L + (W-L-R) * (N<=1 ? 0.5 : i/(N-1));
-const Y = v => T + (H-T-B) * (1 - (v-lo)/(hi-lo));
-function segments(key){
-  const segs = []; let cur = [];
-  data.history.forEach(function(h,i){
-    const v = h[key];
-    if (v==null) { if (cur.length) { segs.push(cur); cur = []; } }
-    else { cur.push(X(i).toFixed(1)+','+Y(v).toFixed(1)); }
+$('legend').innerHTML = SERIES.map(s=>'<span class="legend-item" data-k="'+s.key+'"><i class="'+s.cls+'"></i>'+s.label+'</span>').join('');
+$('legend').addEventListener('click', e=>{
+  const li = e.target.closest('.legend-item'); if(!li) return;
+  const k = li.dataset.k;
+  if (hidden.has(k)) { hidden.delete(k); li.classList.remove('off'); }
+  else { hidden.add(k); li.classList.add('off'); }
+  render();
+});
+function currentHistory(){
+  if (!rangeDays) return data.history;
+  const cutoff = new Date(last.date); cutoff.setDate(cutoff.getDate() - rangeDays);
+  return data.history.filter(h => new Date(h.date) >= cutoff);
+}
+function render(){
+  const hist = currentHistory();
+  const active = SERIES.filter(s => !hidden.has(s.key) && hist.some(h=>h[s.key]!=null));
+  if (hist.length < 2){
+    svg.innerHTML = '<text class="chart-label" x="'+L+'" y="140">Se necesitan al menos dos capturas para dibujar la serie.</text>';
+    $('chart-note').textContent = hist.length + ' captura(s) disponible(s).';
+    return;
+  }
+  const values = [];
+  active.forEach(s => hist.forEach(h => { if (h[s.key]!=null) values.push(h[s.key]); }));
+  let lo, hi;
+  if (!values.length){ lo=-1; hi=1; }
+  else {
+    const mn = Math.min.apply(null, values), mx = Math.max.apply(null, values);
+    if (mn===mx){ lo=mn-1; hi=mx+1; } else { const pad=Math.max(.1,(mx-mn)*.15); lo=mn-pad; hi=mx+pad; }
+  }
+  const N = hist.length;
+  const X = i => L + (W-L-R) * (i/(N-1));
+  const Y = v => T + (H-T-B) * (1 - (v-lo)/(hi-lo));
+  let c = '';
+  for (let g=0; g<=3; g++){
+    const v = lo + (hi-lo)*(g/3), y = Y(v);
+    c += '<line class="grid" x1="'+L+'" y1="'+y.toFixed(1)+'" x2="'+(W-R)+'" y2="'+y.toFixed(1)+'"/>';
+    c += '<text class="chart-label" x="4" y="'+(y+4).toFixed(1)+'">'+fmtNum(v)+'%</text>';
+  }
+  const ticks = Math.min(6, N);
+  for (let t=0; t<ticks; t++){
+    const i = Math.round((N-1)*t/(ticks-1));
+    const d = hist[i].date.slice(5,10).replace('-','/');
+    c += '<text class="chart-label" text-anchor="middle" x="'+X(i).toFixed(1)+'" y="'+(H-10)+'">'+d+'</text>';
+  }
+  const annualS = SERIES.find(s=>s.key==='annual');
+  if (active.includes(annualS)){
+    const pts = [];
+    hist.forEach((h,i)=>{ if(h.annual!=null) pts.push(X(i).toFixed(1)+','+Y(h.annual).toFixed(1)); });
+    if (pts.length>1) c += '<polygon class="area-annual" points="'+L+','+Y(Math.max(0,lo)).toFixed(1)+' '+pts.join(' ')+' '+(W-R)+','+Y(Math.max(0,lo)).toFixed(1)+'"/>';
+  }
+  active.forEach(s=>{
+    const pts=[];
+    hist.forEach((h,i)=>{ if(h[s.key]!=null) pts.push(X(i).toFixed(1)+','+Y(h[s.key]).toFixed(1)); });
+    c += '<polyline class="'+s.cls+'" points="'+pts.join(' ')+'"/>';
+    const li = N-1, lv = hist[li][s.key];
+    if (lv!=null){
+      c += '<circle class="end-dot '+s.dot+'" cx="'+X(li).toFixed(1)+'" cy="'+Y(lv).toFixed(1)+'" r="3.5"/>';
+      c += '<text class="end-label '+s.dot+'" x="'+(X(li)+6).toFixed(1)+'" y="'+(Y(lv)+4).toFixed(1)+'">'+fmtNum(lv)+'%</text>';
+    }
   });
-  if (cur.length) segs.push(cur);
-  return segs;
+  svg.innerHTML = c;
+  svg.onmousemove = ev => {
+    const rect = svg.getBoundingClientRect();
+    const px = (ev.clientX-rect.left)/rect.width*W;
+    let bi=0, bd=1e9;
+    for (let i=0;i<N;i++){ const d=Math.abs(X(i)-px); if(d<bd){bd=d;bi=i;} }
+    const h = hist[bi];
+    let html = '<b>'+h.date.slice(0,10)+'</b>';
+    SERIES.forEach(s=>{ if(h[s.key]!=null) html += '<br>'+s.label+': '+fmtPct(h[s.key]); });
+    tip.innerHTML = html;
+    tip.style.display='block';
+    const r2 = $('chartPanel').getBoundingClientRect();
+    tip.style.left = Math.min(ev.clientX-r2.left+14, r2.width-170)+'px';
+    tip.style.top = Math.min(ev.clientY-r2.top+14, r2.height-96)+'px';
+    svg.innerHTML = c + '<line class="crosshair" x1="'+X(bi).toFixed(1)+'" y1="'+T+'" x2="'+X(bi).toFixed(1)+'" y2="'+(H-B)+'"/>';
+  };
+  svg.onmouseleave = () => { tip.style.display='none'; render(); };
+  $('chart-note').textContent = (data.annual_partial?'Anual parcial desde la primera captura disponible del año. ':'Anual desde el último dato previo al 1 de enero. ') + N + ' capturas.';
 }
-let content = '';
-if (lo < 0 && hi > 0) {
-  content += '<line class="axis" x1="'+L+'" y1="'+Y(0)+'" x2="'+(W-R)+'" y2="'+Y(0)+'"/>';
-  content += '<text class="chart-label" x="4" y="'+(Y(0)+4)+'">0%</text>';
+render();
+
+const M = data.movers||[];
+const maxAbs = Math.max.apply(null, M.map(m=>Math.abs(m.change)).concat([1]));
+$('movers').innerHTML = M.length ? M.map(m=>{
+  const cls = m.change>0?'up':'down';
+  return '<tr><td><strong>'+esc(m.name)+'</strong><br><small>'+esc(m.category)+'</small></td>'
+    + '<td class="num">'+fmtEuro(m.old_price)+'</td><td class="num">'+fmtEuro(m.new_price)+'</td>'
+    + '<td><span class="pill '+cls+'">'+fmtPct(m.change)+'</span><div class="mbar"><i class="'+cls+'" style="width:'+(Math.abs(m.change)/maxAbs*100).toFixed(0)+'%"></i></div></td></tr>';
+}).join('') : '<tr><td colspan="4" class="empty">Aún no hay una captura anterior para comparar.</td></tr>';
+const CATS = data.categories||[];
+const cmax = Math.max.apply(null, CATS.map(x=>Math.abs(x.change)).concat([1]));
+$('cats').innerHTML = CATS.length ? CATS.map(c2=>{
+  const cls = c2.change>0?'up':'down';
+  return '<div class="catrow"><span>'+esc(c2.category)+'</span>'
+    + '<div class="catbar"><i class="'+cls+'" style="width:'+(Math.abs(c2.change)/cmax*100).toFixed(1)+'%"></i></div>'
+    + '<span class="catpct '+cls+'">'+fmtPct(c2.change)+' <small style="font-weight:400;color:var(--muted)">('+c2.count+')</small></span></div>';
+}).join('') : '<div class="empty">Sin datos comparables todavía.</div>';
+const P = data.products||[];
+let sortK = 5, sortDir = -1, page = 0, psize = 50;
+function view(){
+  const q = $('q').value.trim().toLowerCase();
+  const only = $('onlyChanges').checked;
+  let rows = P.filter(r => (!only || r[3]!==r[4]) && (!q || (r[1]+' '+r[2]+' '+r[0]).toLowerCase().includes(q)));
+  rows.sort((a,b)=>{
+    const va=a[sortK], vb=b[sortK];
+    if (typeof va === 'string' || typeof vb === 'string') return String(va).localeCompare(String(vb),'es')*sortDir;
+    return (va-vb)*sortDir;
+  });
+  return rows;
 }
-content += '<text class="chart-label" x="4" y="'+(Y(hi)+4)+'">'+fmtNum(hi)+'%</text>';
-content += '<text class="chart-label" x="4" y="'+(Y(lo)+4)+'">'+fmtNum(lo)+'%</text>';
-active.forEach(function(d){
-  segments(d.key).forEach(function(seg){
-    content += '<polyline class="'+d.cls+'" points="'+seg.join(' ')+'"/>';
+function renderTable(){
+  const rows = view();
+  const pages = Math.max(1, Math.ceil(rows.length/psize));
+  if (page >= pages) page = pages-1;
+  const slice = rows.slice(page*psize, page*psize+psize);
+  $('pcount').textContent = P.length.toLocaleString('es-ES');
+  $('productsBody').innerHTML = slice.length ? slice.map(r=>
+    '<tr><td><strong>'+esc(r[1])+'</strong><br><small style="color:var(--muted)">'+esc(r[0])+'</small></td>'
+    + '<td>'+esc(r[2])+'</td><td class="num">'+fmtEuro(r[3])+'</td><td class="num">'+fmtEuro(r[4])+'</td>'
+    + '<td><span class="pill '+(r[5]>0?'up':(r[5]<0?'down':''))+'">'+fmtPct(r[5])+'</span></td></tr>'
+  ).join('') : '<tr><td colspan="5" class="empty">Ningún producto coincide con la búsqueda.</td></tr>';
+  $('pageInfo').textContent = 'Página '+(page+1)+' de '+pages+' · '+rows.length.toLocaleString('es-ES')+' productos';
+  $('prev').disabled = page===0;
+  $('next').disabled = page>=pages-1;
+}
+$('q').addEventListener('input', ()=>{ page=0; renderTable(); });
+$('onlyChanges').addEventListener('change', ()=>{ page=0; renderTable(); });
+$('pageSize').addEventListener('change', e=>{ psize=+e.target.value; page=0; renderTable(); });
+$('prev').addEventListener('click', ()=>{ if(page>0){page--; renderTable();} });
+$('next').addEventListener('click', ()=>{ page++; renderTable(); });
+document.querySelectorAll('#products-panel th.sortable').forEach(th=>{
+  th.addEventListener('click', ()=>{
+    const k = +th.dataset.k;
+    if (sortK===k) sortDir = -sortDir; else { sortK=k; sortDir = (k===1||k===2)?1:-1; }
+    renderTable();
   });
 });
-content += '<text class="chart-label" x="'+L+'" y="'+(H-8)+'">'+data.history[0].date.slice(0,10)+'</text>';
-content += '<text class="chart-label" text-anchor="end" x="'+(W-R)+'" y="'+(H-8)+'">'+last.date.slice(0,10)+'</text>';
-svg.innerHTML = content;
-document.getElementById('chart-note').textContent =
-  (data.annual_partial ? 'Anual parcial desde la primera captura disponible del año. ' : 'Anual desde el último dato previo al 1 de enero. ')
-  + N + ' capturas disponibles.';
+$('csv').addEventListener('click', ()=>{
+  const nl = String.fromCharCode(10), sep = String.fromCharCode(59);
+  const head = ['id','producto','categoria','precio_base','precio_actual','variacion_pct'].join(sep);
+  const lines = view().map(r=>[r[0],r[1],r[2],r[3],r[4],r[5]].join(sep));
+  const blob = new Blob([String.fromCharCode(0xFEFF)+head+nl+lines.join(nl)], {type:'text/csv;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'inflacion-por-producto.csv';
+  a.click();
+  URL.revokeObjectURL(a.href);
+});
+renderTable();
 </script>
 </html>"""
 
@@ -599,7 +848,6 @@ def dashboard_html(payload: dict[str, Any]) -> str:
         .replace("__ZONE__", html.escape(str(payload.get("zone", ""))))
     )
 
-
 # --------------------------------------------------------------------------- #
 # Salidas
 # --------------------------------------------------------------------------- #
@@ -609,12 +857,12 @@ def make_outputs(conn: sqlite3.Connection, current: str, config: dict[str, Any],
     if current_index is None:
         raise RuntimeError("No hay productos comparables entre la base y la fecha solicitada.")
     prev = previous_date(conn, current)
-    intraday = None
-    day_start = first_snapshot_of_day(conn, current)
-    if day_start:
-        result = period_change(conn, day_start, current)
+    week_base = week_reference(conn, current)
+    week = None
+    if week_base:
+        result = period_change(conn, week_base, current)
         if result:
-            intraday = result[0]
+            week = result[0]
     monthly = None
     previous_month = previous_date(conn, current, month_only=True)
     if previous_month:
@@ -634,7 +882,7 @@ def make_outputs(conn: sqlite3.Connection, current: str, config: dict[str, Any],
     lines = [
         f"Índice Mercadona — {calendar_day(current).strftime('%d/%m/%Y')}", "",
         f"Índice: {current_index[0]:.2f}".replace(".", ","),
-        f"Inflación intradía: {pct(intraday)}",
+        f"Variación 7 días: {pct(week)}",
         f"Inflación mensual: {pct(monthly)}",
         f"Inflación anual acumulada: {pct(annual)}", "",
         f"Cesta comparable: {current_index[1]} productos",
@@ -660,8 +908,8 @@ def make_outputs(conn: sqlite3.Connection, current: str, config: dict[str, Any],
     history = []
     for (snapshot_date,) in conn.execute("SELECT snapshot_date FROM snapshots ORDER BY snapshot_date"):
         level = index_change(conn, base, snapshot_date)
-        start_day = first_snapshot_of_day(conn, snapshot_date)
-        change = period_change(conn, start_day, snapshot_date) if start_day else None
+        week_ref = week_reference(conn, snapshot_date)
+        change_week = period_change(conn, week_ref, snapshot_date) if week_ref else None
         before_month = previous_date(conn, snapshot_date, month_only=True)
         change_month = period_change(conn, before_month, snapshot_date) if before_month else None
         year_base, partial = annual_reference(conn, snapshot_date)
@@ -671,7 +919,7 @@ def make_outputs(conn: sqlite3.Connection, current: str, config: dict[str, Any],
                 "date": snapshot_date,
                 "index": round(level[0], 4),
                 "products": level[1],
-                "intraday": round(change[0], 4) if change else None,
+                "week": round(change_week[0], 4) if change_week else None,
                 "monthly": round(change_month[0], 4) if change_month else None,
                 "annual": round(change_year[0], 4) if change_year else None,
             })
@@ -683,15 +931,19 @@ def make_outputs(conn: sqlite3.Connection, current: str, config: dict[str, Any],
         "history": history[-365:],
         "movers": price_movers(conn, prev, current),
         "annual_partial": annual_partial,
+        "week": week,
     }
-    index_path.write_text(dashboard_html(payload), encoding="utf-8")
+    # data.json se mantiene ligero (sin el detalle por producto); el detalle
+    # viaja embebido en index.html para que el dashboard siga siendo un único
+    # archivo autocontenido sin peticiones adicionales.
+    dashboard_payload = dict(payload)
+    dashboard_payload["categories"] = category_changes(conn, base, current, limit=12)
+    dashboard_payload["products"] = product_changes(conn, base, current)
+    index_path.write_text(dashboard_html(dashboard_payload), encoding="utf-8")
     data_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
     return text
 
 
-# --------------------------------------------------------------------------- #
-# CLI
-# --------------------------------------------------------------------------- #
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Captura precios de Mercadona y publica el índice.")
     parser.add_argument("--date", default=datetime.now(ZoneInfo("Europe/Madrid")).isoformat(timespec="seconds"),

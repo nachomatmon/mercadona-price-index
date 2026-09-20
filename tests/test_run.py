@@ -4,6 +4,7 @@ Solo biblioteca estándar. Usan una base de datos SQLite en memoria, por lo que
 no tocan `data/mercadona.sqlite3` ni realizan peticiones de red.
 """
 import importlib.util
+import json
 import sys
 import tempfile
 import unittest
@@ -22,22 +23,24 @@ spec.loader.exec_module(run)
 def make_db(rows_by_date):
     """Crea una base en memoria con los productos indicados.
 
-    `rows_by_date` es un dict {fecha: [(product_id, price), ...]}.
+    `rows_by_date` es un dict {fecha: [(product_id, price), ...]}. Cada fila
+    admite una tercera componente opcional con la categoría del producto.
     """
     conn = run.db_connect(":memory:")
     config = {"postal_code": "08028", "warehouse": "bcn1"}
     for snapshot_date, rows in rows_by_date.items():
-        products = [
-            {
+        products = []
+        for row in rows:
+            pid, price = row[0], row[1]
+            category = row[2] if len(row) > 2 else "Test"
+            products.append({
                 "product_id": pid,
                 "name": f"Producto {pid}",
                 "price": price,
                 "format": "unidad",
-                "category": "Test",
+                "category": category,
                 "unit_price": price,
-            }
-            for pid, price in rows
-        ]
+            })
         run.save_snapshot(conn, snapshot_date, config, products, "test", force=True)
     return conn
 
@@ -263,6 +266,78 @@ class OutputDirTests(unittest.TestCase):
                 self.assertTrue((Path(tmp) / name).is_file(), f"falta {name}")
             self.assertIn("Índice Mercadona", text)
             self.assertIn("Índice: 110,00", text)
+
+
+class WeekReferenceTests(unittest.TestCase):
+    def test_week_reference_returns_capture_at_least_7_days_old(self):
+        conn = make_db({
+            "2026-01-01": [("1", 1.0)],
+            "2026-01-08": [("1", 1.0)],
+            "2026-01-15": [("1", 1.0)],
+        })
+        self.assertEqual(run.week_reference(conn, "2026-01-15"), "2026-01-08")
+        self.assertEqual(run.week_reference(conn, "2026-01-10"), "2026-01-01")
+
+    def test_week_reference_none_without_enough_history(self):
+        conn = make_db({"2026-01-05": [("1", 1.0)]})
+        self.assertIsNone(run.week_reference(conn, "2026-01-07"))
+
+    def test_week_reference_handles_datetime_identifiers(self):
+        conn = make_db({
+            "2026-01-01T08:00:00": [("1", 1.0)],
+            "2026-01-12T08:00:00": [("1", 1.0)],
+        })
+        self.assertEqual(run.week_reference(conn, "2026-01-12T08:00:00"), "2026-01-01T08:00:00")
+
+
+class CategoryAndProductChangesTests(unittest.TestCase):
+    def setUp(self):
+        self.conn = make_db({
+            "2026-01-01": [("1", 1.0, "Lácteos"), ("2", 2.0, "Despensa"), ("3", 5.0, "Lácteos")],
+            "2026-01-02": [("1", 1.5, "Lácteos"), ("2", 2.0, "Despensa"), ("3", 4.0, "Lácteos")],
+        })
+
+    def test_category_changes_groups_comparable_products(self):
+        rows = run.category_changes(self.conn, "2026-01-01", "2026-01-02")
+        by_cat = {r["category"]: r for r in rows}
+        # Lácteos: (1.5 + 4.0) / (1.0 + 5.0) - 1 = -8,333... %
+        self.assertAlmostEqual(by_cat["Lácteos"]["change"], -8.3333, places=3)
+        self.assertEqual(by_cat["Lácteos"]["count"], 2)
+        self.assertAlmostEqual(by_cat["Despensa"]["change"], 0.0, places=6)
+
+    def test_category_changes_orders_by_magnitude_and_respects_limit(self):
+        rows = run.category_changes(self.conn, "2026-01-01", "2026-01-02")
+        self.assertEqual(rows[0]["category"], "Lácteos")
+        self.assertEqual(len(run.category_changes(self.conn, "2026-01-01", "2026-01-02", limit=1)), 1)
+
+    def test_product_changes_returns_compact_rows(self):
+        rows = run.product_changes(self.conn, "2026-01-01", "2026-01-02")
+        by_id = {r[0]: r for r in rows}
+        # [id, nombre, categoría, precio_base, precio_actual, %]
+        self.assertEqual(by_id["1"], ["1", "Producto 1", "Lácteos", 1.0, 1.5, 50.0])
+        self.assertAlmostEqual(by_id["3"][5], -20.0, places=4)
+
+
+class MakeOutputsPayloadTests(unittest.TestCase):
+    def test_dashboard_embeds_categories_and_products_datajson_stays_light(self):
+        conn = make_db({
+            "2026-01-01": [("1", 1.0, "Lácteos"), ("2", 2.0, "Despensa")],
+            "2026-01-02": [("1", 1.1, "Lácteos"), ("2", 2.2, "Despensa")],
+        })
+        config = {"postal_code": "08028", "warehouse": "bcn1"}
+        with tempfile.TemporaryDirectory() as tmp:
+            text = run.make_outputs(conn, "2026-01-02", config, Path(tmp))
+            self.assertIn("Variación 7 días", text)
+            dashboard = (Path(tmp) / "index.html").read_text(encoding="utf-8")
+            data = json.loads((Path(tmp) / "data.json").read_text(encoding="utf-8"))
+            # El detalle por producto y categoría viaja embebido en el HTML...
+            self.assertIn('"categories"', dashboard)
+            self.assertIn('"products"', dashboard)
+            self.assertIn("Producto 1", dashboard)
+            # ...pero data.json se mantiene ligero.
+            self.assertNotIn("categories", data)
+            self.assertNotIn("products", data)
+            self.assertIn("week", data)
 
 
 if __name__ == "__main__":

@@ -1,13 +1,13 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-20T14:33:37+02:00",
+  "captured_at": "2026-09-20T18:07:55+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
       "date": "2026-09-10",
       "index": 100.0,
       "products": 4314,
-      "intraday": 0.0,
+      "week": null,
       "monthly": null,
       "annual": 0.0
     },
@@ -15,7 +15,7 @@
       "date": "2026-09-11",
       "index": 99.9871,
       "products": 4313,
-      "intraday": 0.0,
+      "week": null,
       "monthly": null,
       "annual": -0.0129
     },
@@ -23,7 +23,7 @@
       "date": "2026-09-12",
       "index": 99.9811,
       "products": 4307,
-      "intraday": 0.0,
+      "week": null,
       "monthly": null,
       "annual": -0.0189
     },
@@ -31,7 +31,7 @@
       "date": "2026-09-13",
       "index": 99.9836,
       "products": 4305,
-      "intraday": 0.0,
+      "week": null,
       "monthly": null,
       "annual": -0.0164
     },
@@ -39,7 +39,7 @@
       "date": "2026-09-14",
       "index": 100.0194,
       "products": 4298,
-      "intraday": 0.0,
+      "week": null,
       "monthly": null,
       "annual": 0.0194
     },
@@ -47,7 +47,7 @@
       "date": "2026-09-15",
       "index": 99.987,
       "products": 4287,
-      "intraday": 0.0,
+      "week": null,
       "monthly": null,
       "annual": -0.013
     },
@@ -55,7 +55,7 @@
       "date": "2026-09-16",
       "index": 100.0538,
       "products": 4290,
-      "intraday": 0.0,
+      "week": null,
       "monthly": null,
       "annual": 0.0538
     },
@@ -63,7 +63,7 @@
       "date": "2026-09-17",
       "index": 100.0087,
       "products": 4287,
-      "intraday": 0.0,
+      "week": 0.0087,
       "monthly": null,
       "annual": 0.0087
     },
@@ -71,7 +71,7 @@
       "date": "2026-09-18",
       "index": 100.0,
       "products": 4288,
-      "intraday": 0.0,
+      "week": 0.013,
       "monthly": null,
       "annual": 0.0
     },
@@ -79,7 +79,7 @@
       "date": "2026-09-19",
       "index": 99.9978,
       "products": 4281,
-      "intraday": 0.0,
+      "week": 0.0175,
       "monthly": null,
       "annual": -0.0022
     },
@@ -87,7 +87,7 @@
       "date": "2026-09-20",
       "index": 99.9435,
       "products": 4279,
-      "intraday": 0.0,
+      "week": -0.0394,
       "monthly": null,
       "annual": -0.0565
     },
@@ -95,7 +95,7 @@
       "date": "2026-09-20T14:32:14+02:00",
       "index": 99.9435,
       "products": 4276,
-      "intraday": 0.0,
+      "week": -0.0394,
       "monthly": null,
       "annual": -0.0565
     }
@@ -186,5 +186,6 @@
       "change": 0.0
     }
   ],
-  "annual_partial": true
+  "annual_partial": true,
+  "week": -0.03939923818857949
 }

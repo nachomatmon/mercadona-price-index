@@ -7,7 +7,7 @@ Proyecto personal, sin dependencias y sin coste de infraestructura, para captura
 1. Descarga el árbol de categorías y sus productos de la tienda online.
 2. Guarda un histórico diario en SQLite (`data/mercadona.sqlite3`).
 3. Calcula un índice de cesta fija con base 100 en la primera captura útil.
-4. Genera un dashboard en `docs/index.html`, con evolución, inflación y mayores cambios.
+4. Genera un dashboard en `docs/index.html`, con evolución, inflación por categoría, tabla de variación por producto y mayores cambios.
 5. Realiza una captura diaria y calcula inflación mensual y anual acumulada.
 
 
@@ -18,7 +18,7 @@ Copy-Item config.example.json config.json
 py -3 src\run.py
 ```
 
-La primera ejecución fija la base del índice y todavía no muestra variaciones. A partir de ahí, cada captura nueva ya calcula la inflación intradía (frente a la primera captura del mismo día), la mensual (frente al último dato del mes anterior) y la anual acumulada.
+La primera ejecución fija la base del índice y todavía no muestra variaciones. A partir de ahí, cada captura nueva ya calcula la variación de los últimos 7 días, la mensual (frente al último dato del mes anterior) y la anual acumulada.
 
 Para probar el cálculo sin conectarse a Mercadona:
 
@@ -95,7 +95,7 @@ El workflow `daily.yml` ejecuta las pruebas antes de capturar, de modo que un ca
 
 `Índice(t) = 100 × suma(precio(t) de productos comparables) / suma(precio(base) de esos mismos productos)`.
 
-Es una cesta de **peso igual por producto y formato de venta**, no un IPC oficial ni una estimación del gasto de los hogares. Cada variación usa únicamente productos presentes en ambas fechas comparadas, para no confundir una baja/alta temporal de catálogo con una variación de precios. La inflación intradía compara con la primera captura del día; la mensual con el último dato del mes anterior; y la anual con el último dato previo al 1 de enero. Si todavía no existe, la anual se muestra desde la primera captura disponible del año como parcial. El código postal y el almacén quedan registrados con cada observación para no mezclar zonas.
+Es una cesta de **peso igual por producto y formato de venta**, no un IPC oficial ni una estimación del gasto de los hogares. Cada variación usa únicamente productos presentes en ambas fechas comparadas, para no confundir una baja/alta temporal de catálogo con una variación de precios. La variación de 7 días compara con el último dato de hace una semana (o el más antiguo disponible si aún no hay una semana de historia); la mensual con el último dato del mes anterior; y la anual con el último dato previo al 1 de enero. Si todavía no existe, la anual se muestra desde la primera captura disponible del año como parcial. El código postal y el almacén quedan registrados con cada observación para no mezclar zonas.
 
 Para un índice más representativo, añade después una tabla de ponderaciones por producto; no cambies la definición histórica sin publicar una nueva serie/base.
 
