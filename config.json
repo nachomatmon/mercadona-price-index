@@ -3,6 +3,7 @@
   "warehouse": "bcn1",
   "language": "es",
   "request_delay_seconds": 0.25,
+  "robots_policy": "warn",
   "basket": {
     "mode": "equal_weight",
     "description": "Una unidad de cada producto comparable. No representa una cesta de consumo ponderada."

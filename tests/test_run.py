@@ -8,6 +8,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src" / "run.py"
@@ -146,7 +147,28 @@ class ConfigTests(unittest.TestCase):
         config = run.validate_config({"warehouse": "bcn1"})
         self.assertEqual(config["warehouse"], "bcn1")
         self.assertEqual(config["request_retries"], 3)
-        self.assertTrue(config["respect_robots"])
+        # Por defecto avisa en lugar de abortar: la tienda prohíbe `/api`.
+        self.assertEqual(config["robots_policy"], "warn")
+
+    def test_validate_config_accepts_known_robots_policy(self):
+        for policy in run.ROBOTS_POLICIES:
+            config = run.validate_config({"warehouse": "bcn1", "robots_policy": policy})
+            self.assertEqual(config["robots_policy"], policy)
+
+    def test_validate_config_rejects_unknown_robots_policy(self):
+        with self.assertRaises(ValueError):
+            run.validate_config({"warehouse": "bcn1", "robots_policy": "quizá"})
+
+    def test_validate_config_migrates_legacy_respect_robots(self):
+        """`respect_robots` era un booleano en versiones anteriores."""
+        blocked = run.validate_config({"warehouse": "bcn1", "respect_robots": True})
+        self.assertEqual(blocked["robots_policy"], "block")
+        self.assertNotIn("respect_robots", blocked)
+        ignored = run.validate_config({"warehouse": "bcn1", "respect_robots": False})
+        self.assertEqual(ignored["robots_policy"], "ignore")
+        # `robots_policy` manda si están las dos claves.
+        explicit = run.validate_config({"warehouse": "bcn1", "robots_policy": "warn", "respect_robots": True})
+        self.assertEqual(explicit["robots_policy"], "warn")
 
     def test_validate_config_requires_warehouse(self):
         with self.assertRaises(ValueError):
@@ -192,6 +214,43 @@ class DashboardTests(unittest.TestCase):
         amp = chr(38)
         # El texto visible se escapa; los datos del <script> conservan el original.
         self.assertIn('<span id="zone">CP ' + amp + "lt;08028" + amp + "gt; · almacén bcn1</span>", html)
+
+
+class RobotsTests(unittest.TestCase):
+    """La comprobación de robots.txt no debe romper la captura automática."""
+
+    # Extracto real: la tienda publica `Disallow: /api` (y `Disallow: /`).
+    ROBOTS = "User-agent: *\nDisallow: /\nDisallow: /api\n"
+
+    def test_robots_allows_detects_disallowed_api(self):
+        self.assertFalse(run.robots_allows(self.ROBOTS, "https://tienda.mercadona.es/api/categories/?lang=es"))
+
+    def test_robots_allows_permits_unlisted_path(self):
+        text = "User-agent: *\nDisallow: /privado\n"
+        self.assertTrue(run.robots_allows(text, "https://tienda.mercadona.es/api/categories/"))
+
+    def test_enforce_robots_warn_does_not_raise(self):
+        config = {"robots_policy": "warn"}
+        with mock.patch.object(run, "robots_verdict", return_value=False):
+            run.enforce_robots("https://tienda.mercadona.es/api/x", config)
+
+    def test_enforce_robots_block_raises(self):
+        config = {"robots_policy": "block"}
+        with mock.patch.object(run, "robots_verdict", return_value=False):
+            with self.assertRaises(RuntimeError):
+                run.enforce_robots("https://tienda.mercadona.es/api/x", config)
+
+    def test_enforce_robots_ignore_skips_lookup(self):
+        config = {"robots_policy": "ignore"}
+        with mock.patch.object(run, "robots_verdict", return_value=False) as verdict:
+            run.enforce_robots("https://tienda.mercadona.es/api/x", config)
+        verdict.assert_not_called()
+
+    def test_enforce_robots_continues_when_robots_unreadable(self):
+        """Si no se puede leer robots.txt (verdict None), no se aborta ni en modo block."""
+        config = {"robots_policy": "block"}
+        with mock.patch.object(run, "robots_verdict", return_value=None):
+            run.enforce_robots("https://tienda.mercadona.es/api/x", config)
 
 
 class OutputDirTests(unittest.TestCase):

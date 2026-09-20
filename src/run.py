@@ -39,6 +39,7 @@ HEADERS = {
     "User-Agent": "MercadonaPriceIndex/0.1 (personal research; contact: local)",
 }
 SCHEMA_VERSION = 1
+ROBOTS_POLICIES = ("block", "warn", "ignore")
 DEFAULT_CONFIG: dict[str, Any] = {
     "postal_code": "",
     "warehouse": "",
@@ -47,7 +48,7 @@ DEFAULT_CONFIG: dict[str, Any] = {
     "request_retries": 3,
     "request_timeout_seconds": 45,
     "completeness_tolerance": 0.25,
-    "respect_robots": True,
+    "robots_policy": "warn",
 }
 
 log = logging.getLogger("mercadona")
@@ -92,7 +93,16 @@ def validate_config(raw: Any) -> dict[str, Any]:
         config["completeness_tolerance"] = max(0.0, float(config["completeness_tolerance"]))
     except (TypeError, ValueError):
         raise ValueError("config.json: 'completeness_tolerance' debe ser numérico.")
-    config["respect_robots"] = bool(config.get("respect_robots", True))
+    # Compatibilidad: versiones anteriores usaban el booleano `respect_robots`.
+    if "robots_policy" not in raw:
+        if raw.get("respect_robots") is False:
+            config["robots_policy"] = "ignore"
+        elif raw.get("respect_robots") is True:
+            config["robots_policy"] = "block"
+    config.pop("respect_robots", None)
+    config["robots_policy"] = str(config["robots_policy"]).strip().lower()
+    if config["robots_policy"] not in ROBOTS_POLICIES:
+        raise ValueError("config.json: 'robots_policy' debe ser " + ", ".join(ROBOTS_POLICIES) + ".")
     config["postal_code"] = str(config.get("postal_code") or "")
     config["warehouse"] = str(config["warehouse"]).strip()
     config["language"] = str(config.get("language") or "es")
@@ -108,24 +118,43 @@ def zone_label(config: dict[str, Any]) -> str:
 # --------------------------------------------------------------------------- #
 # Descarga (con reintentos, backoff y respeto de robots.txt)
 # --------------------------------------------------------------------------- #
-def robots_allowed(url: str, config: dict[str, Any]) -> bool:
-    if not config.get("respect_robots", True):
-        log.warning("Comprobación de robots.txt desactivada por configuración.")
-        return True
+def robots_allows(robots_text: str, url: str, user_agent: str = HEADERS["User-Agent"]) -> bool:
+    """Interpreta un `robots.txt` ya descargado. Función pura: no toca la red."""
     parser = urllib.robotparser.RobotFileParser()
+    parser.parse(robots_text.splitlines())
+    return parser.can_fetch(user_agent, url)
+
+
+def robots_verdict(url: str, config: dict[str, Any]) -> bool | None:
+    """Devuelve True si robots.txt permite la URL, False si la prohíbe y None si no se pudo leer."""
     robots_url = urllib.parse.urljoin(SITE, "/robots.txt")
-    parser.set_url(robots_url)
     try:
         req = urllib.request.Request(robots_url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=config["request_timeout_seconds"]) as response:
-            parser.parse(response.read().decode("utf-8", "replace").splitlines())
+            text = response.read().decode("utf-8", "replace")
     except (urllib.error.URLError, OSError, ValueError) as error:
         log.warning("No se pudo leer robots.txt (%s); se continúa sin restricción.", error)
-        return True
-    allowed = parser.can_fetch(HEADERS["User-Agent"], url)
-    if not allowed:
-        log.error("robots.txt prohíbe acceder a %s", url)
-    return allowed
+        return None
+    return robots_allows(text, url)
+
+
+def enforce_robots(url: str, config: dict[str, Any]) -> None:
+    """Aplica `robots_policy`: `block` cancela, `warn` avisa y `ignore` ni consulta.
+
+    La tienda publica `Disallow: /api`, así que bloquear por defecto dejaría la
+    captura automática sin efecto. Por eso el valor por defecto avisa en lugar de
+    abortar: la decisión queda explícita en config.json y se registra en cada
+    ejecución, sin romper el workflow silenciosamente.
+    """
+    policy = str(config.get("robots_policy", "warn"))
+    if policy == "ignore":
+        return
+    if robots_verdict(url, config) is not False:
+        return
+    message = f"robots.txt de {SITE} prohíbe {url}"
+    if policy == "block":
+        raise RuntimeError(f"{message}; captura cancelada (robots_policy=block).")
+    log.warning("%s; se continúa porque robots_policy=warn. Revisa las condiciones del sitio.", message)
 
 
 def request_json(url: str, config: dict[str, Any]) -> Any:
@@ -213,8 +242,7 @@ def category_ids(tree: Any) -> list[tuple[str, str]]:
 def fetch_catalog(config: dict[str, Any]) -> list[dict[str, Any]]:
     params = urllib.parse.urlencode({"lang": config.get("language", "es"), "wh": config.get("warehouse", "")})
     root_url = f"{API}/categories/?{params}"
-    if not robots_allowed(root_url, config):
-        raise RuntimeError("robots.txt no permite el acceso; se cancela la captura.")
+    enforce_robots(root_url, config)
     root = request_json(root_url, config)
     items: dict[str, dict[str, Any]] = {}
     categories = category_ids(root)

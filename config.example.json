@@ -6,7 +6,7 @@
   "request_retries": 3,
   "request_timeout_seconds": 45,
   "completeness_tolerance": 0.25,
-  "respect_robots": true,
+  "robots_policy": "warn",
   "basket": {
     "mode": "equal_weight",
     "description": "Una unidad de cada producto comparable. No representa una cesta de consumo ponderada."

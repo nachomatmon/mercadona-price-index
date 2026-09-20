@@ -51,9 +51,22 @@ py -3 -m unittest discover -s tests -p "test_*.py" -v
 
 La ejecución es **idempotente**: repetirla con la misma fecha no duplica datos ni descarga de nuevo, únicamente vuelve a generar el dashboard y el resumen.
 
+## Configuración (`config.json`)
+
+| Clave | Por defecto | Para qué sirve |
+| --- | --- | --- |
+| `postal_code` | `""` | Código postal asociado a la captura. |
+| `warehouse` | — (obligatorio) | Almacén (`wh`) que se consulta en la tienda. |
+| `language` | `"es"` | Idioma de las peticiones. |
+| `request_delay_seconds` | `0.25` | Espera entre categorías. |
+| `request_retries` | `3` | Reintentos por petición, con espera exponencial. |
+| `request_timeout_seconds` | `45` | Tiempo máximo por petición. |
+| `completeness_tolerance` | `0.25` | Desviación máxima de nº de productos antes de rechazar la captura. |
+| `robots_policy` | `"warn"` | `"warn"` avisa si robots.txt lo prohíbe, `"block"` cancela la captura y `"ignore"` ni lo consulta. |
+
 ## Protecciones y compatibilidad
 
-- **robots.txt**: antes de descargar nada se consulta `https://tienda.mercadona.es/robots.txt`. Si prohíbe el acceso, la captura se cancela en lugar de forzarla.
+- **robots.txt**: antes de descargar nada se consulta `https://tienda.mercadona.es/robots.txt`. La tienda publica `Disallow: /api`, y por eso el valor por defecto (`robots_policy: "warn"`) **avisa en el log y continúa**: bloquear por defecto dejaría la captura automática sin efecto. Con `"block"` la captura se cancela y con `"ignore"` ni se consulta. La decisión queda explícita en `config.json` en lugar de tomarse por ti.
 - **Reintentos**: cada petición se reintenta con espera exponencial (`request_retries`) y hay un retardo entre categorías (`request_delay_seconds`) para no castigar el servidor.
 - **Categorías tolerantes a fallos**: si una categoría falla tras los reintentos, se avisa y se continúa con las demás, en vez de abortar toda la captura.
 - **Control de integridad**: si una captura trae muchos menos productos que la anterior (más de `completeness_tolerance`), se rechaza para no falsear el índice.
