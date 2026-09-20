@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-20T18:07:55+02:00",
+  "captured_at": "2026-09-20T18:26:21+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -98,6 +98,14 @@
       "week": -0.0394,
       "monthly": null,
       "annual": -0.0565
+    },
+    {
+      "date": "2026-09-20T18:24:28+02:00",
+      "index": 99.9435,
+      "products": 4275,
+      "week": -0.0394,
+      "monthly": null,
+      "annual": -0.0565
     }
   ],
   "movers": [
@@ -187,5 +195,5 @@
     }
   ],
   "annual_partial": true,
-  "week": -0.03939923818857949
+  "week": -0.03940426689266019
 }
