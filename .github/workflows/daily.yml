@@ -2,8 +2,9 @@ name: Captura diaria del índice
 
 on:
   schedule:
-    - cron: '15 7,13,19 * * *'
-      timezone: Europe/Madrid
+    # Una captura al día, a las 08:15 hora de Madrid (06:15 UTC en verano,
+    # 07:15 UTC en invierno; los cron de Actions siempre van en UTC).
+    - cron: '15 6 * * *'
   workflow_dispatch:
 
 permissions:

@@ -8,7 +8,7 @@ Proyecto personal, sin dependencias y sin coste de infraestructura, para captura
 2. Guarda un histórico diario en SQLite (`data/mercadona.sqlite3`).
 3. Calcula un índice de cesta fija con base 100 en la primera captura útil.
 4. Genera un dashboard en `docs/index.html`, con evolución, inflación y mayores cambios.
-5. Realiza tres capturas diarias y calcula inflación intradía, mensual y anual acumulada.
+5. Realiza una captura diaria y calcula inflación mensual y anual acumulada.
 
 
 ## Arranque local (Windows)
@@ -41,7 +41,7 @@ py -3 -m unittest discover -s tests -p "test_*.py" -v
 
 | Opción | Para qué sirve |
 | --- | --- |
-| `--date ISO` | Identificador de la captura. Por defecto incluye la hora local con segundos, para que las tres capturas diarias convivan sin pisarse. |
+| `--date ISO` | Identificador de la captura. Por defecto incluye la hora local con segundos, de modo que varias capturas del mismo día convivan sin pisarse. |
 | `--database RUTA` | Usa otra base de datos. El histórico real no se toca. |
 | `--output-dir RUTA` | Escribe `post.txt`, `index.html` y `data.json` en otra carpeta en lugar de `out/` y `docs/`. |
 | `--import-fixture JSON` | Carga una lista de productos normalizados en lugar de descargarlos. |

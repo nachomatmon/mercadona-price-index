@@ -501,7 +501,7 @@ td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
 </section>
 <section class="panel method">
   <h2>Cómo se calcula</h2>
-  <p>Se realizan tres capturas al día. La inflación intradía compara cada captura con la primera del día; la mensual con el último dato del mes anterior; y la anual con el último dato previo al 1 de enero. Cuando aún no hay historia del año anterior, la anual se calcula desde la primera captura disponible del año y se señala como parcial. El índice usa una cesta de peso igual por producto y formato de venta; no es un índice oficial.</p>
+  <p>Se realiza una captura al día. La inflación mensual compara cada captura con el último dato del mes anterior, y la anual con el último dato previo al 1 de enero. Cuando aún no hay historia del año anterior, la anual se calcula desde la primera captura disponible del año y se señala como parcial. El índice usa una cesta de peso igual por producto y formato de venta; no es un índice oficial.</p>
 </section>
 </main>
 <script>
