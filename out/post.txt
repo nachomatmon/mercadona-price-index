@@ -1,9 +1,10 @@
 Índice Mercadona — 20/09/2026
 
 Índice: 99,94
-Variación diaria: -0,05%
-Variación mensual: sin dato
+Inflación intradía: +0,00%
+Inflación mensual: sin dato
+Inflación anual acumulada: -0,06%
 
-Cesta comparable: 4279 productos
+Cesta comparable: 4276 productos
 Zona: CP 08028 · almacén bcn1
 Metodología: cesta de peso igual por producto.

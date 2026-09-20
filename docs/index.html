@@ -1,11 +1,153 @@
 <!doctype html>
 <html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Índice Mercadona · 08028</title>
+<title>Índice Mercadona</title>
 <style>
-:root{color-scheme:light dark;--ink:#173b32;--muted:#5e716b;--surface:#fff;--paper:#f5f7f3;--green:#0d6b4e;--red:#bb3c35;--line:#dce4df}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px system-ui,-apple-system,Segoe UI,sans-serif}main{max-width:1120px;margin:auto;padding:32px 20px 56px}header{display:flex;justify-content:space-between;gap:20px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:22px}h1{font-size:clamp(28px,5vw,45px);margin:0 0 6px;letter-spacing:-.04em}h2{font-size:20px;margin:0 0 16px}p{margin:0;color:var(--muted)}.tag{color:var(--green);font-weight:700;text-transform:uppercase;font-size:12px;letter-spacing:.09em}.updated{text-align:right;font-size:14px;white-space:nowrap}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0}.metric,.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px}.metric{padding:18px}.metric span{display:block;color:var(--muted);font-size:13px}.metric strong{display:block;font-size:30px;letter-spacing:-.04em;margin-top:7px}.positive{color:var(--red)}.negative{color:var(--green)}.layout{display:grid;grid-template-columns:1.45fr .9fr;gap:18px}.panel{padding:22px}#chart{display:block;width:100%;height:auto;overflow:visible}.axis{stroke:var(--line);stroke-width:1}.chart-line{fill:none;stroke:var(--green);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}.chart-dot{fill:var(--green)}.chart-label{fill:var(--muted);font-size:12px}table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:11px 5px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--muted);font-weight:600}td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}.up{color:var(--red);font-weight:700}.down{color:var(--green);font-weight:700}.method{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;line-height:1.5}@media(max-width:760px){main{padding:22px 14px}header{display:block}.updated{text-align:left;margin-top:12px;white-space:normal}.metrics{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.metric strong{font-size:25px}}@media(prefers-color-scheme:dark){:root{--ink:#e6f0eb;--muted:#a7b7b0;--surface:#17221e;--paper:#0d1512;--green:#4bc090;--red:#ff8b83;--line:#304139}}
+:root{color-scheme:light dark;--ink:#173b32;--muted:#5e716b;--surface:#fff;--paper:#f5f7f3;--green:#0d6b4e;--red:#bb3c35;--line:#dce4df}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1120px;margin:auto;padding:32px 20px 56px}
+header{display:flex;justify-content:space-between;gap:20px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:22px}
+h1{font-size:clamp(28px,5vw,45px);margin:0 0 6px;letter-spacing:-.04em}h2{font-size:20px;margin:0 0 16px}
+p{margin:0;color:var(--muted)}.tag{color:var(--green);font-weight:700;text-transform:uppercase;font-size:12px;letter-spacing:.09em}
+.updated{text-align:right;font-size:14px;white-space:nowrap}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0}
+.metric,.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px}.metric{padding:18px}
+.metric span{display:block;color:var(--muted);font-size:13px}.metric strong{display:block;font-size:30px;letter-spacing:-.04em;margin-top:7px}
+.positive{color:var(--red)}.negative{color:var(--green)}
+.layout{display:grid;grid-template-columns:1.45fr .9fr;gap:18px}.panel{padding:22px}
+#chart{display:block;width:100%;height:auto;overflow:visible}
+.axis{stroke:var(--line);stroke-width:1}
+.chart-intraday{fill:none;stroke:var(--green);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.chart-monthly{fill:none;stroke:#2563eb;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.chart-annual{fill:none;stroke:#d97706;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.chart-label{fill:var(--muted);font-size:12px}
+#legend{display:flex;gap:16px;flex-wrap:wrap;margin:0 0 12px;font-size:13px;color:var(--muted)}
+.legend-item{display:inline-flex;align-items:center;gap:6px}
+.legend-item i{width:14px;height:3px;border-radius:2px;display:inline-block}
+i.chart-intraday{background:var(--green)}i.chart-monthly{background:#2563eb}i.chart-annual{background:#d97706}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{padding:11px 5px;border-bottom:1px solid var(--line);text-align:left}
+th{color:var(--muted);font-weight:600}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:var(--red);font-weight:700}.down{color:var(--green);font-weight:700}
+.method{margin-top:18px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;line-height:1.5}
+@media(max-width:760px){main{padding:22px 14px}header{display:block}.updated{text-align:left;margin-top:12px;white-space:normal}
+.metrics{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.metric strong{font-size:25px}}
+@media(prefers-color-scheme:dark){:root{--ink:#e6f0eb;--muted:#a7b7b0;--surface:#17221e;--paper:#0d1512;--green:#4bc090;--red:#ff8b83;--line:#304139}}
 </style>
-<main><header><div><div class="tag">Seguimiento independiente</div><h1>Índice Mercadona</h1><p>Precios online para 08028 · Barcelona</p></div><p class="updated" id="updated"></p></header>
-<section class="metrics" aria-label="Indicadores principales"><div class="metric"><span>Índice base 100</span><strong id="index">—</strong></div><div class="metric"><span>Inflación diaria</span><strong id="daily">—</strong></div><div class="metric"><span>Inflación mensual</span><strong id="monthly">—</strong></div><div class="metric"><span>Productos comparables</span><strong id="products">—</strong></div></section>
-<section class="layout"><article class="panel"><h2>Evolución del índice</h2><svg id="chart" viewBox="0 0 680 270" role="img" aria-label="Evolución temporal del índice de precios"></svg><p id="chart-note"></p></article><article class="panel"><h2>Mayores cambios diarios</h2><div style="overflow-x:auto"><table><thead><tr><th>Producto</th><th>Antes</th><th>Ahora</th><th>Variación</th></tr></thead><tbody id="movers"></tbody></table></div></article></section>
-<section class="panel method"><h2>Cómo se calcula</h2><p>El índice compara una cesta de peso igual por producto y formato de venta. Las variaciones usan únicamente productos disponibles en ambas fechas, para evitar que altas o bajas de catálogo se confundan con inflación. No es un índice oficial ni una estimación del gasto de los hogares.</p></section></main>
-<script>const data={"base_date": "2026-09-10", "captured_at": "2026-09-20T09:51:40", "history": [{"date": "2026-09-10", "index": 100.0, "products": 4314, "daily": null, "monthly": null}, {"date": "2026-09-11", "index": 99.9871, "products": 4313, "daily": -0.0129, "monthly": null}, {"date": "2026-09-12", "index": 99.9811, "products": 4307, "daily": -0.006, "monthly": null}, {"date": "2026-09-13", "index": 99.9836, "products": 4305, "daily": 0.0025, "monthly": null}, {"date": "2026-09-14", "index": 100.0194, "products": 4298, "daily": 0.0357, "monthly": null}, {"date": "2026-09-15", "index": 99.987, "products": 4287, "daily": -0.0367, "monthly": null}, {"date": "2026-09-16", "index": 100.0538, "products": 4290, "daily": 0.0475, "monthly": null}, {"date": "2026-09-17", "index": 100.0087, "products": 4287, "daily": -0.0448, "monthly": null}, {"date": "2026-09-18", "index": 100.0, "products": 4288, "daily": -0.0086, "monthly": null}, {"date": "2026-09-19", "index": 99.9978, "products": 4281, "daily": -0.0022, "monthly": null}, {"date": "2026-09-20", "index": 99.9435, "products": 4279, "daily": -0.0539, "monthly": null}], "movers": [{"name": "Merluza media pieza a rodajas", "category": "Pescado fresco", "old_price": 8.17, "new_price": 7.02, "change": -14.075887392900865}, {"name": "Merluza media pieza abierta en libro sin cabeza y sin espina", "category": "Pescado fresco", "old_price": 8.17, "new_price": 7.02, "change": -14.075887392900865}, {"name": "Merluza media pieza sin aletas y sin escamas", "category": "Pescado fresco", "old_price": 8.17, "new_price": 7.02, "change": -14.075887392900865}, {"name": "Lima", "category": "Fruta", "old_price": 0.35, "new_price": 0.31, "change": -11.428571428571422}, {"name": "Merluza a rodajas", "category": "Pescado fresco", "old_price": 15.53, "new_price": 13.92, "change": -10.36703155183516}, {"name": "Merluza abierta en libro sin cabeza y sin espina", "category": "Pescado fresco", "old_price": 15.53, "new_price": 13.92, "change": -10.36703155183516}, {"name": "Merluza sin aletas y sin escamas", "category": "Pescado fresco", "old_price": 15.53, "new_price": 13.92, "change": -10.36703155183516}, {"name": "Pera Conferencia", "category": "Fruta", "old_price": 0.5, "new_price": 0.55, "change": 10.000000000000009}, {"name": "Sepia limpia pequeña", "category": "Pescado fresco", "old_price": 3.07, "new_price": 2.79, "change": -9.12052117263843}, {"name": "Dorada a filetes sin cabeza y sin espina", "category": "Pescado fresco", "old_price": 5.89, "new_price": 5.42, "change": -7.979626485568758}, {"name": "Dorada abierta a la espalda con espinas y con cabeza", "category": "Pescado fresco", "old_price": 5.89, "new_price": 5.42, "change": -7.979626485568758}, {"name": "Dorada abierta en libro sin cabeza y sin espina", "category": "Pescado fresco", "old_price": 5.89, "new_price": 5.42, "change": -7.979626485568758}]};const euro=n=>new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(n);const number=n=>new Intl.NumberFormat('es-ES',{maximumFractionDigits:2,minimumFractionDigits:2}).format(n);const pct=n=>n==null?'Sin dato':`${n>=0?'+':''}${number(n)}%`;const last=data.history.at(-1);document.getElementById('updated').textContent=`Actualizado: ${new Date(data.captured_at).toLocaleString('es-ES')}`;document.getElementById('index').textContent=number(last.index);for(const [id,value] of [['daily',last.daily],['monthly',last.monthly]]){const el=document.getElementById(id);el.textContent=pct(value);el.className=value>0?'positive':value<0?'negative':''}document.getElementById('products').textContent=new Intl.NumberFormat('es-ES').format(last.products);document.getElementById('chart-note').textContent=`Base: ${data.base_date} · ${data.history.length} capturas disponibles`;document.getElementById('movers').innerHTML=data.movers.length?data.movers.map(x=>`<tr><td><strong>${x.name}</strong><br><small>${x.category}</small></td><td>${euro(x.old_price)}</td><td>${euro(x.new_price)}</td><td class="${x.change>0?'up':'down'}">${pct(x.change)}</td></tr>`).join(''):'<tr><td colspan="4">Aún no hay una captura anterior para comparar.</td></tr>';const svg=document.getElementById('chart'),w=680,h=270,l=55,r=18,t=18,b=35,values=data.history.map(x=>x.index),min=Math.min(...values),max=Math.max(...values),pad=Math.max(.5,(max-min)*.15),lo=min-pad,hi=max+pad,x=i=>l+(w-l-r)*(data.history.length===1?.5:i/(data.history.length-1)),y=v=>t+(h-t-b)*(1-(v-lo)/(hi-lo));svg.innerHTML=`<line class="axis" x1="${l}" y1="${y(lo)}" x2="${w-r}" y2="${y(lo)}"/><line class="axis" x1="${l}" y1="${y(100)}" x2="${w-r}" y2="${y(100)}"/><text class="chart-label" x="4" y="${y(hi)+4}">${number(hi)}</text><text class="chart-label" x="4" y="${y(100)+4}">100</text><polyline class="chart-line" points="${data.history.map((d,i)=>`${x(i)},${y(d.index)}`).join(' ')}"/>${data.history.map((d,i)=>`<circle class="chart-dot" cx="${x(i)}" cy="${y(d.index)}" r="4"><title>${d.date}: ${number(d.index)}</title></circle>`).join('')}<text class="chart-label" x="${l}" y="${h-8}">${data.history[0].date}</text><text class="chart-label" text-anchor="end" x="${w-r}" y="${h-8}">${last.date}</text>`;</script></html>
+<main>
+<header>
+  <div><div class="tag">Seguimiento independiente</div><h1>Índice Mercadona</h1><p>Precios online · <span id="zone">CP 08028 · almacén bcn1</span></p></div>
+  <p class="updated" id="updated"></p>
+</header>
+<section class="metrics" aria-label="Indicadores principales">
+  <div class="metric"><span>Índice base 100</span><strong id="index">—</strong></div>
+  <div class="metric"><span>Inflación intradía</span><strong id="intraday">—</strong></div>
+  <div class="metric"><span>Inflación mensual</span><strong id="monthly">—</strong></div>
+  <div class="metric"><span>Inflación anual acumulada</span><strong id="annual">—</strong></div>
+</section>
+<section class="layout">
+  <article class="panel">
+    <h2>Evolución de la inflación</h2>
+    <div id="legend"></div>
+    <svg id="chart" viewBox="0 0 680 280" role="img" aria-label="Evolución temporal de la inflación intradía, mensual y anual"></svg>
+    <p id="chart-note"></p>
+  </article>
+  <article class="panel">
+    <h2>Mayores cambios desde la última captura</h2>
+    <div style="overflow-x:auto">
+      <table>
+        <thead><tr><th>Producto</th><th>Antes</th><th>Ahora</th><th>Variación</th></tr></thead>
+        <tbody id="movers"></tbody>
+      </table>
+    </div>
+  </article>
+</section>
+<section class="panel method">
+  <h2>Cómo se calcula</h2>
+  <p>Se realizan tres capturas al día. La inflación intradía compara cada captura con la primera del día; la mensual con el último dato del mes anterior; y la anual con el último dato previo al 1 de enero. Cuando aún no hay historia del año anterior, la anual se calcula desde la primera captura disponible del año y se señala como parcial. El índice usa una cesta de peso igual por producto y formato de venta; no es un índice oficial.</p>
+</section>
+</main>
+<script>
+const data = {"base_date": "2026-09-10", "captured_at": "2026-09-20T14:33:37+02:00", "zone": "CP 08028 · almacén bcn1", "history": [{"date": "2026-09-10", "index": 100.0, "products": 4314, "intraday": 0.0, "monthly": null, "annual": 0.0}, {"date": "2026-09-11", "index": 99.9871, "products": 4313, "intraday": 0.0, "monthly": null, "annual": -0.0129}, {"date": "2026-09-12", "index": 99.9811, "products": 4307, "intraday": 0.0, "monthly": null, "annual": -0.0189}, {"date": "2026-09-13", "index": 99.9836, "products": 4305, "intraday": 0.0, "monthly": null, "annual": -0.0164}, {"date": "2026-09-14", "index": 100.0194, "products": 4298, "intraday": 0.0, "monthly": null, "annual": 0.0194}, {"date": "2026-09-15", "index": 99.987, "products": 4287, "intraday": 0.0, "monthly": null, "annual": -0.013}, {"date": "2026-09-16", "index": 100.0538, "products": 4290, "intraday": 0.0, "monthly": null, "annual": 0.0538}, {"date": "2026-09-17", "index": 100.0087, "products": 4287, "intraday": 0.0, "monthly": null, "annual": 0.0087}, {"date": "2026-09-18", "index": 100.0, "products": 4288, "intraday": 0.0, "monthly": null, "annual": 0.0}, {"date": "2026-09-19", "index": 99.9978, "products": 4281, "intraday": 0.0, "monthly": null, "annual": -0.0022}, {"date": "2026-09-20", "index": 99.9435, "products": 4279, "intraday": 0.0, "monthly": null, "annual": -0.0565}, {"date": "2026-09-20T14:32:14+02:00", "index": 99.9435, "products": 4276, "intraday": 0.0, "monthly": null, "annual": -0.0565}], "movers": [{"name": "1/4 Sandía baja en semillas", "category": "Fruta", "old_price": 1.81, "new_price": 1.81, "change": 0.0}, {"name": "11 Panecillos", "category": "Pan de horno", "old_price": 1.14, "new_price": 1.14, "change": 0.0}, {"name": "12 Artesanitos surtidos", "category": "Bollería de horno", "old_price": 3.5, "new_price": 3.5, "change": 0.0}, {"name": "12 Mini croissants de mantequilla", "category": "Bollería de horno", "old_price": 2.15, "new_price": 2.15, "change": 0.0}, {"name": "12 Mini saladas surtidas", "category": "Bollería de horno", "old_price": 1.4, "new_price": 1.4, "change": 0.0}, {"name": "2 Baguettes para hornear", "category": "Pan de horno", "old_price": 1.3, "new_price": 1.3, "change": 0.0}, {"name": "24 Mini saladas surtidas", "category": "Bollería de horno", "old_price": 2.8, "new_price": 2.8, "change": 0.0}, {"name": "3 Baguettes masa madre", "category": "Pan de horno", "old_price": 1.5, "new_price": 1.5, "change": 0.0}, {"name": "3 Barras de pan", "category": "Pan de horno", "old_price": 1.19, "new_price": 1.19, "change": 0.0}, {"name": "3 Barras de pan rebanadas", "category": "Pan de horno", "old_price": 1.19, "new_price": 1.19, "change": 0.0}, {"name": "3 Bocadillos", "category": "Pan de horno", "old_price": 1.04, "new_price": 1.04, "change": 0.0}, {"name": "3 Vegetales para microondas lavados", "category": "Verdura", "old_price": 1.95, "new_price": 1.95, "change": 0.0}], "annual_partial": true};
+const fmtEuro = n => new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR'}).format(n);
+const fmtNum = n => new Intl.NumberFormat('es-ES',{minimumFractionDigits:2,maximumFractionDigits:2}).format(n);
+const fmtPct = n => n==null ? 'Sin dato' : ((n>=0?'+':'') + fmtNum(n) + '%');
+const ESCAPE = {'&':'&#38;','<':'&#60;','>':'&#62;','"':'&#34;',"'":'&#39;'};
+const escapeHtml = s => String(s==null?'':s).replace(/[&<>"']/g, c => ESCAPE[c]);
+function setMetric(id, value){
+  const el = document.getElementById(id);
+  el.textContent = fmtPct(value);
+  el.className = value>0 ? 'positive' : (value<0 ? 'negative' : '');
+}
+const last = data.history[data.history.length-1];
+document.getElementById('zone').textContent = data.zone;
+document.getElementById('updated').textContent = 'Actualizado: ' + new Date(data.captured_at).toLocaleString('es-ES');
+document.getElementById('index').textContent = fmtNum(last.index);
+setMetric('intraday', last.intraday);
+setMetric('monthly', last.monthly);
+setMetric('annual', last.annual);
+const moversBody = document.getElementById('movers');
+if (data.movers && data.movers.length) {
+  moversBody.innerHTML = data.movers.map(function(m){
+    const cls = m.change>0 ? 'up' : 'down';
+    return '<tr><td><strong>'+escapeHtml(m.name)+'</strong><br><small>'+escapeHtml(m.category)+'</small></td>'
+      + '<td>'+fmtEuro(m.old_price)+'</td><td>'+fmtEuro(m.new_price)+'</td>'
+      + '<td class="'+cls+'">'+fmtPct(m.change)+'</td></tr>';
+  }).join('');
+} else {
+  moversBody.innerHTML = '<tr><td colspan="4">Aún no hay una captura anterior para comparar.</td></tr>';
+}
+const svg = document.getElementById('chart');
+const W=680, H=280, L=58, R=18, T=18, B=38;
+const defs = [
+  {key:'intraday', label:'Intradía', cls:'chart-intraday'},
+  {key:'monthly', label:'Mensual', cls:'chart-monthly'},
+  {key:'annual', label:'Anual', cls:'chart-annual'}
+];
+const active = defs.filter(function(d){
+  return data.history.some(function(h){ return h[d.key]!=null; });
+});
+document.getElementById('legend').innerHTML = active.map(function(d){
+  return '<span class="legend-item"><i class="'+d.cls+'"></i>'+d.label+'</span>';
+}).join('');
+const values = [];
+active.forEach(function(d){ data.history.forEach(function(h){ if (h[d.key]!=null) values.push(h[d.key]); }); });
+let lo, hi;
+if (values.length) {
+  const mn = Math.min.apply(null, values), mx = Math.max.apply(null, values);
+  if (mn === mx) { lo = mn - 1; hi = mx + 1; }
+  else { const pad = Math.max(0.1, (mx-mn)*0.15); lo = mn - pad; hi = mx + pad; }
+} else { lo = -1; hi = 1; }
+const N = data.history.length;
+const X = i => L + (W-L-R) * (N<=1 ? 0.5 : i/(N-1));
+const Y = v => T + (H-T-B) * (1 - (v-lo)/(hi-lo));
+function segments(key){
+  const segs = []; let cur = [];
+  data.history.forEach(function(h,i){
+    const v = h[key];
+    if (v==null) { if (cur.length) { segs.push(cur); cur = []; } }
+    else { cur.push(X(i).toFixed(1)+','+Y(v).toFixed(1)); }
+  });
+  if (cur.length) segs.push(cur);
+  return segs;
+}
+let content = '';
+if (lo < 0 && hi > 0) {
+  content += '<line class="axis" x1="'+L+'" y1="'+Y(0)+'" x2="'+(W-R)+'" y2="'+Y(0)+'"/>';
+  content += '<text class="chart-label" x="4" y="'+(Y(0)+4)+'">0%</text>';
+}
+content += '<text class="chart-label" x="4" y="'+(Y(hi)+4)+'">'+fmtNum(hi)+'%</text>';
+content += '<text class="chart-label" x="4" y="'+(Y(lo)+4)+'">'+fmtNum(lo)+'%</text>';
+active.forEach(function(d){
+  segments(d.key).forEach(function(seg){
+    content += '<polyline class="'+d.cls+'" points="'+seg.join(' ')+'"/>';
+  });
+});
+content += '<text class="chart-label" x="'+L+'" y="'+(H-8)+'">'+data.history[0].date.slice(0,10)+'</text>';
+content += '<text class="chart-label" text-anchor="end" x="'+(W-R)+'" y="'+(H-8)+'">'+last.date.slice(0,10)+'</text>';
+svg.innerHTML = content;
+document.getElementById('chart-note').textContent =
+  (data.annual_partial ? 'Anual parcial desde la primera captura disponible del año. ' : 'Anual desde el último dato previo al 1 de enero. ')
+  + N + ' capturas disponibles.';
+</script>
+</html>
