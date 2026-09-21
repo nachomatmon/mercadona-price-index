@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-20T18:26:21+02:00",
+  "captured_at": "2026-09-21T14:53:24+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -106,94 +106,102 @@
       "week": -0.0394,
       "monthly": null,
       "annual": -0.0565
+    },
+    {
+      "date": "2026-09-21T14:51:15+02:00",
+      "index": 99.9986,
+      "products": 4276,
+      "week": -0.0203,
+      "monthly": null,
+      "annual": -0.0014
     }
   ],
   "movers": [
     {
-      "name": "1/4 Sandía baja en semillas",
+      "name": "Queso fresco 0% MG de vaca Burgo de Arias",
+      "category": "Queso untable, fresco y especialidades",
+      "old_price": 2.5,
+      "new_price": 3.4,
+      "change": 35.999999999999986
+    },
+    {
+      "name": "Queso fresco de vaca Burgo de Arias",
+      "category": "Queso untable, fresco y especialidades",
+      "old_price": 2.5,
+      "new_price": 3.4,
+      "change": 35.999999999999986
+    },
+    {
+      "name": "Fruta + leche tropical Bifrutas",
+      "category": "Fruta variada",
+      "old_price": 2.0,
+      "new_price": 2.59,
+      "change": 29.499999999999993
+    },
+    {
+      "name": "Melón piel de sapo",
       "category": "Fruta",
-      "old_price": 1.81,
-      "new_price": 1.81,
-      "change": 0.0
+      "old_price": 2.86,
+      "new_price": 3.68,
+      "change": 28.671328671328688
     },
     {
-      "name": "11 Panecillos",
-      "category": "Pan de horno",
-      "old_price": 1.14,
-      "new_price": 1.14,
-      "change": 0.0
-    },
-    {
-      "name": "12 Artesanitos surtidos",
-      "category": "Bollería de horno",
-      "old_price": 3.5,
-      "new_price": 3.5,
-      "change": 0.0
-    },
-    {
-      "name": "12 Mini croissants de mantequilla",
-      "category": "Bollería de horno",
-      "old_price": 2.15,
-      "new_price": 2.15,
-      "change": 0.0
-    },
-    {
-      "name": "12 Mini saladas surtidas",
-      "category": "Bollería de horno",
+      "name": "Pan tostado fino con sésamo y sal marina Delicate Crisp Wasa",
+      "category": "Pan tostado y rallado",
       "old_price": 1.4,
-      "new_price": 1.4,
-      "change": 0.0
+      "new_price": 1.8,
+      "change": 28.57142857142858
     },
     {
-      "name": "2 Baguettes para hornear",
-      "category": "Pan de horno",
-      "old_price": 1.3,
-      "new_price": 1.3,
-      "change": 0.0
+      "name": "Plátano de Canarias IGP",
+      "category": "Fruta",
+      "old_price": 0.32,
+      "new_price": 0.41,
+      "change": 28.125
     },
     {
-      "name": "24 Mini saladas surtidas",
-      "category": "Bollería de horno",
-      "old_price": 2.8,
-      "new_price": 2.8,
-      "change": 0.0
-    },
-    {
-      "name": "3 Baguettes masa madre",
-      "category": "Pan de horno",
-      "old_price": 1.5,
-      "new_price": 1.5,
-      "change": 0.0
-    },
-    {
-      "name": "3 Barras de pan",
-      "category": "Pan de horno",
-      "old_price": 1.19,
-      "new_price": 1.19,
-      "change": 0.0
-    },
-    {
-      "name": "3 Barras de pan rebanadas",
-      "category": "Pan de horno",
-      "old_price": 1.19,
-      "new_price": 1.19,
-      "change": 0.0
-    },
-    {
-      "name": "3 Bocadillos",
-      "category": "Pan de horno",
-      "old_price": 1.04,
-      "new_price": 1.04,
-      "change": 0.0
-    },
-    {
-      "name": "3 Vegetales para microondas lavados",
-      "category": "Verdura",
-      "old_price": 1.95,
+      "name": "Barritas de avena y chocolate negro Crunchy Nature Valley",
+      "category": "Cereales",
+      "old_price": 2.6,
       "new_price": 1.95,
-      "change": 0.0
+      "change": -25.0
+    },
+    {
+      "name": "Bebida energética Red Bull",
+      "category": "Isotónico y energético",
+      "old_price": 10.35,
+      "new_price": 8.35,
+      "change": -19.323671497584538
+    },
+    {
+      "name": "Bebida láctea con cereales crecimiento y desarrollo Puleva Max",
+      "category": "Leche y bebidas vegetales",
+      "old_price": 9.54,
+      "new_price": 11.34,
+      "change": 18.867924528301906
+    },
+    {
+      "name": "Bebida láctea con cereales crecimiento y desarrollo Puleva Max",
+      "category": "Leche y bebidas vegetales",
+      "old_price": 1.59,
+      "new_price": 1.89,
+      "change": 18.867924528301884
+    },
+    {
+      "name": "Medio melón piel de sapo",
+      "category": "Fruta",
+      "old_price": 2.27,
+      "new_price": 2.66,
+      "change": 17.180616740088105
+    },
+    {
+      "name": "Sandía baja en semillas",
+      "category": "Fruta",
+      "old_price": 4.04,
+      "new_price": 4.72,
+      "change": 16.831683168316825
     }
   ],
   "annual_partial": true,
-  "week": -0.03940426689266019
+  "week": -0.020270793682755084
 }
