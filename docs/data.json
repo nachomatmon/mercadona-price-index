@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-21T14:53:24+02:00",
+  "captured_at": "2026-09-22T13:42:10+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -114,94 +114,102 @@
       "week": -0.0203,
       "monthly": null,
       "annual": -0.0014
+    },
+    {
+      "date": "2026-09-22T13:40:53+02:00",
+      "index": 99.9944,
+      "products": 4269,
+      "week": 0.0905,
+      "monthly": null,
+      "annual": -0.0056
     }
   ],
   "movers": [
     {
-      "name": "Queso fresco 0% MG de vaca Burgo de Arias",
-      "category": "Queso untable, fresco y especialidades",
-      "old_price": 2.5,
-      "new_price": 3.4,
-      "change": 35.999999999999986
+      "name": "Cerveza tostada Turia",
+      "category": "Cerveza",
+      "old_price": 8.28,
+      "new_price": 10.2,
+      "change": 23.188405797101442
     },
     {
-      "name": "Queso fresco de vaca Burgo de Arias",
-      "category": "Queso untable, fresco y especialidades",
-      "old_price": 2.5,
-      "new_price": 3.4,
-      "change": 35.999999999999986
+      "name": "Cerveza Estrella Damm",
+      "category": "Cerveza",
+      "old_price": 6.96,
+      "new_price": 8.4,
+      "change": 20.68965517241379
     },
     {
-      "name": "Fruta + leche tropical Bifrutas",
-      "category": "Fruta variada",
-      "old_price": 2.0,
-      "new_price": 2.59,
-      "change": 29.499999999999993
+      "name": "Cerveza tostada Turia",
+      "category": "Cerveza",
+      "old_price": 0.72,
+      "new_price": 0.85,
+      "change": 18.055555555555557
     },
     {
-      "name": "Melón piel de sapo",
+      "name": "Boquerón limpio sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 1.19,
+      "new_price": 0.99,
+      "change": -16.806722689075627
+    },
+    {
+      "name": "Sardina limpia sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 1.39,
+      "new_price": 1.19,
+      "change": -14.388489208633093
+    },
+    {
+      "name": "Sardina sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 1.39,
+      "new_price": 1.19,
+      "change": -14.388489208633093
+    },
+    {
+      "name": "Manzana Granny Smith",
       "category": "Fruta",
-      "old_price": 2.86,
-      "new_price": 3.68,
-      "change": 28.671328671328688
+      "old_price": 0.45,
+      "new_price": 0.5,
+      "change": 11.111111111111116
     },
     {
-      "name": "Pan tostado fino con sésamo y sal marina Delicate Crisp Wasa",
-      "category": "Pan tostado y rallado",
-      "old_price": 1.4,
-      "new_price": 1.8,
-      "change": 28.57142857142858
+      "name": "Cerveza especial Estrella Galicia",
+      "category": "Cerveza",
+      "old_price": 8.16,
+      "new_price": 7.32,
+      "change": -10.29411764705882
     },
     {
-      "name": "Plátano de Canarias IGP",
+      "name": "Trucha abierta en libro con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 5.64,
+      "new_price": 5.17,
+      "change": -8.333333333333325
+    },
+    {
+      "name": "Trucha abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 5.64,
+      "new_price": 5.17,
+      "change": -8.333333333333325
+    },
+    {
+      "name": "Trucha sin aletas",
+      "category": "Pescado fresco",
+      "old_price": 5.64,
+      "new_price": 5.17,
+      "change": -8.333333333333325
+    },
+    {
+      "name": "Ciruela roja",
       "category": "Fruta",
-      "old_price": 0.32,
-      "new_price": 0.41,
-      "change": 28.125
-    },
-    {
-      "name": "Barritas de avena y chocolate negro Crunchy Nature Valley",
-      "category": "Cereales",
-      "old_price": 2.6,
-      "new_price": 1.95,
-      "change": -25.0
-    },
-    {
-      "name": "Bebida energética Red Bull",
-      "category": "Isotónico y energético",
-      "old_price": 10.35,
-      "new_price": 8.35,
-      "change": -19.323671497584538
-    },
-    {
-      "name": "Bebida láctea con cereales crecimiento y desarrollo Puleva Max",
-      "category": "Leche y bebidas vegetales",
-      "old_price": 9.54,
-      "new_price": 11.34,
-      "change": 18.867924528301906
-    },
-    {
-      "name": "Bebida láctea con cereales crecimiento y desarrollo Puleva Max",
-      "category": "Leche y bebidas vegetales",
-      "old_price": 1.59,
-      "new_price": 1.89,
-      "change": 18.867924528301884
-    },
-    {
-      "name": "Medio melón piel de sapo",
-      "category": "Fruta",
-      "old_price": 2.27,
-      "new_price": 2.66,
-      "change": 17.180616740088105
-    },
-    {
-      "name": "Sandía baja en semillas",
-      "category": "Fruta",
-      "old_price": 4.04,
-      "new_price": 4.72,
-      "change": 16.831683168316825
+      "old_price": 0.46,
+      "new_price": 0.49,
+      "change": 6.521739130434767
     }
   ],
   "annual_partial": true,
-  "week": -0.020270793682755084
+  "week": 0.09051245804710106
 }
