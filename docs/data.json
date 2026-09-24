@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-23T13:41:09+02:00",
+  "captured_at": "2026-09-24T13:49:34+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -130,94 +130,102 @@
       "week": -0.0337,
       "monthly": null,
       "annual": 0.0204
+    },
+    {
+      "date": "2026-09-24T13:48:17+02:00",
+      "index": 100.109,
+      "products": 4253,
+      "week": 0.068,
+      "monthly": null,
+      "annual": 0.109
     }
   ],
   "movers": [
     {
-      "name": "Tomate rosa",
-      "category": "Verdura",
-      "old_price": 1.84,
-      "new_price": 1.33,
-      "change": -27.717391304347828
+      "name": "Desodorante invisible black + white Rexona antimanchas",
+      "category": "Desodorante",
+      "old_price": 2.3,
+      "new_price": 2.9,
+      "change": 26.086956521739136
     },
     {
-      "name": "Bífidus natural edulcorado probióticos Activia 0% MG 0% azúcares añadidos",
-      "category": "Bífidus",
-      "old_price": 3.3,
-      "new_price": 3.99,
-      "change": 20.90909090909092
+      "name": "Desodorante invisible ice fresh Rexona Men antitranspirante y antimanchas",
+      "category": "Desodorante",
+      "old_price": 2.3,
+      "new_price": 2.9,
+      "change": 26.086956521739136
     },
     {
-      "name": "Bífidus natural probióticos Activia 0% MG  0% azúcares añadidos",
-      "category": "Bífidus",
-      "old_price": 3.3,
-      "new_price": 3.99,
-      "change": 20.90909090909092
+      "name": "Desodorante roll-on Dry impact Nivea Men antitranspirante",
+      "category": "Desodorante",
+      "old_price": 2.0,
+      "new_price": 2.5,
+      "change": 25.0
     },
     {
-      "name": "Boquerón limpio sin cabeza",
-      "category": "Pescado fresco",
-      "old_price": 0.99,
-      "new_price": 0.79,
-      "change": -20.2020202020202
+      "name": "Desodorante roll-on Invisible Black & White Nivea Men antitranspirante",
+      "category": "Desodorante",
+      "old_price": 2.0,
+      "new_price": 2.5,
+      "change": 25.0
     },
     {
-      "name": "Cerveza Estrella Damm",
-      "category": "Cerveza",
-      "old_price": 8.4,
-      "new_price": 6.96,
-      "change": -17.14285714285715
+      "name": "Desodorante roll-on Invisible Black & White Nivea antitranspirante",
+      "category": "Desodorante",
+      "old_price": 2.0,
+      "new_price": 2.5,
+      "change": 25.0
     },
     {
-      "name": "Rabanitos",
-      "category": "Verdura",
-      "old_price": 1.15,
-      "new_price": 1.3,
-      "change": 13.043478260869579
+      "name": "Colgador WC Power Activ Pino Bref",
+      "category": "Limpieza baño y WC",
+      "old_price": 2.45,
+      "new_price": 2.95,
+      "change": 20.408163265306122
     },
     {
-      "name": "Pimiento verde freír",
-      "category": "Verdura",
-      "old_price": 0.23,
-      "new_price": 0.2,
-      "change": -13.043478260869568
+      "name": "Desodorante original Dove antitranspirante",
+      "category": "Desodorante",
+      "old_price": 3.15,
+      "new_price": 3.75,
+      "change": 19.047619047619047
     },
     {
-      "name": "Ciruela amarilla",
-      "category": "Fruta",
-      "old_price": 0.38,
-      "new_price": 0.42,
-      "change": 10.526315789473673
+      "name": "Dentífrico Total original Colgate",
+      "category": "Higiene bucal",
+      "old_price": 2.45,
+      "new_price": 2.9,
+      "change": 18.36734693877551
     },
     {
-      "name": "Pera Conferencia",
-      "category": "Fruta",
-      "old_price": 0.55,
-      "new_price": 0.5,
-      "change": -9.090909090909093
+      "name": "Desodorante dermo extra control Sanex antitranspirante",
+      "category": "Desodorante",
+      "old_price": 2.85,
+      "new_price": 2.35,
+      "change": -17.543859649122805
     },
     {
-      "name": "Chuletas de cordero paletilla",
-      "category": "Conejo y cordero",
-      "old_price": 7.1,
-      "new_price": 7.68,
-      "change": 8.169014084507054
+      "name": "Desodorante roll-on Active control Sanex men antitranspirante",
+      "category": "Desodorante",
+      "old_price": 2.3,
+      "new_price": 1.9,
+      "change": -17.391304347826086
     },
     {
-      "name": "Ciruela roja",
-      "category": "Fruta",
-      "old_price": 0.49,
-      "new_price": 0.53,
-      "change": 8.163265306122458
+      "name": "Desodorante roll-on Dermo extra control Sanex antitranspirante",
+      "category": "Desodorante",
+      "old_price": 2.3,
+      "new_price": 1.9,
+      "change": -17.391304347826086
     },
     {
-      "name": "Trozos de cordero para guisar",
-      "category": "Conejo y cordero",
-      "old_price": 6.25,
-      "new_price": 6.75,
-      "change": 8.000000000000007
+      "name": "Bebida láctea natural Actimel",
+      "category": "Yogures líquidos",
+      "old_price": 5.99,
+      "new_price": 4.95,
+      "change": -17.36227045075125
     }
   ],
   "annual_partial": true,
-  "week": -0.03366457671542378
+  "week": 0.06802055525272976
 }
