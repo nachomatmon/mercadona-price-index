@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-24T13:49:34+02:00",
+  "captured_at": "2026-09-25T13:54:14+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -138,94 +138,102 @@
       "week": 0.068,
       "monthly": null,
       "annual": 0.109
+    },
+    {
+      "date": "2026-09-25T13:52:54+02:00",
+      "index": 100.1113,
+      "products": 4251,
+      "week": 0.064,
+      "monthly": null,
+      "annual": 0.1113
     }
   ],
   "movers": [
     {
-      "name": "Desodorante invisible black + white Rexona antimanchas",
-      "category": "Desodorante",
-      "old_price": 2.3,
-      "new_price": 2.9,
-      "change": 26.086956521739136
+      "name": "Sardina limpia sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 1.19,
+      "new_price": 1.39,
+      "change": 16.806722689075638
     },
     {
-      "name": "Desodorante invisible ice fresh Rexona Men antitranspirante y antimanchas",
-      "category": "Desodorante",
-      "old_price": 2.3,
-      "new_price": 2.9,
-      "change": 26.086956521739136
+      "name": "Sardina sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 1.19,
+      "new_price": 1.39,
+      "change": 16.806722689075638
     },
     {
-      "name": "Desodorante roll-on Dry impact Nivea Men antitranspirante",
-      "category": "Desodorante",
-      "old_price": 2.0,
-      "new_price": 2.5,
-      "change": 25.0
+      "name": "Bebida isotónica Zero sabor cítrico Iso drink",
+      "category": "Isotónico y energético",
+      "old_price": 0.9,
+      "new_price": 1.0,
+      "change": 11.111111111111116
     },
     {
-      "name": "Desodorante roll-on Invisible Black & White Nivea Men antitranspirante",
-      "category": "Desodorante",
-      "old_price": 2.0,
-      "new_price": 2.5,
-      "change": 25.0
+      "name": "Bebida isotónica de naranja Iso drink",
+      "category": "Isotónico y energético",
+      "old_price": 0.9,
+      "new_price": 1.0,
+      "change": 11.111111111111116
     },
     {
-      "name": "Desodorante roll-on Invisible Black & White Nivea antitranspirante",
-      "category": "Desodorante",
-      "old_price": 2.0,
-      "new_price": 2.5,
-      "change": 25.0
+      "name": "Bebida isotónica sabor cítrico Iso drink",
+      "category": "Isotónico y energético",
+      "old_price": 0.9,
+      "new_price": 1.0,
+      "change": 11.111111111111116
     },
     {
-      "name": "Colgador WC Power Activ Pino Bref",
-      "category": "Limpieza baño y WC",
-      "old_price": 2.45,
-      "new_price": 2.95,
-      "change": 20.408163265306122
+      "name": "Papaya",
+      "category": "Fruta",
+      "old_price": 2.52,
+      "new_price": 2.36,
+      "change": -6.34920634920636
     },
     {
-      "name": "Desodorante original Dove antitranspirante",
-      "category": "Desodorante",
-      "old_price": 3.15,
-      "new_price": 3.75,
-      "change": 19.047619047619047
+      "name": "Limón",
+      "category": "Fruta",
+      "old_price": 0.57,
+      "new_price": 0.6,
+      "change": 5.263157894736836
     },
     {
-      "name": "Dentífrico Total original Colgate",
-      "category": "Higiene bucal",
-      "old_price": 2.45,
-      "new_price": 2.9,
-      "change": 18.36734693877551
+      "name": "Panela azúcar moreno de caña integral Hacendado",
+      "category": "Azúcar y edulcorante",
+      "old_price": 2.05,
+      "new_price": 2.15,
+      "change": 4.878048780487809
     },
     {
-      "name": "Desodorante dermo extra control Sanex antitranspirante",
-      "category": "Desodorante",
+      "name": "Manzana roja dulce",
+      "category": "Fruta",
+      "old_price": 0.42,
+      "new_price": 0.4,
+      "change": -4.761904761904756
+    },
+    {
+      "name": "Medio melón piel de sapo",
+      "category": "Fruta",
       "old_price": 2.85,
-      "new_price": 2.35,
-      "change": -17.543859649122805
+      "new_price": 2.98,
+      "change": 4.561403508771922
     },
     {
-      "name": "Desodorante roll-on Active control Sanex men antitranspirante",
-      "category": "Desodorante",
-      "old_price": 2.3,
-      "new_price": 1.9,
-      "change": -17.391304347826086
+      "name": "Aceite de oliva virgen extra Hacendado Gran Selección",
+      "category": "Aceite, vinagre y sal",
+      "old_price": 5.5,
+      "new_price": 5.25,
+      "change": -4.545454545454541
     },
     {
-      "name": "Desodorante roll-on Dermo extra control Sanex antitranspirante",
-      "category": "Desodorante",
-      "old_price": 2.3,
-      "new_price": 1.9,
-      "change": -17.391304347826086
-    },
-    {
-      "name": "Bebida láctea natural Actimel",
-      "category": "Yogures líquidos",
-      "old_price": 5.99,
-      "new_price": 4.95,
-      "change": -17.36227045075125
+      "name": "Filetes lomo de vacuno añojo para plancha",
+      "category": "Vacuno",
+      "old_price": 11.1,
+      "new_price": 11.6,
+      "change": 4.504504504504503
     }
   ],
   "annual_partial": true,
-  "week": 0.06802055525272976
+  "week": 0.06398733292972736
 }
