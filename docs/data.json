@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-28T15:59:34+02:00",
+  "captured_at": "2026-09-29T14:57:02+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -170,94 +170,102 @@
       "week": 0.0968,
       "monthly": null,
       "annual": 0.1821
+    },
+    {
+      "date": "2026-09-29T14:55:38+02:00",
+      "index": 100.2043,
+      "products": 4230,
+      "week": 0.1639,
+      "monthly": null,
+      "annual": 0.2043
     }
   ],
   "movers": [
     {
-      "name": "Refresco limón Schweppes original",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 5.04,
-      "new_price": 7.76,
-      "change": 53.968253968253954
+      "name": "Boquerón limpio sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 0.79,
+      "new_price": 1.19,
+      "change": 50.63291139240504
     },
     {
-      "name": "Melón piel de sapo",
+      "name": "Cava brut Anna Codorníu",
+      "category": "Sidra y cava",
+      "old_price": 9.95,
+      "new_price": 8.0,
+      "change": -19.59798994974874
+    },
+    {
+      "name": "Cerveza tostada Turia",
+      "category": "Cerveza",
+      "old_price": 10.2,
+      "new_price": 8.28,
+      "change": -18.823529411764707
+    },
+    {
+      "name": "Cerveza tostada Turia",
+      "category": "Cerveza",
+      "old_price": 0.85,
+      "new_price": 0.72,
+      "change": -15.294117647058824
+    },
+    {
+      "name": "Sardina limpia sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 1.39,
+      "new_price": 1.19,
+      "change": -14.388489208633093
+    },
+    {
+      "name": "Sardina sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 1.39,
+      "new_price": 1.19,
+      "change": -14.388489208633093
+    },
+    {
+      "name": "Manzana Granny Smith",
       "category": "Fruta",
-      "old_price": 4.12,
-      "new_price": 6.18,
-      "change": 50.0
+      "old_price": 0.5,
+      "new_price": 0.43,
+      "change": -14.000000000000002
     },
     {
-      "name": "Medio melón piel de sapo",
-      "category": "Fruta",
-      "old_price": 2.81,
-      "new_price": 3.74,
-      "change": 33.09608540925269
+      "name": "Café con leche cappuccino Hacendado",
+      "category": "Café soluble y otras bebidas",
+      "old_price": 0.75,
+      "new_price": 0.85,
+      "change": 13.33333333333333
     },
     {
-      "name": "Aperitivo de patata sabor crema agria y cebolla Pringles",
-      "category": "Patatas fritas y snacks",
-      "old_price": 2.0,
-      "new_price": 2.65,
-      "change": 32.49999999999999
+      "name": "Café con leche descafeinado Hacendado",
+      "category": "Café soluble y otras bebidas",
+      "old_price": 0.75,
+      "new_price": 0.85,
+      "change": 13.33333333333333
     },
     {
-      "name": "Aperitivo de patata sabor original Pringles",
-      "category": "Patatas fritas y snacks",
-      "old_price": 2.0,
-      "new_price": 2.65,
-      "change": 32.49999999999999
+      "name": "Café con leche espresso Hacendado",
+      "category": "Café soluble y otras bebidas",
+      "old_price": 0.75,
+      "new_price": 0.85,
+      "change": 13.33333333333333
     },
     {
-      "name": "Barritas de barquillo Huesitos bañadas de chocolate con leche",
-      "category": "Chocolate",
-      "old_price": 1.95,
-      "new_price": 2.5,
-      "change": 28.205128205128215
+      "name": "Café con leche light sin lactosa Hacendado",
+      "category": "Café soluble y otras bebidas",
+      "old_price": 0.75,
+      "new_price": 0.85,
+      "change": 13.33333333333333
     },
     {
-      "name": "Agua mineral grande Viladrau",
-      "category": "Agua",
-      "old_price": 0.55,
-      "new_price": 0.69,
-      "change": 25.45454545454544
-    },
-    {
-      "name": "Agua mineral grande Viladrau",
-      "category": "Agua",
-      "old_price": 3.3,
-      "new_price": 4.14,
-      "change": 25.45454545454544
-    },
-    {
-      "name": "Chocolate con leche Milka galleta",
-      "category": "Chocolate",
-      "old_price": 3.95,
-      "new_price": 2.95,
-      "change": -25.31645569620253
-    },
-    {
-      "name": "Chocolate con leche Valor almendras enteras",
-      "category": "Chocolate",
-      "old_price": 3.95,
-      "new_price": 4.95,
-      "change": 25.31645569620253
-    },
-    {
-      "name": "Chocolate puro Valor con almendras enteras",
-      "category": "Chocolate",
-      "old_price": 3.95,
-      "new_price": 4.95,
-      "change": 25.31645569620253
-    },
-    {
-      "name": "Fruta + leche Proteína 20 gr Don Simón sin azúcares añadidos con colágeno y vitamina C",
-      "category": "Fruta variada",
-      "old_price": 1.65,
-      "new_price": 1.25,
-      "change": -24.242424242424242
+      "name": "Corvina a filetes",
+      "category": "Pescado fresco",
+      "old_price": 13.34,
+      "new_price": 15.07,
+      "change": 12.96851574212894
     }
   ],
   "annual_partial": true,
-  "week": 0.09678539880439985
+  "week": 0.16386081174555045
 }
