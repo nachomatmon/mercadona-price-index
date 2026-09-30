@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-29T14:57:02+02:00",
+  "captured_at": "2026-09-30T14:40:33+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -178,94 +178,102 @@
       "week": 0.1639,
       "monthly": null,
       "annual": 0.2043
+    },
+    {
+      "date": "2026-09-30T14:39:09+02:00",
+      "index": 100.1978,
+      "products": 4230,
+      "week": 0.1455,
+      "monthly": null,
+      "annual": 0.1978
     }
   ],
   "movers": [
     {
       "name": "Boquerón limpio sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 0.79,
-      "new_price": 1.19,
-      "change": 50.63291139240504
+      "old_price": 1.19,
+      "new_price": 0.79,
+      "change": -33.613445378151255
     },
     {
-      "name": "Cava brut Anna Codorníu",
-      "category": "Sidra y cava",
-      "old_price": 9.95,
-      "new_price": 8.0,
-      "change": -19.59798994974874
+      "name": "Melón piel de sapo",
+      "category": "Fruta",
+      "old_price": 5.52,
+      "new_price": 4.59,
+      "change": -16.84782608695652
     },
     {
-      "name": "Cerveza tostada Turia",
-      "category": "Cerveza",
-      "old_price": 10.2,
-      "new_price": 8.28,
-      "change": -18.823529411764707
+      "name": "Manzana Golden",
+      "category": "Fruta",
+      "old_price": 0.4,
+      "new_price": 0.46,
+      "change": 14.999999999999991
     },
     {
-      "name": "Cerveza tostada Turia",
-      "category": "Cerveza",
-      "old_price": 0.85,
-      "new_price": 0.72,
-      "change": -15.294117647058824
+      "name": "Whisky escocés Grand Old Parr 12 años",
+      "category": "Licores",
+      "old_price": 19.75,
+      "new_price": 22.0,
+      "change": 11.392405063291132
     },
     {
-      "name": "Sardina limpia sin cabeza",
-      "category": "Pescado fresco",
-      "old_price": 1.39,
-      "new_price": 1.19,
-      "change": -14.388489208633093
-    },
-    {
-      "name": "Sardina sin limpiar",
-      "category": "Pescado fresco",
-      "old_price": 1.39,
-      "new_price": 1.19,
-      "change": -14.388489208633093
-    },
-    {
-      "name": "Manzana Granny Smith",
+      "name": "Pera Conferencia",
       "category": "Fruta",
       "old_price": 0.5,
-      "new_price": 0.43,
-      "change": -14.000000000000002
+      "new_price": 0.55,
+      "change": 10.000000000000009
     },
     {
-      "name": "Café con leche cappuccino Hacendado",
-      "category": "Café soluble y otras bebidas",
-      "old_price": 0.75,
-      "new_price": 0.85,
-      "change": 13.33333333333333
-    },
-    {
-      "name": "Café con leche descafeinado Hacendado",
-      "category": "Café soluble y otras bebidas",
-      "old_price": 0.75,
-      "new_price": 0.85,
-      "change": 13.33333333333333
-    },
-    {
-      "name": "Café con leche espresso Hacendado",
-      "category": "Café soluble y otras bebidas",
-      "old_price": 0.75,
-      "new_price": 0.85,
-      "change": 13.33333333333333
-    },
-    {
-      "name": "Café con leche light sin lactosa Hacendado",
-      "category": "Café soluble y otras bebidas",
-      "old_price": 0.75,
-      "new_price": 0.85,
-      "change": 13.33333333333333
-    },
-    {
-      "name": "Corvina a filetes",
+      "name": "Bacalao media pieza a rodajas",
       "category": "Pescado fresco",
-      "old_price": 13.34,
-      "new_price": 15.07,
-      "change": 12.96851574212894
+      "old_price": 11.28,
+      "new_price": 12.37,
+      "change": 9.663120567375882
+    },
+    {
+      "name": "Bacalao media pieza abierto en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 11.28,
+      "new_price": 12.37,
+      "change": 9.663120567375882
+    },
+    {
+      "name": "Ciruela amarilla",
+      "category": "Fruta",
+      "old_price": 0.42,
+      "new_price": 0.46,
+      "change": 9.523809523809534
+    },
+    {
+      "name": "Pastillas enciende fuegos Bosque Verde",
+      "category": "Menaje y conservación de alimentos",
+      "old_price": 1.05,
+      "new_price": 1.15,
+      "change": 9.523809523809511
+    },
+    {
+      "name": "Contramuslos deshuesados y sin piel de pollo certificado alimentado con un 50% de maíz",
+      "category": "Aves y pollo",
+      "old_price": 4.95,
+      "new_price": 5.39,
+      "change": 8.888888888888879
+    },
+    {
+      "name": "Jamoncitos de pollo certificado alimentado con un 50% de maíz",
+      "category": "Aves y pollo",
+      "old_price": 3.47,
+      "new_price": 3.2,
+      "change": -7.78097982708934
+    },
+    {
+      "name": "Protegeslip Flexiform Carefree Cotton feel regular + tanga",
+      "category": "Higiene íntima",
+      "old_price": 2.05,
+      "new_price": 1.9,
+      "change": -7.317073170731703
     }
   ],
   "annual_partial": true,
-  "week": 0.16386081174555045
+  "week": 0.14547302466618817
 }
