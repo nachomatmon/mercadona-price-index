@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-09-30T14:40:33+02:00",
+  "captured_at": "2026-10-01T15:19:56+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -186,94 +186,102 @@
       "week": 0.1455,
       "monthly": null,
       "annual": 0.1978
+    },
+    {
+      "date": "2026-10-01T15:18:42+02:00",
+      "index": 100.2381,
+      "products": 4220,
+      "week": 0.186,
+      "monthly": 0.0399,
+      "annual": 0.2381
     }
   ],
   "movers": [
     {
+      "name": "Bebida Florida Sunny Delight",
+      "category": "Refresco de té y sin gas",
+      "old_price": 1.25,
+      "new_price": 1.99,
+      "change": 59.20000000000001
+    },
+    {
       "name": "Boquerón limpio sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 0.79,
-      "change": -33.613445378151255
+      "old_price": 0.79,
+      "new_price": 1.19,
+      "change": 50.63291139240504
     },
     {
-      "name": "Melón piel de sapo",
-      "category": "Fruta",
-      "old_price": 5.52,
-      "new_price": 4.59,
-      "change": -16.84782608695652
+      "name": "Maquinilla de afeitar recargable Gillette Labs Body + Intimate 2 hojas",
+      "category": "Afeitado y cuidado para hombre",
+      "old_price": 12.9,
+      "new_price": 16.9,
+      "change": 31.007751937984484
     },
     {
-      "name": "Manzana Golden",
-      "category": "Fruta",
-      "old_price": 0.4,
-      "new_price": 0.46,
-      "change": 14.999999999999991
+      "name": "Vino tinto Sangre de Toro Bodegas Torres DO Catalunya",
+      "category": "Vino tinto",
+      "old_price": 4.0,
+      "new_price": 5.05,
+      "change": 26.249999999999996
     },
     {
-      "name": "Whisky escocés Grand Old Parr 12 años",
-      "category": "Licores",
-      "old_price": 19.75,
-      "new_price": 22.0,
-      "change": 11.392405063291132
+      "name": "Champú anticaspa Citric Ultrex cabello graso",
+      "category": "Champú",
+      "old_price": 2.0,
+      "new_price": 2.5,
+      "change": 25.0
     },
     {
-      "name": "Pera Conferencia",
-      "category": "Fruta",
-      "old_price": 0.5,
-      "new_price": 0.55,
-      "change": 10.000000000000009
+      "name": "Champú anticaspa Menthol Ultrex todo tipo de cabello",
+      "category": "Champú",
+      "old_price": 2.0,
+      "new_price": 2.5,
+      "change": 25.0
     },
     {
-      "name": "Bacalao media pieza a rodajas",
+      "name": "Champú y acondicionador anticaspa Classic 2 en 1 Ultrex todo tipo de cabello",
+      "category": "Champú",
+      "old_price": 2.0,
+      "new_price": 2.5,
+      "change": 25.0
+    },
+    {
+      "name": "Trucha abierta en libro con cabeza",
       "category": "Pescado fresco",
-      "old_price": 11.28,
-      "new_price": 12.37,
-      "change": 9.663120567375882
+      "old_price": 5.64,
+      "new_price": 6.98,
+      "change": 23.758865248226968
     },
     {
-      "name": "Bacalao media pieza abierto en libro sin cabeza y sin espina",
+      "name": "Trucha abierta en libro sin cabeza y sin espina",
       "category": "Pescado fresco",
-      "old_price": 11.28,
-      "new_price": 12.37,
-      "change": 9.663120567375882
+      "old_price": 5.64,
+      "new_price": 6.98,
+      "change": 23.758865248226968
     },
     {
-      "name": "Ciruela amarilla",
-      "category": "Fruta",
-      "old_price": 0.42,
-      "new_price": 0.46,
-      "change": 9.523809523809534
+      "name": "Trucha sin aletas",
+      "category": "Pescado fresco",
+      "old_price": 5.64,
+      "new_price": 6.98,
+      "change": 23.758865248226968
     },
     {
-      "name": "Pastillas enciende fuegos Bosque Verde",
-      "category": "Menaje y conservación de alimentos",
-      "old_price": 1.05,
-      "new_price": 1.15,
-      "change": 9.523809523809511
+      "name": "Fideos orientales Yatekomo sabor pollo Gallina Blanca",
+      "category": "Platos preparados calientes",
+      "old_price": 3.45,
+      "new_price": 4.1,
+      "change": 18.8405797101449
     },
     {
-      "name": "Contramuslos deshuesados y sin piel de pollo certificado alimentado con un 50% de maíz",
-      "category": "Aves y pollo",
-      "old_price": 4.95,
-      "new_price": 5.39,
-      "change": 8.888888888888879
-    },
-    {
-      "name": "Jamoncitos de pollo certificado alimentado con un 50% de maíz",
-      "category": "Aves y pollo",
-      "old_price": 3.47,
-      "new_price": 3.2,
-      "change": -7.78097982708934
-    },
-    {
-      "name": "Protegeslip Flexiform Carefree Cotton feel regular + tanga",
-      "category": "Higiene íntima",
-      "old_price": 2.05,
-      "new_price": 1.9,
-      "change": -7.317073170731703
+      "name": "Galletas caramelizadas Lotus Biscoff",
+      "category": "Galletas",
+      "old_price": 1.6,
+      "new_price": 1.3,
+      "change": -18.75
     }
   ],
   "annual_partial": true,
-  "week": 0.14547302466618817
+  "week": 0.1860497688967797
 }
