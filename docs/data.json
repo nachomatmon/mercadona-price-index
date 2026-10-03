@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-02T14:39:19+02:00",
+  "captured_at": "2026-10-03T13:42:56+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -202,94 +202,102 @@
       "week": 0.1717,
       "monthly": 0.0341,
       "annual": 0.2073
+    },
+    {
+      "date": "2026-10-03T13:41:41+02:00",
+      "index": 100.19,
+      "products": 4207,
+      "week": 0.0863,
+      "monthly": 0.0198,
+      "annual": 0.19
     }
   ],
   "movers": [
     {
-      "name": "Tónica Zero Schweppes",
-      "category": "Tónica y bitter",
-      "old_price": 7.68,
-      "new_price": 5.6,
-      "change": -27.083333333333336
-    },
-    {
-      "name": "Tónica original Schweppes",
-      "category": "Tónica y bitter",
-      "old_price": 7.68,
-      "new_price": 5.6,
-      "change": -27.083333333333336
-    },
-    {
-      "name": "Lima",
-      "category": "Fruta",
-      "old_price": 0.26,
-      "new_price": 0.31,
-      "change": 19.23076923076923
-    },
-    {
-      "name": "Boquerón limpio sin cabeza",
-      "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 0.99,
-      "change": -16.806722689075627
-    },
-    {
-      "name": "Boquerón sin limpiar",
-      "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 0.99,
-      "change": -16.806722689075627
-    },
-    {
       "name": "Sardina limpia sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 0.99,
-      "change": -16.806722689075627
+      "old_price": 0.99,
+      "new_price": 1.19,
+      "change": 20.2020202020202
     },
     {
-      "name": "Mejillones al natural Hacendado pequeños",
-      "category": "Berberechos y mejillones",
-      "old_price": 2.0,
-      "new_price": 1.8,
-      "change": -9.999999999999998
+      "name": "Ginebra London Dry Gin Larios",
+      "category": "Licores",
+      "old_price": 12.2,
+      "new_price": 10.95,
+      "change": -10.245901639344268
     },
     {
-      "name": "Mejillones en escabeche Hacendado pequeños",
-      "category": "Berberechos y mejillones",
-      "old_price": 2.0,
-      "new_price": 1.8,
-      "change": -9.999999999999998
+      "name": "Bacalao media pieza a rodajas",
+      "category": "Pescado fresco",
+      "old_price": 12.92,
+      "new_price": 14.13,
+      "change": 9.365325077399378
     },
     {
-      "name": "Mejillones picantes en escabeche Hacendado pequeños",
-      "category": "Berberechos y mejillones",
-      "old_price": 2.0,
-      "new_price": 1.8,
-      "change": -9.999999999999998
+      "name": "Bacalao media pieza abierto en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 12.92,
+      "new_price": 14.13,
+      "change": 9.365325077399378
     },
     {
-      "name": "Filetes de caballa del sur en tomate Hacendado",
-      "category": "Atún y otras conservas de pescado",
-      "old_price": 2.6,
-      "new_price": 2.85,
-      "change": 9.615384615384626
+      "name": "Tomate pera",
+      "category": "Verdura",
+      "old_price": 0.24,
+      "new_price": 0.22,
+      "change": -8.333333333333325
     },
     {
-      "name": "Filetes de caballa del sur en aceite de oliva Hacendado",
-      "category": "Atún y otras conservas de pescado",
-      "old_price": 2.7,
-      "new_price": 2.95,
-      "change": 9.259259259259256
+      "name": "Ciruela amarilla",
+      "category": "Fruta",
+      "old_price": 0.46,
+      "new_price": 0.49,
+      "change": 6.521739130434767
     },
     {
-      "name": "Jamón serrano Jamcal lonchas",
-      "category": "Jamón serrano",
-      "old_price": 1.1,
-      "new_price": 1.0,
-      "change": -9.090909090909093
+      "name": "Pera Conferencia",
+      "category": "Fruta",
+      "old_price": 0.52,
+      "new_price": 0.55,
+      "change": 5.769230769230771
+    },
+    {
+      "name": "Patata",
+      "category": "Verdura",
+      "old_price": 0.36,
+      "new_price": 0.38,
+      "change": 5.555555555555558
+    },
+    {
+      "name": "Sepia limpia pequeña",
+      "category": "Pescado fresco",
+      "old_price": 2.65,
+      "new_price": 2.79,
+      "change": 5.283018867924527
+    },
+    {
+      "name": "Corvina a filetes",
+      "category": "Pescado fresco",
+      "old_price": 15.18,
+      "new_price": 14.38,
+      "change": -5.270092226613954
+    },
+    {
+      "name": "Corvina abierta a la espalda con espinas y con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 15.18,
+      "new_price": 14.38,
+      "change": -5.270092226613954
+    },
+    {
+      "name": "Corvina limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 15.18,
+      "new_price": 14.38,
+      "change": -5.270092226613954
     }
   ],
   "annual_partial": true,
-  "week": 0.17168318022119422
+  "week": 0.08626082867310458
 }
