@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-03T13:42:56+02:00",
+  "captured_at": "2026-10-04T14:25:33+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -210,94 +210,102 @@
       "week": 0.0863,
       "monthly": 0.0198,
       "annual": 0.19
+    },
+    {
+      "date": "2026-10-04T14:24:07+02:00",
+      "index": 100.1781,
+      "products": 4204,
+      "week": 0.0524,
+      "monthly": 0.005,
+      "annual": 0.1781
     }
   ],
   "movers": [
     {
-      "name": "Sardina limpia sin cabeza",
-      "category": "Pescado fresco",
-      "old_price": 0.99,
-      "new_price": 1.19,
-      "change": 20.2020202020202
-    },
-    {
-      "name": "Ginebra London Dry Gin Larios",
-      "category": "Licores",
-      "old_price": 12.2,
-      "new_price": 10.95,
-      "change": -10.245901639344268
-    },
-    {
-      "name": "Bacalao media pieza a rodajas",
-      "category": "Pescado fresco",
-      "old_price": 12.92,
-      "new_price": 14.13,
-      "change": 9.365325077399378
-    },
-    {
-      "name": "Bacalao media pieza abierto en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 12.92,
-      "new_price": 14.13,
-      "change": 9.365325077399378
-    },
-    {
-      "name": "Tomate pera",
-      "category": "Verdura",
-      "old_price": 0.24,
-      "new_price": 0.22,
-      "change": -8.333333333333325
-    },
-    {
-      "name": "Ciruela amarilla",
+      "name": "Pera Limonera",
       "category": "Fruta",
-      "old_price": 0.46,
-      "new_price": 0.49,
-      "change": 6.521739130434767
+      "old_price": 0.56,
+      "new_price": 0.76,
+      "change": 35.7142857142857
+    },
+    {
+      "name": "Trucha abierta en libro con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 6.89,
+      "new_price": 6.09,
+      "change": -11.611030478955009
+    },
+    {
+      "name": "Trucha abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 6.89,
+      "new_price": 6.09,
+      "change": -11.611030478955009
+    },
+    {
+      "name": "Trucha sin aletas",
+      "category": "Pescado fresco",
+      "old_price": 6.89,
+      "new_price": 6.09,
+      "change": -11.611030478955009
+    },
+    {
+      "name": "Piña",
+      "category": "Fruta",
+      "old_price": 4.28,
+      "new_price": 3.88,
+      "change": -9.345794392523377
+    },
+    {
+      "name": "Yuca",
+      "category": "Verdura",
+      "old_price": 2.24,
+      "new_price": 2.38,
+      "change": 6.249999999999978
+    },
+    {
+      "name": "Limón",
+      "category": "Fruta",
+      "old_price": 0.54,
+      "new_price": 0.51,
+      "change": -5.555555555555558
     },
     {
       "name": "Pera Conferencia",
       "category": "Fruta",
-      "old_price": 0.52,
-      "new_price": 0.55,
-      "change": 5.769230769230771
+      "old_price": 0.55,
+      "new_price": 0.58,
+      "change": 5.454545454545445
     },
     {
       "name": "Patata",
       "category": "Verdura",
-      "old_price": 0.36,
-      "new_price": 0.38,
-      "change": 5.555555555555558
+      "old_price": 0.38,
+      "new_price": 0.4,
+      "change": 5.263157894736836
     },
     {
-      "name": "Sepia limpia pequeña",
-      "category": "Pescado fresco",
-      "old_price": 2.65,
-      "new_price": 2.79,
-      "change": 5.283018867924527
+      "name": "Tomate ensalada",
+      "category": "Verdura",
+      "old_price": 0.57,
+      "new_price": 0.59,
+      "change": 3.5087719298245723
     },
     {
-      "name": "Corvina a filetes",
-      "category": "Pescado fresco",
-      "old_price": 15.18,
-      "new_price": 14.38,
-      "change": -5.270092226613954
+      "name": "Melocotón amarillo",
+      "category": "Fruta",
+      "old_price": 0.86,
+      "new_price": 0.83,
+      "change": -3.488372093023262
     },
     {
-      "name": "Corvina abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 15.18,
-      "new_price": 14.38,
-      "change": -5.270092226613954
-    },
-    {
-      "name": "Corvina limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 15.18,
-      "new_price": 14.38,
-      "change": -5.270092226613954
+      "name": "Rama de Tomates",
+      "category": "Verdura",
+      "old_price": 1.58,
+      "new_price": 1.63,
+      "change": 3.164556962025311
     }
   ],
   "annual_partial": true,
-  "week": 0.08626082867310458
+  "week": 0.052402317274342636
 }
