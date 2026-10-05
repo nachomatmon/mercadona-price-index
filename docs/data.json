@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-04T14:25:33+02:00",
+  "captured_at": "2026-10-05T16:44:39+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -218,94 +218,102 @@
       "week": 0.0524,
       "monthly": 0.005,
       "annual": 0.1781
+    },
+    {
+      "date": "2026-10-05T16:43:13+02:00",
+      "index": 100.1999,
+      "products": 4202,
+      "week": 0.0357,
+      "monthly": 0.0139,
+      "annual": 0.1999
     }
   ],
   "movers": [
     {
-      "name": "Pera Limonera",
+      "name": "Cerveza especial San Miguel",
+      "category": "Cerveza",
+      "old_price": 4.8,
+      "new_price": 6.84,
+      "change": 42.50000000000001
+    },
+    {
+      "name": "Lote infantil Minecraft",
+      "category": "Perfume y colonia",
+      "old_price": 10.0,
+      "new_price": 6.5,
+      "change": -35.0
+    },
+    {
+      "name": "Barritas de avena y chocolate negro Crunchy Nature Valley",
+      "category": "Cereales",
+      "old_price": 1.95,
+      "new_price": 2.6,
+      "change": 33.33333333333335
+    },
+    {
+      "name": "Cerveza Estrella Damm",
+      "category": "Cerveza",
+      "old_price": 8.28,
+      "new_price": 10.44,
+      "change": 26.086956521739136
+    },
+    {
+      "name": "Cerveza suave Xibeca Damm",
+      "category": "Cerveza",
+      "old_price": 1.41,
+      "new_price": 1.73,
+      "change": 22.69503546099292
+    },
+    {
+      "name": "Cerveza suave Xibeca Damm",
+      "category": "Cerveza",
+      "old_price": 8.46,
+      "new_price": 10.38,
+      "change": 22.695035460992898
+    },
+    {
+      "name": "Barritas con proteínas sabor coco y chocolate Enervit Sport",
+      "category": "Fitoterapia",
+      "old_price": 2.95,
+      "new_price": 3.6,
+      "change": 22.033898305084733
+    },
+    {
+      "name": "Tinto de verano limón Casón Histórico",
+      "category": "Tinto de verano y sangría",
+      "old_price": 0.95,
+      "new_price": 1.15,
+      "change": 21.052631578947366
+    },
+    {
+      "name": "Tinto de verano zero limón Casón Histórico",
+      "category": "Tinto de verano y sangría",
+      "old_price": 0.95,
+      "new_price": 1.15,
+      "change": 21.052631578947366
+    },
+    {
+      "name": "Banana",
       "category": "Fruta",
-      "old_price": 0.56,
-      "new_price": 0.76,
-      "change": 35.7142857142857
+      "old_price": 0.25,
+      "new_price": 0.2,
+      "change": -19.999999999999996
     },
     {
-      "name": "Trucha abierta en libro con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 6.89,
-      "new_price": 6.09,
-      "change": -11.611030478955009
-    },
-    {
-      "name": "Trucha abierta en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 6.89,
-      "new_price": 6.09,
-      "change": -11.611030478955009
-    },
-    {
-      "name": "Trucha sin aletas",
-      "category": "Pescado fresco",
-      "old_price": 6.89,
-      "new_price": 6.09,
-      "change": -11.611030478955009
-    },
-    {
-      "name": "Piña",
+      "name": "Manzanas rojas acidulces",
       "category": "Fruta",
-      "old_price": 4.28,
-      "new_price": 3.88,
-      "change": -9.345794392523377
+      "old_price": 4.08,
+      "new_price": 3.3,
+      "change": -19.11764705882354
     },
     {
-      "name": "Yuca",
-      "category": "Verdura",
-      "old_price": 2.24,
-      "new_price": 2.38,
-      "change": 6.249999999999978
-    },
-    {
-      "name": "Limón",
-      "category": "Fruta",
-      "old_price": 0.54,
-      "new_price": 0.51,
-      "change": -5.555555555555558
-    },
-    {
-      "name": "Pera Conferencia",
-      "category": "Fruta",
-      "old_price": 0.55,
-      "new_price": 0.58,
-      "change": 5.454545454545445
-    },
-    {
-      "name": "Patata",
-      "category": "Verdura",
-      "old_price": 0.38,
-      "new_price": 0.4,
-      "change": 5.263157894736836
-    },
-    {
-      "name": "Tomate ensalada",
-      "category": "Verdura",
-      "old_price": 0.57,
-      "new_price": 0.59,
-      "change": 3.5087719298245723
-    },
-    {
-      "name": "Melocotón amarillo",
-      "category": "Fruta",
-      "old_price": 0.86,
-      "new_price": 0.83,
-      "change": -3.488372093023262
-    },
-    {
-      "name": "Rama de Tomates",
-      "category": "Verdura",
-      "old_price": 1.58,
-      "new_price": 1.63,
-      "change": 3.164556962025311
+      "name": "Cerveza Estrella Damm",
+      "category": "Cerveza",
+      "old_price": 0.75,
+      "new_price": 0.89,
+      "change": 18.666666666666675
     }
   ],
   "annual_partial": true,
-  "week": 0.052402317274342636
+  "week": 0.035712187739818546
 }
