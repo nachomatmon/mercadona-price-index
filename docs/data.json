@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-05T16:44:39+02:00",
+  "captured_at": "2026-10-06T15:21:40+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -226,94 +226,102 @@
       "week": 0.0357,
       "monthly": 0.0139,
       "annual": 0.1999
+    },
+    {
+      "date": "2026-10-06T15:20:23+02:00",
+      "index": 100.2138,
+      "products": 4199,
+      "week": 0.0383,
+      "monthly": 0.0334,
+      "annual": 0.2138
     }
   ],
   "movers": [
     {
+      "name": "Melón piel de sapo",
+      "category": "Fruta",
+      "old_price": 3.75,
+      "new_price": 6.36,
+      "change": 69.60000000000002
+    },
+    {
       "name": "Cerveza especial San Miguel",
       "category": "Cerveza",
-      "old_price": 4.8,
-      "new_price": 6.84,
-      "change": 42.50000000000001
+      "old_price": 0.5,
+      "new_price": 0.74,
+      "change": 48.0
     },
     {
-      "name": "Lote infantil Minecraft",
-      "category": "Perfume y colonia",
-      "old_price": 10.0,
-      "new_price": 6.5,
-      "change": -35.0
-    },
-    {
-      "name": "Barritas de avena y chocolate negro Crunchy Nature Valley",
-      "category": "Cereales",
-      "old_price": 1.95,
-      "new_price": 2.6,
-      "change": 33.33333333333335
-    },
-    {
-      "name": "Cerveza Estrella Damm",
-      "category": "Cerveza",
-      "old_price": 8.28,
-      "new_price": 10.44,
-      "change": 26.086956521739136
-    },
-    {
-      "name": "Cerveza suave Xibeca Damm",
-      "category": "Cerveza",
-      "old_price": 1.41,
-      "new_price": 1.73,
-      "change": 22.69503546099292
-    },
-    {
-      "name": "Cerveza suave Xibeca Damm",
-      "category": "Cerveza",
-      "old_price": 8.46,
-      "new_price": 10.38,
-      "change": 22.695035460992898
-    },
-    {
-      "name": "Barritas con proteínas sabor coco y chocolate Enervit Sport",
-      "category": "Fitoterapia",
-      "old_price": 2.95,
-      "new_price": 3.6,
-      "change": 22.033898305084733
-    },
-    {
-      "name": "Tinto de verano limón Casón Histórico",
-      "category": "Tinto de verano y sangría",
-      "old_price": 0.95,
-      "new_price": 1.15,
-      "change": 21.052631578947366
-    },
-    {
-      "name": "Tinto de verano zero limón Casón Histórico",
-      "category": "Tinto de verano y sangría",
-      "old_price": 0.95,
-      "new_price": 1.15,
-      "change": 21.052631578947366
-    },
-    {
-      "name": "Banana",
+      "name": "Medio melón piel de sapo",
       "category": "Fruta",
-      "old_price": 0.25,
-      "new_price": 0.2,
-      "change": -19.999999999999996
+      "old_price": 2.99,
+      "new_price": 4.29,
+      "change": 43.47826086956521
     },
     {
-      "name": "Manzanas rojas acidulces",
-      "category": "Fruta",
-      "old_price": 4.08,
-      "new_price": 3.3,
-      "change": -19.11764705882354
-    },
-    {
-      "name": "Cerveza Estrella Damm",
+      "name": "Cerveza especial San Miguel",
       "category": "Cerveza",
-      "old_price": 0.75,
-      "new_price": 0.89,
-      "change": 18.666666666666675
+      "old_price": 5.4,
+      "new_price": 6.96,
+      "change": 28.888888888888875
+    },
+    {
+      "name": "Pera Limonera",
+      "category": "Fruta",
+      "old_price": 0.76,
+      "new_price": 0.56,
+      "change": -26.315789473684205
+    },
+    {
+      "name": "Pimiento verde freír",
+      "category": "Verdura",
+      "old_price": 0.15,
+      "new_price": 0.18,
+      "change": 19.999999999999996
+    },
+    {
+      "name": "Fartons",
+      "category": "Bollería de horno",
+      "old_price": 2.0,
+      "new_price": 1.7,
+      "change": -15.000000000000002
+    },
+    {
+      "name": "Trucha abierta en libro con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 6.09,
+      "new_price": 6.89,
+      "change": 13.13628899835797
+    },
+    {
+      "name": "Trucha abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 6.09,
+      "new_price": 6.89,
+      "change": 13.13628899835797
+    },
+    {
+      "name": "Trucha sin aletas",
+      "category": "Pescado fresco",
+      "old_price": 6.09,
+      "new_price": 6.89,
+      "change": 13.13628899835797
+    },
+    {
+      "name": "Tomates pera",
+      "category": "Verdura",
+      "old_price": 2.39,
+      "new_price": 2.62,
+      "change": 9.623430962343104
+    },
+    {
+      "name": "Buñuelos de bacalao Hacendado ultracongelados",
+      "category": "Pescado congelado",
+      "old_price": 4.35,
+      "new_price": 4.75,
+      "change": 9.195402298850585
     }
   ],
   "annual_partial": true,
-  "week": 0.035712187739818546
+  "week": 0.03833025402758494
 }
