@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-07T15:28:18+02:00",
+  "captured_at": "2026-10-08T15:34:06+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -242,94 +242,102 @@
       "week": 0.0619,
       "monthly": 0.0619,
       "annual": 0.249
+    },
+    {
+      "date": "2026-10-08T15:32:52+02:00",
+      "index": 100.2149,
+      "products": 4185,
+      "week": -0.0153,
+      "monthly": 0.027,
+      "annual": 0.2149
     }
   ],
   "movers": [
     {
-      "name": "Bebida energética Red Bull",
-      "category": "Isotónico y energético",
-      "old_price": 8.35,
-      "new_price": 10.35,
-      "change": 23.952095808383245
+      "name": "Cerveza especial San Miguel",
+      "category": "Cerveza",
+      "old_price": 0.74,
+      "new_price": 0.5,
+      "change": -32.432432432432435
     },
     {
-      "name": "Sardina limpia sin cabeza",
+      "name": "Dentífrico Repair & Protect Sensodyne",
+      "category": "Higiene bucal",
+      "old_price": 3.95,
+      "new_price": 4.95,
+      "change": 25.31645569620253
+    },
+    {
+      "name": "Surtido bombones Caja Roja Nestlé",
+      "category": "Chocolate",
+      "old_price": 6.95,
+      "new_price": 5.25,
+      "change": -24.460431654676263
+    },
+    {
+      "name": "Boquerón limpio sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 0.99,
-      "change": -16.806722689075627
+      "old_price": 0.99,
+      "new_price": 0.79,
+      "change": -20.2020202020202
     },
     {
-      "name": "Corvina a filetes",
+      "name": "Boquerón sin limpiar",
       "category": "Pescado fresco",
-      "old_price": 14.03,
-      "new_price": 15.76,
-      "change": 12.330719885958663
+      "old_price": 0.99,
+      "new_price": 0.79,
+      "change": -20.2020202020202
     },
     {
-      "name": "Corvina abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 14.03,
-      "new_price": 15.76,
-      "change": 12.330719885958663
+      "name": "Manzana roja acidulce",
+      "category": "Fruta",
+      "old_price": 0.6,
+      "new_price": 0.5,
+      "change": -16.666666666666664
     },
     {
-      "name": "Corvina limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 14.03,
-      "new_price": 15.76,
-      "change": 12.330719885958663
+      "name": "Dentífrico Pro-Expert Oral-B sabor menta especiada",
+      "category": "Higiene bucal",
+      "old_price": 2.85,
+      "new_price": 2.5,
+      "change": -12.28070175438597
     },
     {
-      "name": "Cocktail frutos secos Crunchy Hacendado sabores a barbacoa, Tex-Mex, miel y sal",
-      "category": "Frutos secos y fruta desecada",
-      "old_price": 1.6,
-      "new_price": 1.75,
-      "change": 9.375
+      "name": "Pañales bebé talla 4 Dodot de 9-14 kg",
+      "category": "Toallitas y pañales",
+      "old_price": 18.95,
+      "new_price": 16.75,
+      "change": -11.609498680738783
     },
     {
-      "name": "Cocktail frutos secos Rumba Hacendado",
-      "category": "Frutos secos y fruta desecada",
-      "old_price": 1.6,
-      "new_price": 1.75,
-      "change": 9.375
+      "name": "Pañales bebé talla 5 Dodot de 11-16 kg",
+      "category": "Toallitas y pañales",
+      "old_price": 18.95,
+      "new_price": 16.75,
+      "change": -11.609498680738783
     },
     {
-      "name": "Cocktail frutos secos mezcla Hacendado",
-      "category": "Frutos secos y fruta desecada",
-      "old_price": 1.6,
-      "new_price": 1.75,
-      "change": 9.375
+      "name": "Pañales bebé talla 6 Dodot de 13-18 kg",
+      "category": "Toallitas y pañales",
+      "old_price": 18.95,
+      "new_price": 16.75,
+      "change": -11.609498680738783
     },
     {
-      "name": "Dorada a filetes sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 5.13,
-      "new_price": 4.66,
-      "change": -9.161793372319682
+      "name": "Pera Ercolina",
+      "category": "Fruta",
+      "old_price": 0.26,
+      "new_price": 0.29,
+      "change": 11.538461538461519
     },
     {
-      "name": "Dorada abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 5.13,
-      "new_price": 4.66,
-      "change": -9.161793372319682
-    },
-    {
-      "name": "Dorada abierta en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 5.13,
-      "new_price": 4.66,
-      "change": -9.161793372319682
-    },
-    {
-      "name": "Dorada limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 5.13,
-      "new_price": 4.66,
-      "change": -9.161793372319682
+      "name": "Pimiento verde freír",
+      "category": "Verdura",
+      "old_price": 0.18,
+      "new_price": 0.2,
+      "change": 11.111111111111116
     }
   ],
   "annual_partial": true,
-  "week": 0.06187660715059451
+  "week": -0.015259210590173211
 }
