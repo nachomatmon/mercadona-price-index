@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-08T15:34:06+02:00",
+  "captured_at": "2026-10-09T15:21:12+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -250,94 +250,102 @@
       "week": -0.0153,
       "monthly": 0.027,
       "annual": 0.2149
+    },
+    {
+      "date": "2026-10-09T15:19:56+02:00",
+      "index": 100.2007,
+      "products": 4182,
+      "week": 0.0263,
+      "monthly": 0.0806,
+      "annual": 0.2007
     }
   ],
   "movers": [
     {
-      "name": "Cerveza especial San Miguel",
-      "category": "Cerveza",
-      "old_price": 0.74,
-      "new_price": 0.5,
-      "change": -32.432432432432435
-    },
-    {
-      "name": "Dentífrico Repair & Protect Sensodyne",
-      "category": "Higiene bucal",
-      "old_price": 3.95,
-      "new_price": 4.95,
-      "change": 25.31645569620253
-    },
-    {
-      "name": "Surtido bombones Caja Roja Nestlé",
-      "category": "Chocolate",
-      "old_price": 6.95,
-      "new_price": 5.25,
-      "change": -24.460431654676263
-    },
-    {
       "name": "Boquerón limpio sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 0.99,
-      "new_price": 0.79,
-      "change": -20.2020202020202
+      "old_price": 0.79,
+      "new_price": 1.19,
+      "change": 50.63291139240504
     },
     {
       "name": "Boquerón sin limpiar",
       "category": "Pescado fresco",
-      "old_price": 0.99,
-      "new_price": 0.79,
-      "change": -20.2020202020202
+      "old_price": 0.79,
+      "new_price": 1.19,
+      "change": 50.63291139240504
     },
     {
-      "name": "Manzana roja acidulce",
-      "category": "Fruta",
-      "old_price": 0.6,
-      "new_price": 0.5,
-      "change": -16.666666666666664
+      "name": "Refresco Fanta naranja",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 1.55,
+      "new_price": 1.0,
+      "change": -35.483870967741936
     },
     {
-      "name": "Dentífrico Pro-Expert Oral-B sabor menta especiada",
-      "category": "Higiene bucal",
-      "old_price": 2.85,
-      "new_price": 2.5,
-      "change": -12.28070175438597
+      "name": "Refresco Fanta limón zero azúcares añadidos",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 6.16,
+      "new_price": 4.24,
+      "change": -31.16883116883117
     },
     {
-      "name": "Pañales bebé talla 4 Dodot de 9-14 kg",
+      "name": "Refresco Fanta naranja zero azúcares añadidos",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 6.16,
+      "new_price": 4.24,
+      "change": -31.16883116883117
+    },
+    {
+      "name": "Pañales bebé talla 3 Dodot Sensitive de 6-10 kg",
       "category": "Toallitas y pañales",
-      "old_price": 18.95,
-      "new_price": 16.75,
-      "change": -11.609498680738783
+      "old_price": 16.95,
+      "new_price": 21.95,
+      "change": 29.498525073746308
     },
     {
-      "name": "Pañales bebé talla 5 Dodot de 11-16 kg",
+      "name": "Aperitivo de patata sabor crema agria y cebolla Pringles",
+      "category": "Patatas fritas y snacks",
+      "old_price": 2.65,
+      "new_price": 1.9,
+      "change": -28.301886792452834
+    },
+    {
+      "name": "Aperitivo de patata sabor original Pringles",
+      "category": "Patatas fritas y snacks",
+      "old_price": 2.65,
+      "new_price": 1.9,
+      "change": -28.301886792452834
+    },
+    {
+      "name": "Pañales bebé talla 1 Dodot Sensitive de 2-5 kg",
       "category": "Toallitas y pañales",
-      "old_price": 18.95,
-      "new_price": 16.75,
-      "change": -11.609498680738783
+      "old_price": 16.95,
+      "new_price": 20.95,
+      "change": 23.59882005899705
     },
     {
-      "name": "Pañales bebé talla 6 Dodot de 13-18 kg",
+      "name": "Pañales bebé talla 2 Dodot Sensitive de 4-8 kg",
       "category": "Toallitas y pañales",
-      "old_price": 18.95,
-      "new_price": 16.75,
-      "change": -11.609498680738783
+      "old_price": 16.95,
+      "new_price": 20.95,
+      "change": 23.59882005899705
     },
     {
-      "name": "Pera Ercolina",
-      "category": "Fruta",
-      "old_price": 0.26,
-      "new_price": 0.29,
-      "change": 11.538461538461519
+      "name": "Cerveza especial San Miguel",
+      "category": "Cerveza",
+      "old_price": 6.96,
+      "new_price": 5.4,
+      "change": -22.413793103448263
     },
     {
-      "name": "Pimiento verde freír",
-      "category": "Verdura",
-      "old_price": 0.18,
-      "new_price": 0.2,
-      "change": 11.111111111111116
+      "name": "Pan tostado fino con sésamo y sal marina Delicate Crisp Wasa",
+      "category": "Pan tostado y rallado",
+      "old_price": 1.8,
+      "new_price": 1.4,
+      "change": -22.222222222222232
     }
   ],
   "annual_partial": true,
-  "week": -0.015259210590173211
+  "week": 0.026333696878168666
 }
