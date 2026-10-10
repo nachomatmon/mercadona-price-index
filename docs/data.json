@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-09T15:21:12+02:00",
+  "captured_at": "2026-10-10T14:35:48+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -258,94 +258,102 @@
       "week": 0.0263,
       "monthly": 0.0806,
       "annual": 0.2007
+    },
+    {
+      "date": "2026-10-10T14:34:33+02:00",
+      "index": 100.217,
+      "products": 4180,
+      "week": 0.0687,
+      "monthly": 0.1105,
+      "annual": 0.217
     }
   ],
   "movers": [
     {
+      "name": "Filete de salmón rosado salvaje con piel Hacendado ultracongelado",
+      "category": "Pescado congelado",
+      "old_price": 4.99,
+      "new_price": 6.1,
+      "change": 22.2444889779559
+    },
+    {
       "name": "Boquerón limpio sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 0.79,
-      "new_price": 1.19,
-      "change": 50.63291139240504
+      "old_price": 1.19,
+      "new_price": 0.99,
+      "change": -16.806722689075627
     },
     {
       "name": "Boquerón sin limpiar",
       "category": "Pescado fresco",
-      "old_price": 0.79,
-      "new_price": 1.19,
-      "change": 50.63291139240504
+      "old_price": 1.19,
+      "new_price": 0.99,
+      "change": -16.806722689075627
     },
     {
-      "name": "Refresco Fanta naranja",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 1.55,
-      "new_price": 1.0,
-      "change": -35.483870967741936
+      "name": "Surtido bombones Senzza de chocolate",
+      "category": "Chocolate",
+      "old_price": 4.2,
+      "new_price": 3.5,
+      "change": -16.666666666666675
     },
     {
-      "name": "Refresco Fanta limón zero azúcares añadidos",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 6.16,
-      "new_price": 4.24,
-      "change": -31.16883116883117
+      "name": "Pimiento verde freír",
+      "category": "Verdura",
+      "old_price": 0.2,
+      "new_price": 0.23,
+      "change": 14.999999999999991
     },
     {
-      "name": "Refresco Fanta naranja zero azúcares añadidos",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 6.16,
-      "new_price": 4.24,
-      "change": -31.16883116883117
+      "name": "Corvina a filetes",
+      "category": "Pescado fresco",
+      "old_price": 14.61,
+      "new_price": 16.79,
+      "change": 14.921286789869947
     },
     {
-      "name": "Pañales bebé talla 3 Dodot Sensitive de 6-10 kg",
-      "category": "Toallitas y pañales",
-      "old_price": 16.95,
-      "new_price": 21.95,
-      "change": 29.498525073746308
+      "name": "Corvina abierta a la espalda con espinas y con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 14.61,
+      "new_price": 16.79,
+      "change": 14.921286789869947
     },
     {
-      "name": "Aperitivo de patata sabor crema agria y cebolla Pringles",
-      "category": "Patatas fritas y snacks",
-      "old_price": 2.65,
-      "new_price": 1.9,
-      "change": -28.301886792452834
+      "name": "Corvina limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 14.61,
+      "new_price": 16.79,
+      "change": 14.921286789869947
     },
     {
-      "name": "Aperitivo de patata sabor original Pringles",
-      "category": "Patatas fritas y snacks",
-      "old_price": 2.65,
-      "new_price": 1.9,
-      "change": -28.301886792452834
+      "name": "Pera Ercolina",
+      "category": "Fruta",
+      "old_price": 0.29,
+      "new_price": 0.26,
+      "change": -10.344827586206884
     },
     {
-      "name": "Pañales bebé talla 1 Dodot Sensitive de 2-5 kg",
-      "category": "Toallitas y pañales",
-      "old_price": 16.95,
-      "new_price": 20.95,
-      "change": 23.59882005899705
+      "name": "Tomate ensalada",
+      "category": "Verdura",
+      "old_price": 0.63,
+      "new_price": 0.58,
+      "change": -7.936507936507942
     },
     {
-      "name": "Pañales bebé talla 2 Dodot Sensitive de 4-8 kg",
-      "category": "Toallitas y pañales",
-      "old_price": 16.95,
-      "new_price": 20.95,
-      "change": 23.59882005899705
+      "name": "Bacalao a rodajas",
+      "category": "Pescado fresco",
+      "old_price": 31.9,
+      "new_price": 34.38,
+      "change": 7.7742946708464045
     },
     {
-      "name": "Cerveza especial San Miguel",
-      "category": "Cerveza",
-      "old_price": 6.96,
-      "new_price": 5.4,
-      "change": -22.413793103448263
-    },
-    {
-      "name": "Pan tostado fino con sésamo y sal marina Delicate Crisp Wasa",
-      "category": "Pan tostado y rallado",
-      "old_price": 1.8,
-      "new_price": 1.4,
-      "change": -22.222222222222232
+      "name": "Bacalao abierto en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 31.9,
+      "new_price": 34.38,
+      "change": 7.7742946708464045
     }
   ],
   "annual_partial": true,
-  "week": 0.026333696878168666
+  "week": 0.06867267917559161
 }
