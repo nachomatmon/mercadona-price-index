@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-10T14:35:48+02:00",
+  "captured_at": "2026-10-11T14:54:10+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -266,94 +266,102 @@
       "week": 0.0687,
       "monthly": 0.1105,
       "annual": 0.217
+    },
+    {
+      "date": "2026-10-11T14:52:52+02:00",
+      "index": 100.2311,
+      "products": 4178,
+      "week": 0.1025,
+      "monthly": 0.1296,
+      "annual": 0.2311
     }
   ],
   "movers": [
     {
-      "name": "Filete de salmón rosado salvaje con piel Hacendado ultracongelado",
-      "category": "Pescado congelado",
-      "old_price": 4.99,
-      "new_price": 6.1,
-      "change": 22.2444889779559
-    },
-    {
-      "name": "Boquerón limpio sin cabeza",
+      "name": "Merluza a rodajas",
       "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 0.99,
-      "change": -16.806722689075627
+      "old_price": 13.92,
+      "new_price": 10.24,
+      "change": -26.436781609195403
     },
     {
-      "name": "Boquerón sin limpiar",
+      "name": "Merluza abierta en libro sin cabeza y sin espina",
       "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 0.99,
-      "change": -16.806722689075627
+      "old_price": 13.92,
+      "new_price": 10.24,
+      "change": -26.436781609195403
     },
     {
-      "name": "Surtido bombones Senzza de chocolate",
-      "category": "Chocolate",
-      "old_price": 4.2,
-      "new_price": 3.5,
-      "change": -16.666666666666675
+      "name": "Merluza sin aletas y sin escamas",
+      "category": "Pescado fresco",
+      "old_price": 13.92,
+      "new_price": 10.24,
+      "change": -26.436781609195403
     },
     {
-      "name": "Pimiento verde freír",
+      "name": "Pepino",
       "category": "Verdura",
-      "old_price": 0.2,
-      "new_price": 0.23,
-      "change": 14.999999999999991
+      "old_price": 0.34,
+      "new_price": 0.36,
+      "change": 5.88235294117645
     },
     {
-      "name": "Corvina a filetes",
-      "category": "Pescado fresco",
-      "old_price": 14.61,
-      "new_price": 16.79,
-      "change": 14.921286789869947
+      "name": "Pimiento rojo",
+      "category": "Verdura",
+      "old_price": 0.52,
+      "new_price": 0.55,
+      "change": 5.769230769230771
     },
     {
-      "name": "Corvina abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 14.61,
-      "new_price": 16.79,
-      "change": 14.921286789869947
-    },
-    {
-      "name": "Corvina limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 14.61,
-      "new_price": 16.79,
-      "change": 14.921286789869947
-    },
-    {
-      "name": "Pera Ercolina",
-      "category": "Fruta",
-      "old_price": 0.29,
-      "new_price": 0.26,
-      "change": -10.344827586206884
+      "name": "Tomate canario",
+      "category": "Verdura",
+      "old_price": 0.35,
+      "new_price": 0.33,
+      "change": -5.714285714285705
     },
     {
       "name": "Tomate ensalada",
       "category": "Verdura",
-      "old_price": 0.63,
-      "new_price": 0.58,
-      "change": -7.936507936507942
+      "old_price": 0.58,
+      "new_price": 0.55,
+      "change": -5.172413793103436
     },
     {
-      "name": "Bacalao a rodajas",
+      "name": "Corvina a filetes",
       "category": "Pescado fresco",
-      "old_price": 31.9,
-      "new_price": 34.38,
-      "change": 7.7742946708464045
+      "old_price": 16.79,
+      "new_price": 17.6,
+      "change": 4.824300178677787
     },
     {
-      "name": "Bacalao abierto en libro sin cabeza y sin espina",
+      "name": "Corvina abierta a la espalda con espinas y con cabeza",
       "category": "Pescado fresco",
-      "old_price": 31.9,
-      "new_price": 34.38,
-      "change": 7.7742946708464045
+      "old_price": 16.79,
+      "new_price": 17.6,
+      "change": 4.824300178677787
+    },
+    {
+      "name": "Corvina limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 16.79,
+      "new_price": 17.6,
+      "change": 4.824300178677787
+    },
+    {
+      "name": "Naranja de mesa",
+      "category": "Fruta",
+      "old_price": 0.68,
+      "new_price": 0.65,
+      "change": -4.4117647058823595
+    },
+    {
+      "name": "Melocotón amarillo",
+      "category": "Fruta",
+      "old_price": 0.86,
+      "new_price": 0.83,
+      "change": -3.488372093023262
     }
   ],
   "annual_partial": true,
-  "week": 0.06867267917559161
+  "week": 0.10250035642170019
 }
