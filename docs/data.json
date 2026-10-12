@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-11T14:54:10+02:00",
+  "captured_at": "2026-10-12T17:30:24+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -274,94 +274,102 @@
       "week": 0.1025,
       "monthly": 0.1296,
       "annual": 0.2311
+    },
+    {
+      "date": "2026-10-12T17:28:58+02:00",
+      "index": 100.2322,
+      "products": 4174,
+      "week": 0.1141,
+      "monthly": 0.1297,
+      "annual": 0.2322
     }
   ],
   "movers": [
     {
-      "name": "Merluza a rodajas",
-      "category": "Pescado fresco",
-      "old_price": 13.92,
-      "new_price": 10.24,
-      "change": -26.436781609195403
+      "name": "11 Panecillos",
+      "category": "Pan de horno",
+      "old_price": 1.14,
+      "new_price": 1.14,
+      "change": 0.0
     },
     {
-      "name": "Merluza abierta en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 13.92,
-      "new_price": 10.24,
-      "change": -26.436781609195403
+      "name": "12 Artesanitos surtidos",
+      "category": "Bollería de horno",
+      "old_price": 3.5,
+      "new_price": 3.5,
+      "change": 0.0
     },
     {
-      "name": "Merluza sin aletas y sin escamas",
-      "category": "Pescado fresco",
-      "old_price": 13.92,
-      "new_price": 10.24,
-      "change": -26.436781609195403
+      "name": "12 Mini croissants de mantequilla",
+      "category": "Bollería de horno",
+      "old_price": 2.15,
+      "new_price": 2.15,
+      "change": 0.0
     },
     {
-      "name": "Pepino",
+      "name": "12 Mini saladas surtidas",
+      "category": "Bollería de horno",
+      "old_price": 1.4,
+      "new_price": 1.4,
+      "change": 0.0
+    },
+    {
+      "name": "2 Baguettes para hornear",
+      "category": "Pan de horno",
+      "old_price": 1.3,
+      "new_price": 1.3,
+      "change": 0.0
+    },
+    {
+      "name": "24 Mini saladas surtidas",
+      "category": "Bollería de horno",
+      "old_price": 2.8,
+      "new_price": 2.8,
+      "change": 0.0
+    },
+    {
+      "name": "3 Baguettes masa madre",
+      "category": "Pan de horno",
+      "old_price": 1.5,
+      "new_price": 1.5,
+      "change": 0.0
+    },
+    {
+      "name": "3 Barras de pan",
+      "category": "Pan de horno",
+      "old_price": 1.19,
+      "new_price": 1.19,
+      "change": 0.0
+    },
+    {
+      "name": "3 Barras de pan rebanadas",
+      "category": "Pan de horno",
+      "old_price": 1.19,
+      "new_price": 1.19,
+      "change": 0.0
+    },
+    {
+      "name": "3 Bocadillos",
+      "category": "Pan de horno",
+      "old_price": 1.04,
+      "new_price": 1.04,
+      "change": 0.0
+    },
+    {
+      "name": "3 Vegetales para microondas lavados",
       "category": "Verdura",
-      "old_price": 0.34,
-      "new_price": 0.36,
-      "change": 5.88235294117645
+      "old_price": 1.95,
+      "new_price": 1.95,
+      "change": 0.0
     },
     {
-      "name": "Pimiento rojo",
-      "category": "Verdura",
-      "old_price": 0.52,
-      "new_price": 0.55,
-      "change": 5.769230769230771
-    },
-    {
-      "name": "Tomate canario",
-      "category": "Verdura",
-      "old_price": 0.35,
-      "new_price": 0.33,
-      "change": -5.714285714285705
-    },
-    {
-      "name": "Tomate ensalada",
-      "category": "Verdura",
-      "old_price": 0.58,
-      "new_price": 0.55,
-      "change": -5.172413793103436
-    },
-    {
-      "name": "Corvina a filetes",
-      "category": "Pescado fresco",
-      "old_price": 16.79,
-      "new_price": 17.6,
-      "change": 4.824300178677787
-    },
-    {
-      "name": "Corvina abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 16.79,
-      "new_price": 17.6,
-      "change": 4.824300178677787
-    },
-    {
-      "name": "Corvina limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 16.79,
-      "new_price": 17.6,
-      "change": 4.824300178677787
-    },
-    {
-      "name": "Naranja de mesa",
-      "category": "Fruta",
-      "old_price": 0.68,
-      "new_price": 0.65,
-      "change": -4.4117647058823595
-    },
-    {
-      "name": "Melocotón amarillo",
-      "category": "Fruta",
-      "old_price": 0.86,
-      "new_price": 0.83,
-      "change": -3.488372093023262
+      "name": "5 Barras de pan 51% integral",
+      "category": "Pan de horno",
+      "old_price": 1.35,
+      "new_price": 1.35,
+      "change": 0.0
     }
   ],
   "annual_partial": true,
-  "week": 0.10250035642170019
+  "week": 0.11406739788225195
 }
