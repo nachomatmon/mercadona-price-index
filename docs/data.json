@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-12T17:30:24+02:00",
+  "captured_at": "2026-10-13T16:15:36+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -282,94 +282,102 @@
       "week": 0.1141,
       "monthly": 0.1297,
       "annual": 0.2322
+    },
+    {
+      "date": "2026-10-13T16:14:20+02:00",
+      "index": 100.3622,
+      "products": 4170,
+      "week": 0.2155,
+      "monthly": 0.2521,
+      "annual": 0.3622
     }
   ],
   "movers": [
     {
-      "name": "11 Panecillos",
-      "category": "Pan de horno",
-      "old_price": 1.14,
-      "new_price": 1.14,
-      "change": 0.0
-    },
-    {
-      "name": "12 Artesanitos surtidos",
-      "category": "Bollería de horno",
-      "old_price": 3.5,
-      "new_price": 3.5,
-      "change": 0.0
-    },
-    {
-      "name": "12 Mini croissants de mantequilla",
-      "category": "Bollería de horno",
-      "old_price": 2.15,
-      "new_price": 2.15,
-      "change": 0.0
-    },
-    {
-      "name": "12 Mini saladas surtidas",
-      "category": "Bollería de horno",
-      "old_price": 1.4,
-      "new_price": 1.4,
-      "change": 0.0
-    },
-    {
-      "name": "2 Baguettes para hornear",
-      "category": "Pan de horno",
-      "old_price": 1.3,
-      "new_price": 1.3,
-      "change": 0.0
-    },
-    {
-      "name": "24 Mini saladas surtidas",
-      "category": "Bollería de horno",
-      "old_price": 2.8,
-      "new_price": 2.8,
-      "change": 0.0
-    },
-    {
-      "name": "3 Baguettes masa madre",
-      "category": "Pan de horno",
-      "old_price": 1.5,
-      "new_price": 1.5,
-      "change": 0.0
-    },
-    {
-      "name": "3 Barras de pan",
-      "category": "Pan de horno",
-      "old_price": 1.19,
-      "new_price": 1.19,
-      "change": 0.0
-    },
-    {
-      "name": "3 Barras de pan rebanadas",
-      "category": "Pan de horno",
-      "old_price": 1.19,
-      "new_price": 1.19,
-      "change": 0.0
-    },
-    {
-      "name": "3 Bocadillos",
-      "category": "Pan de horno",
-      "old_price": 1.04,
-      "new_price": 1.04,
-      "change": 0.0
-    },
-    {
-      "name": "3 Vegetales para microondas lavados",
-      "category": "Verdura",
+      "name": "Chocolate con leche Milka",
+      "category": "Chocolate",
       "old_price": 1.95,
-      "new_price": 1.95,
-      "change": 0.0
+      "new_price": 1.25,
+      "change": -35.89743589743589
     },
     {
-      "name": "5 Barras de pan 51% integral",
-      "category": "Pan de horno",
-      "old_price": 1.35,
-      "new_price": 1.35,
-      "change": 0.0
+      "name": "Chocolate con leche Milka galleta",
+      "category": "Chocolate",
+      "old_price": 2.95,
+      "new_price": 3.95,
+      "change": 33.89830508474576
+    },
+    {
+      "name": "Refresco té sabor limón Fuze Tea",
+      "category": "Refresco de té y sin gas",
+      "old_price": 1.49,
+      "new_price": 1.99,
+      "change": 33.55704697986577
+    },
+    {
+      "name": "Barritas de galleta bañadas en chocolate con leche Chips Ahoy",
+      "category": "Galletas",
+      "old_price": 1.5,
+      "new_price": 1.0,
+      "change": -33.333333333333336
+    },
+    {
+      "name": "Bebida energética Monster Energy Ultra zero azúcar",
+      "category": "Isotónico y energético",
+      "old_price": 5.28,
+      "new_price": 6.68,
+      "change": 26.515151515151516
+    },
+    {
+      "name": "Bebida isotónica limón Aquarius zero azúcar",
+      "category": "Isotónico y energético",
+      "old_price": 1.69,
+      "new_price": 2.1,
+      "change": 24.26035502958581
+    },
+    {
+      "name": "Bebida isotónica melocotón rojo Aquarius",
+      "category": "Isotónico y energético",
+      "old_price": 1.69,
+      "new_price": 2.1,
+      "change": 24.26035502958581
+    },
+    {
+      "name": "Bebida energética Monster Energy Ultra zero azúcar",
+      "category": "Isotónico y energético",
+      "old_price": 1.45,
+      "new_price": 1.79,
+      "change": 23.448275862068968
+    },
+    {
+      "name": "Bebida energética Mango Loco Juiced Monster Energy",
+      "category": "Isotónico y energético",
+      "old_price": 5.76,
+      "new_price": 7.08,
+      "change": 22.916666666666675
+    },
+    {
+      "name": "Bebida energética Monster Energy",
+      "category": "Isotónico y energético",
+      "old_price": 5.76,
+      "new_price": 7.08,
+      "change": 22.916666666666675
+    },
+    {
+      "name": "Bebida energética Mango Loco Juiced Monster Energy",
+      "category": "Isotónico y energético",
+      "old_price": 1.55,
+      "new_price": 1.89,
+      "change": 21.93548387096773
+    },
+    {
+      "name": "Bebida energética Monster Energy",
+      "category": "Isotónico y energético",
+      "old_price": 1.55,
+      "new_price": 1.89,
+      "change": 21.93548387096773
     }
   ],
   "annual_partial": true,
-  "week": 0.11406739788225195
+  "week": 0.21550822667916236
 }
