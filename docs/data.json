@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-15T13:33:14+02:00",
+  "captured_at": "2026-10-16T13:28:41+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -306,94 +306,102 @@
       "week": 0.2374,
       "monthly": 0.3114,
       "annual": 0.4226
+    },
+    {
+      "date": "2026-10-16T13:26:59+02:00",
+      "index": 100.4207,
+      "products": 4167,
+      "week": 0.2124,
+      "monthly": 0.3327,
+      "annual": 0.4207
     }
   ],
   "movers": [
     {
-      "name": "Granada",
-      "category": "Fruta",
-      "old_price": 1.14,
-      "new_price": 1.56,
-      "change": 36.84210526315792
-    },
-    {
-      "name": "Detergente ropa todo en 1 Ariel Pods en cápsulas",
+      "name": "Detergente ropa Ariel líquido",
       "category": "Detergente y suavizante ropa",
-      "old_price": 6.9,
-      "new_price": 4.95,
-      "change": -28.260869565217394
+      "old_price": 5.95,
+      "new_price": 7.95,
+      "change": 33.613445378151255
     },
     {
-      "name": "Pimiento rojo",
-      "category": "Verdura",
-      "old_price": 0.64,
-      "new_price": 0.81,
-      "change": 26.5625
+      "name": "Cerveza especial San Miguel",
+      "category": "Cerveza",
+      "old_price": 6.84,
+      "new_price": 4.8,
+      "change": -29.824561403508774
     },
     {
-      "name": "Enjuague bucal cuidado total Listerine menta",
-      "category": "Higiene bucal",
-      "old_price": 5.15,
-      "new_price": 3.95,
-      "change": -23.300970873786408
+      "name": "Lubina a filetes sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 3.88,
+      "new_price": 4.48,
+      "change": 15.463917525773208
     },
     {
-      "name": "Enjuague bucal dientes y encías Listerine menta",
-      "category": "Higiene bucal",
-      "old_price": 5.15,
-      "new_price": 3.95,
-      "change": -23.300970873786408
+      "name": "Lubina abierta a la espalda con espinas y con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 3.88,
+      "new_price": 4.48,
+      "change": 15.463917525773208
     },
     {
-      "name": "Bebida láctea natural Actimel",
-      "category": "Yogures líquidos",
-      "old_price": 4.95,
-      "new_price": 5.99,
-      "change": 21.01010101010101
+      "name": "Lubina abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 3.88,
+      "new_price": 4.48,
+      "change": 15.463917525773208
     },
     {
-      "name": "Bebida láctea natural Actimel 0% MG 0% azúcares añadidos",
-      "category": "Yogures líquidos",
-      "old_price": 4.95,
-      "new_price": 5.99,
-      "change": 21.01010101010101
+      "name": "Lubina limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 3.88,
+      "new_price": 4.48,
+      "change": 15.463917525773208
     },
     {
-      "name": "Bífidus natural edulcorado probióticos Activia 0% MG 0% azúcares añadidos",
-      "category": "Bífidus",
-      "old_price": 3.99,
-      "new_price": 3.3,
-      "change": -17.29323308270677
+      "name": "Lubina sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 3.88,
+      "new_price": 4.48,
+      "change": 15.463917525773208
     },
     {
-      "name": "Bífidus natural probióticos Activia 0% MG  0% azúcares añadidos",
-      "category": "Bífidus",
-      "old_price": 3.99,
-      "new_price": 3.3,
-      "change": -17.29323308270677
+      "name": "Bombones delicias de avellana Delizze Hacendado",
+      "category": "Chocolate",
+      "old_price": 4.2,
+      "new_price": 3.7,
+      "change": -11.904761904761907
     },
     {
-      "name": "Golosinas ojos rellenos Halloween Trolli Spooky Balls",
-      "category": "Golosinas",
-      "old_price": 1.6,
-      "new_price": 1.35,
-      "change": -15.625
+      "name": "Cerveza especial Estrella Galicia",
+      "category": "Cerveza",
+      "old_price": 8.16,
+      "new_price": 7.32,
+      "change": -10.29411764705882
     },
     {
-      "name": "Postre de soja sabor arándanos Alpro",
-      "category": "Postres de soja",
-      "old_price": 2.0,
-      "new_price": 2.3,
-      "change": 14.999999999999991
+      "name": "Sepia limpia pequeña",
+      "category": "Pescado fresco",
+      "old_price": 2.79,
+      "new_price": 2.51,
+      "change": -10.035842293906816
     },
     {
-      "name": "Postre de soja sabor lima limón Alpro",
-      "category": "Postres de soja",
-      "old_price": 2.0,
-      "new_price": 2.3,
-      "change": 14.999999999999991
+      "name": "Melocotón amarillo",
+      "category": "Fruta",
+      "old_price": 0.73,
+      "new_price": 0.66,
+      "change": -9.589041095890405
+    },
+    {
+      "name": "Agua mineral grande Bezoya",
+      "category": "Agua",
+      "old_price": 0.69,
+      "new_price": 0.75,
+      "change": 8.69565217391306
     }
   ],
   "annual_partial": true,
-  "week": 0.23744662308158127
+  "week": 0.21243355101616146
 }
