@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-16T13:28:41+02:00",
+  "captured_at": "2026-10-17T12:47:51+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -314,94 +314,102 @@
       "week": 0.2124,
       "monthly": 0.3327,
       "annual": 0.4207
+    },
+    {
+      "date": "2026-10-17T12:46:31+02:00",
+      "index": 100.3979,
+      "products": 4161,
+      "week": 0.1942,
+      "monthly": 0.3216,
+      "annual": 0.3979
     }
   ],
   "movers": [
     {
-      "name": "Detergente ropa Ariel líquido",
-      "category": "Detergente y suavizante ropa",
-      "old_price": 5.95,
-      "new_price": 7.95,
-      "change": 33.613445378151255
-    },
-    {
-      "name": "Cerveza especial San Miguel",
+      "name": "Cerveza Bohemia Estrella Damm reserva",
       "category": "Cerveza",
-      "old_price": 6.84,
-      "new_price": 4.8,
-      "change": -29.824561403508774
+      "old_price": 8.34,
+      "new_price": 7.14,
+      "change": -14.388489208633093
     },
     {
-      "name": "Lubina a filetes sin cabeza y sin espina",
+      "name": "Cerveza sin gluten 0,0% sin alcohol Free Damm",
+      "category": "Cerveza sin alcohol",
+      "old_price": 0.8,
+      "new_price": 0.69,
+      "change": -13.750000000000007
+    },
+    {
+      "name": "Pimiento verde freír",
+      "category": "Verdura",
+      "old_price": 0.23,
+      "new_price": 0.2,
+      "change": -13.043478260869568
+    },
+    {
+      "name": "Cerveza sin gluten 0,0% sin alcohol Free Damm",
+      "category": "Cerveza sin alcohol",
+      "old_price": 9.48,
+      "new_price": 8.28,
+      "change": -12.658227848101278
+    },
+    {
+      "name": "Trucha abierta en libro con cabeza",
       "category": "Pescado fresco",
-      "old_price": 3.88,
-      "new_price": 4.48,
-      "change": 15.463917525773208
+      "old_price": 7.07,
+      "new_price": 7.88,
+      "change": 11.456859971711442
     },
     {
-      "name": "Lubina abierta a la espalda con espinas y con cabeza",
+      "name": "Trucha abierta en libro sin cabeza y sin espina",
       "category": "Pescado fresco",
-      "old_price": 3.88,
-      "new_price": 4.48,
-      "change": 15.463917525773208
+      "old_price": 7.07,
+      "new_price": 7.88,
+      "change": 11.456859971711442
     },
     {
-      "name": "Lubina abierta en libro sin cabeza y sin espina",
+      "name": "Trucha sin aletas",
       "category": "Pescado fresco",
-      "old_price": 3.88,
-      "new_price": 4.48,
-      "change": 15.463917525773208
+      "old_price": 7.07,
+      "new_price": 7.88,
+      "change": 11.456859971711442
     },
     {
-      "name": "Lubina limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 3.88,
-      "new_price": 4.48,
-      "change": 15.463917525773208
+      "name": "Mandarina",
+      "category": "Fruta",
+      "old_price": 0.31,
+      "new_price": 0.28,
+      "change": -9.677419354838701
     },
     {
-      "name": "Lubina sin limpiar",
-      "category": "Pescado fresco",
-      "old_price": 3.88,
-      "new_price": 4.48,
-      "change": 15.463917525773208
+      "name": "Mayonesa en sobres individuales Hacendado",
+      "category": "Mayonesa, ketchup y mostaza",
+      "old_price": 1.4,
+      "new_price": 1.5,
+      "change": 7.14285714285714
     },
     {
-      "name": "Bombones delicias de avellana Delizze Hacendado",
-      "category": "Chocolate",
-      "old_price": 4.2,
-      "new_price": 3.7,
-      "change": -11.904761904761907
-    },
-    {
-      "name": "Cerveza especial Estrella Galicia",
-      "category": "Cerveza",
-      "old_price": 8.16,
-      "new_price": 7.32,
-      "change": -10.29411764705882
-    },
-    {
-      "name": "Sepia limpia pequeña",
-      "category": "Pescado fresco",
-      "old_price": 2.79,
-      "new_price": 2.51,
-      "change": -10.035842293906816
-    },
-    {
-      "name": "Melocotón amarillo",
+      "name": "Naranja de mesa",
       "category": "Fruta",
       "old_price": 0.73,
-      "new_price": 0.66,
-      "change": -9.589041095890405
+      "new_price": 0.78,
+      "change": 6.849315068493156
     },
     {
-      "name": "Agua mineral grande Bezoya",
-      "category": "Agua",
-      "old_price": 0.69,
-      "new_price": 0.75,
-      "change": 8.69565217391306
+      "name": "Plátano de Canarias IGP",
+      "category": "Fruta",
+      "old_price": 0.45,
+      "new_price": 0.48,
+      "change": 6.666666666666665
+    },
+    {
+      "name": "Berenjena",
+      "category": "Verdura",
+      "old_price": 0.81,
+      "new_price": 0.86,
+      "change": 6.1728395061728225
     }
   ],
   "annual_partial": true,
-  "week": 0.21243355101616146
+  "week": 0.19422656899229196
 }
