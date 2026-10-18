@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-17T12:47:51+02:00",
+  "captured_at": "2026-10-18T13:09:41+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -322,94 +322,102 @@
       "week": 0.1942,
       "monthly": 0.3216,
       "annual": 0.3979
+    },
+    {
+      "date": "2026-10-18T13:08:19+02:00",
+      "index": 100.3981,
+      "products": 4158,
+      "week": 0.2206,
+      "monthly": 0.3166,
+      "annual": 0.3981
     }
   ],
   "movers": [
     {
-      "name": "Cerveza Bohemia Estrella Damm reserva",
-      "category": "Cerveza",
-      "old_price": 8.34,
-      "new_price": 7.14,
-      "change": -14.388489208633093
-    },
-    {
-      "name": "Cerveza sin gluten 0,0% sin alcohol Free Damm",
-      "category": "Cerveza sin alcohol",
-      "old_price": 0.8,
-      "new_price": 0.69,
-      "change": -13.750000000000007
-    },
-    {
-      "name": "Pimiento verde freír",
-      "category": "Verdura",
-      "old_price": 0.23,
-      "new_price": 0.2,
-      "change": -13.043478260869568
-    },
-    {
-      "name": "Cerveza sin gluten 0,0% sin alcohol Free Damm",
-      "category": "Cerveza sin alcohol",
-      "old_price": 9.48,
-      "new_price": 8.28,
-      "change": -12.658227848101278
-    },
-    {
-      "name": "Trucha abierta en libro con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 7.07,
-      "new_price": 7.88,
-      "change": 11.456859971711442
-    },
-    {
-      "name": "Trucha abierta en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 7.07,
-      "new_price": 7.88,
-      "change": 11.456859971711442
-    },
-    {
-      "name": "Trucha sin aletas",
-      "category": "Pescado fresco",
-      "old_price": 7.07,
-      "new_price": 7.88,
-      "change": 11.456859971711442
-    },
-    {
-      "name": "Mandarina",
+      "name": "Lima",
       "category": "Fruta",
       "old_price": 0.31,
-      "new_price": 0.28,
-      "change": -9.677419354838701
+      "new_price": 0.26,
+      "change": -16.129032258064512
     },
     {
-      "name": "Mayonesa en sobres individuales Hacendado",
-      "category": "Mayonesa, ketchup y mostaza",
-      "old_price": 1.4,
-      "new_price": 1.5,
-      "change": 7.14285714285714
-    },
-    {
-      "name": "Naranja de mesa",
+      "name": "Granada",
       "category": "Fruta",
-      "old_price": 0.73,
-      "new_price": 0.78,
-      "change": 6.849315068493156
+      "old_price": 1.53,
+      "new_price": 1.38,
+      "change": -9.80392156862746
     },
     {
-      "name": "Plátano de Canarias IGP",
+      "name": "Kiwi verde",
       "category": "Fruta",
-      "old_price": 0.45,
-      "new_price": 0.48,
-      "change": 6.666666666666665
+      "old_price": 0.51,
+      "new_price": 0.56,
+      "change": 9.80392156862746
+    },
+    {
+      "name": "Limón",
+      "category": "Fruta",
+      "old_price": 0.42,
+      "new_price": 0.39,
+      "change": -7.14285714285714
+    },
+    {
+      "name": "Tomate canario",
+      "category": "Verdura",
+      "old_price": 0.33,
+      "new_price": 0.35,
+      "change": 6.060606060606055
     },
     {
       "name": "Berenjena",
       "category": "Verdura",
-      "old_price": 0.81,
-      "new_price": 0.86,
-      "change": 6.1728395061728225
+      "old_price": 0.86,
+      "new_price": 0.81,
+      "change": -5.813953488372081
+    },
+    {
+      "name": "Salmón media pieza a rodajas",
+      "category": "Pescado fresco",
+      "old_price": 13.36,
+      "new_price": 13.91,
+      "change": 4.116766467065869
+    },
+    {
+      "name": "Salmón media pieza abierto en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 13.36,
+      "new_price": 13.91,
+      "change": 4.116766467065869
+    },
+    {
+      "name": "Salmón media pieza sin aletas y sin escamas",
+      "category": "Pescado fresco",
+      "old_price": 13.36,
+      "new_price": 13.91,
+      "change": 4.116766467065869
+    },
+    {
+      "name": "Pimiento rojo",
+      "category": "Verdura",
+      "old_price": 0.87,
+      "new_price": 0.9,
+      "change": 3.4482758620689724
+    },
+    {
+      "name": "Aguacate",
+      "category": "Fruta",
+      "old_price": 1.6,
+      "new_price": 1.55,
+      "change": -3.125
+    },
+    {
+      "name": "Bacalao media pieza a rodajas",
+      "category": "Pescado fresco",
+      "old_price": 18.7,
+      "new_price": 18.15,
+      "change": -2.941176470588236
     }
   ],
   "annual_partial": true,
-  "week": 0.19422656899229196
+  "week": 0.22064588648071037
 }
