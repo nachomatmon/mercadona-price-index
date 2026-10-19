@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-18T13:09:41+02:00",
+  "captured_at": "2026-10-19T15:21:13+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -330,94 +330,102 @@
       "week": 0.2206,
       "monthly": 0.3166,
       "annual": 0.3981
+    },
+    {
+      "date": "2026-10-19T15:19:51+02:00",
+      "index": 100.4096,
+      "products": 4157,
+      "week": 0.2355,
+      "monthly": 0.3316,
+      "annual": 0.4096
     }
   ],
   "movers": [
     {
-      "name": "Lima",
-      "category": "Fruta",
-      "old_price": 0.31,
-      "new_price": 0.26,
-      "change": -16.129032258064512
+      "name": "Surtido bombones Caja Roja Nestlé",
+      "category": "Chocolate",
+      "old_price": 5.25,
+      "new_price": 6.95,
+      "change": 32.38095238095238
     },
     {
-      "name": "Granada",
-      "category": "Fruta",
-      "old_price": 1.53,
-      "new_price": 1.38,
-      "change": -9.80392156862746
-    },
-    {
-      "name": "Kiwi verde",
-      "category": "Fruta",
-      "old_price": 0.51,
+      "name": "Calabacín verde",
+      "category": "Verdura",
+      "old_price": 0.76,
       "new_price": 0.56,
-      "change": 9.80392156862746
+      "change": -26.315789473684205
     },
     {
-      "name": "Limón",
-      "category": "Fruta",
-      "old_price": 0.42,
-      "new_price": 0.39,
-      "change": -7.14285714285714
+      "name": "Cereales copos de trigo integral y arroz Special K Classic",
+      "category": "Cereales",
+      "old_price": 3.25,
+      "new_price": 2.4,
+      "change": -26.15384615384616
     },
     {
-      "name": "Tomate canario",
-      "category": "Verdura",
-      "old_price": 0.33,
-      "new_price": 0.35,
-      "change": 6.060606060606055
+      "name": "Barritas de avena y chocolate negro Crunchy Nature Valley",
+      "category": "Cereales",
+      "old_price": 2.6,
+      "new_price": 1.95,
+      "change": -25.0
     },
     {
-      "name": "Berenjena",
-      "category": "Verdura",
-      "old_price": 0.86,
-      "new_price": 0.81,
-      "change": -5.813953488372081
+      "name": "Salsa Original Ligeresa",
+      "category": "Mayonesa, ketchup y mostaza",
+      "old_price": 2.0,
+      "new_price": 2.5,
+      "change": 25.0
     },
     {
-      "name": "Salmón media pieza a rodajas",
-      "category": "Pescado fresco",
-      "old_price": 13.36,
-      "new_price": 13.91,
-      "change": 4.116766467065869
+      "name": "Galletas caramelizadas Lotus Biscoff",
+      "category": "Galletas",
+      "old_price": 1.3,
+      "new_price": 1.6,
+      "change": 23.076923076923084
     },
     {
-      "name": "Salmón media pieza abierto en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 13.36,
-      "new_price": 13.91,
-      "change": 4.116766467065869
+      "name": "Cerveza doble malta Voll-Damm",
+      "category": "Cerveza",
+      "old_price": 5.1,
+      "new_price": 6.24,
+      "change": 22.352941176470598
     },
     {
-      "name": "Salmón media pieza sin aletas y sin escamas",
-      "category": "Pescado fresco",
-      "old_price": 13.36,
-      "new_price": 13.91,
-      "change": 4.116766467065869
+      "name": "Margarina Flora Original",
+      "category": "Mantequilla y margarina",
+      "old_price": 2.69,
+      "new_price": 3.19,
+      "change": 18.587360594795534
     },
     {
-      "name": "Pimiento rojo",
-      "category": "Verdura",
-      "old_price": 0.87,
-      "new_price": 0.9,
-      "change": 3.4482758620689724
+      "name": "Cacao soluble instantáneo Nesquik",
+      "category": "Cacao soluble y chocolate a la taza",
+      "old_price": 15.85,
+      "new_price": 12.95,
+      "change": -18.296529968454255
     },
     {
-      "name": "Aguacate",
-      "category": "Fruta",
-      "old_price": 1.6,
-      "new_price": 1.55,
-      "change": -3.125
+      "name": "Galletas tostadas Tosta Rica",
+      "category": "Galletas",
+      "old_price": 2.5,
+      "new_price": 2.95,
+      "change": 18.000000000000014
     },
     {
-      "name": "Bacalao media pieza a rodajas",
-      "category": "Pescado fresco",
-      "old_price": 18.7,
-      "new_price": 18.15,
-      "change": -2.941176470588236
+      "name": "Cerveza doble malta Voll-Damm",
+      "category": "Cerveza",
+      "old_price": 0.89,
+      "new_price": 1.04,
+      "change": 16.85393258426966
+    },
+    {
+      "name": "Empanados vegetales con proteína de soja Tivall",
+      "category": "Platos preparados calientes",
+      "old_price": 2.4,
+      "new_price": 2.8,
+      "change": 16.666666666666675
     }
   ],
   "annual_partial": true,
-  "week": 0.22064588648071037
+  "week": 0.23553211138705876
 }
