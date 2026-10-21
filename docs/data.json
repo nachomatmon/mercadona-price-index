@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-20T13:41:26+02:00",
+  "captured_at": "2026-10-21T13:53:06+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -346,94 +346,102 @@
       "week": 0.1078,
       "monthly": 0.3347,
       "annual": 0.4074
+    },
+    {
+      "date": "2026-10-21T13:51:49+02:00",
+      "index": 100.3125,
+      "products": 4145,
+      "week": -0.0515,
+      "monthly": 0.2373,
+      "annual": 0.3125
     }
   ],
   "movers": [
     {
-      "name": "Cerveza tostada Turia",
+      "name": "Corvina a filetes",
+      "category": "Pescado fresco",
+      "old_price": 21.39,
+      "new_price": 13.8,
+      "change": -35.483870967741936
+    },
+    {
+      "name": "Corvina abierta a la espalda con espinas y con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 21.39,
+      "new_price": 13.8,
+      "change": -35.483870967741936
+    },
+    {
+      "name": "Corvina limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 21.39,
+      "new_price": 13.8,
+      "change": -35.483870967741936
+    },
+    {
+      "name": "Cerveza Estrella Damm",
       "category": "Cerveza",
-      "old_price": 10.2,
-      "new_price": 8.28,
-      "change": -18.823529411764707
+      "old_price": 8.28,
+      "new_price": 10.44,
+      "change": 26.086956521739136
     },
     {
-      "name": "Cerveza tostada Turia",
+      "name": "Cerveza Estrella Damm",
       "category": "Cerveza",
-      "old_price": 0.85,
-      "new_price": 0.72,
-      "change": -15.294117647058824
+      "old_price": 0.75,
+      "new_price": 0.89,
+      "change": 18.666666666666675
     },
     {
-      "name": "Cerveza Heineken",
-      "category": "Cerveza",
-      "old_price": 0.79,
-      "new_price": 0.68,
-      "change": -13.924050632911388
-    },
-    {
-      "name": "Pera Ercolina",
-      "category": "Fruta",
-      "old_price": 0.23,
-      "new_price": 0.26,
-      "change": 13.043478260869556
-    },
-    {
-      "name": "Bebida espirituosa centenario Terry",
-      "category": "Licores",
-      "old_price": 9.75,
-      "new_price": 8.75,
-      "change": -10.256410256410254
+      "name": "Refresco Coca-Cola",
+      "category": "Refresco de cola",
+      "old_price": 1.8,
+      "new_price": 1.6,
+      "change": -11.111111111111105
     },
     {
       "name": "Manzana roja acidulce",
       "category": "Fruta",
-      "old_price": 0.5,
-      "new_price": 0.55,
-      "change": 10.000000000000009
+      "old_price": 0.55,
+      "new_price": 0.6,
+      "change": 9.090909090909083
     },
     {
-      "name": "Kiwi verde",
+      "name": "Ciruela amarilla",
       "category": "Fruta",
-      "old_price": 0.56,
-      "new_price": 0.51,
-      "change": -8.92857142857143
-    },
-    {
-      "name": "Tomate pera",
-      "category": "Verdura",
-      "old_price": 0.24,
-      "new_price": 0.22,
-      "change": -8.333333333333325
-    },
-    {
-      "name": "Limón",
-      "category": "Fruta",
-      "old_price": 0.39,
+      "old_price": 0.46,
       "new_price": 0.42,
-      "change": 7.692307692307687
+      "change": -8.695652173913048
     },
     {
-      "name": "Mandarina",
+      "name": "Melocotón amarillo",
       "category": "Fruta",
-      "old_price": 0.28,
-      "new_price": 0.26,
-      "change": -7.142857142857151
+      "old_price": 0.69,
+      "new_price": 0.73,
+      "change": 5.797101449275366
     },
     {
-      "name": "Pera Conferencia",
+      "name": "Tomate canario",
+      "category": "Verdura",
+      "old_price": 0.35,
+      "new_price": 0.37,
+      "change": 5.714285714285716
+    },
+    {
+      "name": "Manzana Golden",
       "category": "Fruta",
-      "old_price": 0.45,
-      "new_price": 0.48,
-      "change": 6.666666666666665
+      "old_price": 0.4,
+      "new_price": 0.42,
+      "change": 4.999999999999982
     },
     {
-      "name": "Fideo cabello de ángel Hacendado",
-      "category": "Pasta y fideos",
-      "old_price": 0.8,
-      "new_price": 0.85,
-      "change": 6.25
+      "name": "Mango",
+      "category": "Fruta",
+      "old_price": 1.22,
+      "new_price": 1.28,
+      "change": 4.918032786885251
     }
   ],
   "annual_partial": true,
-  "week": 0.1077790986227285
+  "week": -0.051495666630387404
 }
