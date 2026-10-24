@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-23T13:43:06+02:00",
+  "captured_at": "2026-10-24T13:05:43+02:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -370,94 +370,102 @@
       "week": -0.1208,
       "monthly": 0.1885,
       "annual": 0.3047
+    },
+    {
+      "date": "2026-10-24T13:04:04+02:00",
+      "index": 100.2875,
+      "products": 4132,
+      "week": -0.1302,
+      "monthly": 0.1713,
+      "annual": 0.2875
     }
   ],
   "movers": [
     {
-      "name": "Batata",
-      "category": "Verdura",
-      "old_price": 1.02,
-      "new_price": 0.66,
-      "change": -35.29411764705882
-    },
-    {
-      "name": "Castañas",
-      "category": "Verdura",
-      "old_price": 3.75,
-      "new_price": 2.5,
-      "change": -33.333333333333336
-    },
-    {
-      "name": "Barritas con proteínas sabor coco y chocolate Enervit Sport",
-      "category": "Fitoterapia",
-      "old_price": 3.6,
-      "new_price": 2.95,
-      "change": -18.055555555555557
-    },
-    {
-      "name": "Kaki",
-      "category": "Fruta",
-      "old_price": 0.84,
-      "new_price": 0.72,
-      "change": -14.28571428571429
-    },
-    {
-      "name": "Bocaditos de carne y pescado en salsa gato adulto Delikuit",
-      "category": "Gato",
-      "old_price": 6.65,
-      "new_price": 5.75,
-      "change": -13.533834586466165
-    },
-    {
       "name": "Medio melón piel de sapo",
       "category": "Fruta",
-      "old_price": 4.0,
-      "new_price": 4.39,
-      "change": 9.749999999999993
-    },
-    {
-      "name": "Vino tinto roble Pata Negra DO Ribera del Duero",
-      "category": "Vino tinto",
-      "old_price": 3.25,
-      "new_price": 2.95,
-      "change": -9.23076923076922
-    },
-    {
-      "name": "Mango",
-      "category": "Fruta",
-      "old_price": 1.33,
-      "new_price": 1.45,
-      "change": 9.022556390977442
+      "old_price": 4.39,
+      "new_price": 3.95,
+      "change": -10.022779043280172
     },
     {
       "name": "Mandarina",
       "category": "Fruta",
-      "old_price": 0.26,
-      "new_price": 0.28,
-      "change": 7.692307692307709
+      "old_price": 0.28,
+      "new_price": 0.26,
+      "change": -7.142857142857151
     },
     {
-      "name": "Corvina a filetes",
-      "category": "Pescado fresco",
-      "old_price": 11.5,
-      "new_price": 12.19,
-      "change": 6.000000000000005
+      "name": "Melón piel de sapo",
+      "category": "Fruta",
+      "old_price": 7.52,
+      "new_price": 7.0,
+      "change": -6.914893617021267
     },
     {
-      "name": "Corvina abierta a la espalda con espinas y con cabeza",
+      "name": "Lubina a filetes sin cabeza y sin espina",
       "category": "Pescado fresco",
-      "old_price": 11.5,
-      "new_price": 12.19,
-      "change": 6.000000000000005
+      "old_price": 4.58,
+      "new_price": 4.28,
+      "change": -6.550218340611346
     },
     {
-      "name": "Corvina limpia con cabeza",
+      "name": "Lubina abierta a la espalda con espinas y con cabeza",
       "category": "Pescado fresco",
-      "old_price": 11.5,
-      "new_price": 12.19,
-      "change": 6.000000000000005
+      "old_price": 4.58,
+      "new_price": 4.28,
+      "change": -6.550218340611346
+    },
+    {
+      "name": "Lubina abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 4.58,
+      "new_price": 4.28,
+      "change": -6.550218340611346
+    },
+    {
+      "name": "Lubina limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 4.58,
+      "new_price": 4.28,
+      "change": -6.550218340611346
+    },
+    {
+      "name": "Lubina sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 4.58,
+      "new_price": 4.28,
+      "change": -6.550218340611346
+    },
+    {
+      "name": "Plátano de Canarias IGP",
+      "category": "Fruta",
+      "old_price": 0.48,
+      "new_price": 0.45,
+      "change": -6.249999999999989
+    },
+    {
+      "name": "Pera Conferencia",
+      "category": "Fruta",
+      "old_price": 0.53,
+      "new_price": 0.5,
+      "change": -5.660377358490576
+    },
+    {
+      "name": "Pepino",
+      "category": "Verdura",
+      "old_price": 0.36,
+      "new_price": 0.34,
+      "change": -5.5555555555555465
+    },
+    {
+      "name": "Melocotón amarillo",
+      "category": "Fruta",
+      "old_price": 0.73,
+      "new_price": 0.69,
+      "change": -5.47945205479452
     }
   ],
   "annual_partial": true,
-  "week": -0.12081412413466808
+  "week": -0.13017056097071134
 }
