@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-25T12:34:30+01:00",
+  "captured_at": "2026-10-26T14:07:47+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -386,94 +386,102 @@
       "week": -0.139,
       "monthly": 0.1532,
       "annual": 0.2664
+    },
+    {
+      "date": "2026-10-26T14:06:23+01:00",
+      "index": 100.3437,
+      "products": 4125,
+      "week": -0.1203,
+      "monthly": 0.2297,
+      "annual": 0.3437
     }
   ],
   "movers": [
     {
-      "name": "Pera Ercolina",
-      "category": "Fruta",
-      "old_price": 0.26,
-      "new_price": 0.23,
-      "change": -11.538461538461542
+      "name": "Chocolate con leche Milka",
+      "category": "Chocolate",
+      "old_price": 1.25,
+      "new_price": 1.95,
+      "change": 56.00000000000001
     },
     {
-      "name": "Pimiento verde freír",
-      "category": "Verdura",
-      "old_price": 0.2,
-      "new_price": 0.18,
-      "change": -10.000000000000009
+      "name": "Refresco Fanta naranja",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 1.0,
+      "new_price": 1.55,
+      "change": 55.00000000000001
     },
     {
-      "name": "Tomate pera",
-      "category": "Verdura",
-      "old_price": 0.22,
-      "new_price": 0.24,
-      "change": 9.090909090909083
+      "name": "Barritas de galleta bañadas en chocolate con leche Chips Ahoy",
+      "category": "Galletas",
+      "old_price": 1.0,
+      "new_price": 1.5,
+      "change": 50.0
     },
     {
-      "name": "Medio melón piel de sapo",
-      "category": "Fruta",
-      "old_price": 3.95,
-      "new_price": 3.64,
-      "change": -7.848101265822782
+      "name": "Refresco Fanta limón zero azúcares añadidos",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 4.24,
+      "new_price": 6.16,
+      "change": 45.28301886792452
     },
     {
-      "name": "Limón",
-      "category": "Fruta",
-      "old_price": 0.44,
-      "new_price": 0.47,
-      "change": 6.818181818181812
+      "name": "Refresco Fanta naranja zero azúcares añadidos",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 4.24,
+      "new_price": 6.16,
+      "change": 45.28301886792452
     },
     {
-      "name": "Melón piel de sapo",
-      "category": "Fruta",
-      "old_price": 7.0,
-      "new_price": 6.56,
-      "change": -6.2857142857142945
+      "name": "Aperitivo de patata sabor crema agria y cebolla Pringles",
+      "category": "Patatas fritas y snacks",
+      "old_price": 1.9,
+      "new_price": 2.65,
+      "change": 39.47368421052633
     },
     {
-      "name": "Tomate canario",
-      "category": "Verdura",
-      "old_price": 0.37,
-      "new_price": 0.35,
-      "change": -5.405405405405405
+      "name": "Aperitivo de patata sabor original Pringles",
+      "category": "Patatas fritas y snacks",
+      "old_price": 1.9,
+      "new_price": 2.65,
+      "change": 39.47368421052633
     },
     {
-      "name": "Patata",
-      "category": "Verdura",
-      "old_price": 0.38,
-      "new_price": 0.36,
-      "change": -5.263157894736848
+      "name": "Tónica Zero Schweppes",
+      "category": "Tónica y bitter",
+      "old_price": 5.6,
+      "new_price": 7.68,
+      "change": 37.142857142857146
     },
     {
-      "name": "Yuca",
-      "category": "Verdura",
-      "old_price": 2.11,
-      "new_price": 2.01,
-      "change": -4.739336492891
+      "name": "Tónica original Schweppes",
+      "category": "Tónica y bitter",
+      "old_price": 5.6,
+      "new_price": 7.68,
+      "change": 37.142857142857146
     },
     {
-      "name": "Melocotón amarillo",
-      "category": "Fruta",
-      "old_price": 0.69,
-      "new_price": 0.66,
-      "change": -4.347826086956507
+      "name": "Queso untar light Philadelphia",
+      "category": "Queso untable, fresco y especialidades",
+      "old_price": 2.9,
+      "new_price": 1.95,
+      "change": -32.758620689655174
     },
     {
-      "name": "Berenjena",
-      "category": "Verdura",
-      "old_price": 0.92,
-      "new_price": 0.95,
-      "change": 3.2608695652173836
+      "name": "Queso untar original Philadelphia",
+      "category": "Queso untable, fresco y especialidades",
+      "old_price": 2.9,
+      "new_price": 1.95,
+      "change": -32.758620689655174
     },
     {
-      "name": "Salmón media pieza a rodajas",
-      "category": "Pescado fresco",
-      "old_price": 13.58,
-      "new_price": 13.14,
-      "change": -3.2400589101620025
+      "name": "Fruta + leche tropical Bifrutas",
+      "category": "Fruta variada",
+      "old_price": 2.0,
+      "new_price": 2.59,
+      "change": 29.499999999999993
     }
   ],
   "annual_partial": true,
-  "week": -0.13901571675687308
+  "week": -0.12034051358882891
 }
