@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-26T14:07:47+01:00",
+  "captured_at": "2026-10-27T13:16:05+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -394,94 +394,102 @@
       "week": -0.1203,
       "monthly": 0.2297,
       "annual": 0.3437
+    },
+    {
+      "date": "2026-10-27T13:14:45+01:00",
+      "index": 100.3972,
+      "products": 4120,
+      "week": -0.0834,
+      "monthly": 0.2705,
+      "annual": 0.3972
     }
   ],
   "movers": [
     {
-      "name": "Chocolate con leche Milka",
-      "category": "Chocolate",
-      "old_price": 1.25,
-      "new_price": 1.95,
-      "change": 56.00000000000001
+      "name": "Mantecado casero La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.21,
+      "new_price": 0.3,
+      "change": 42.85714285714286
     },
     {
-      "name": "Refresco Fanta naranja",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 1.0,
-      "new_price": 1.55,
-      "change": 55.00000000000001
+      "name": "Hojaldrada al chocolate La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.19,
+      "new_price": 0.27,
+      "change": 42.10526315789473
     },
     {
-      "name": "Barritas de galleta bañadas en chocolate con leche Chips Ahoy",
-      "category": "Galletas",
-      "old_price": 1.0,
-      "new_price": 1.5,
-      "change": 50.0
+      "name": "Alfajor de almendra La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.12,
+      "new_price": 0.17,
+      "change": 41.66666666666667
     },
     {
-      "name": "Refresco Fanta limón zero azúcares añadidos",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 4.24,
-      "new_price": 6.16,
-      "change": 45.28301886792452
+      "name": "Cortadillo de cabello de Ángel La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.24,
+      "new_price": 0.34,
+      "change": 41.66666666666667
     },
     {
-      "name": "Refresco Fanta naranja zero azúcares añadidos",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 4.24,
-      "new_price": 6.16,
-      "change": 45.28301886792452
+      "name": "Mantecado de cacao La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.17,
+      "new_price": 0.24,
+      "change": 41.17647058823528
     },
     {
-      "name": "Aperitivo de patata sabor crema agria y cebolla Pringles",
-      "category": "Patatas fritas y snacks",
-      "old_price": 1.9,
-      "new_price": 2.65,
-      "change": 39.47368421052633
+      "name": "Mantecado de cacao sin gluten La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.17,
+      "new_price": 0.24,
+      "change": 41.17647058823528
     },
     {
-      "name": "Aperitivo de patata sabor original Pringles",
-      "category": "Patatas fritas y snacks",
-      "old_price": 1.9,
-      "new_price": 2.65,
-      "change": 39.47368421052633
+      "name": "Mantecado de coco La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.17,
+      "new_price": 0.24,
+      "change": 41.17647058823528
     },
     {
-      "name": "Tónica Zero Schweppes",
-      "category": "Tónica y bitter",
-      "old_price": 5.6,
-      "new_price": 7.68,
-      "change": 37.142857142857146
+      "name": "Mantecado de limón La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.17,
+      "new_price": 0.24,
+      "change": 41.17647058823528
     },
     {
-      "name": "Tónica original Schweppes",
-      "category": "Tónica y bitter",
-      "old_price": 5.6,
-      "new_price": 7.68,
-      "change": 37.142857142857146
+      "name": "Mantecado de limón sin azúcar añadido La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.17,
+      "new_price": 0.24,
+      "change": 41.17647058823528
     },
     {
-      "name": "Queso untar light Philadelphia",
-      "category": "Queso untable, fresco y especialidades",
-      "old_price": 2.9,
-      "new_price": 1.95,
-      "change": -32.758620689655174
+      "name": "Polvorón de almendra La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.17,
+      "new_price": 0.24,
+      "change": 41.17647058823528
     },
     {
-      "name": "Queso untar original Philadelphia",
-      "category": "Queso untable, fresco y especialidades",
-      "old_price": 2.9,
-      "new_price": 1.95,
-      "change": -32.758620689655174
+      "name": "Rosco de vino y almendra La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.15,
+      "new_price": 0.21,
+      "change": 39.99999999999999
     },
     {
-      "name": "Fruta + leche tropical Bifrutas",
-      "category": "Fruta variada",
-      "old_price": 2.0,
-      "new_price": 2.59,
-      "change": 29.499999999999993
+      "name": "Hojaldrada La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.13,
+      "new_price": 0.18,
+      "change": 38.46153846153846
     }
   ],
   "annual_partial": true,
-  "week": -0.12034051358882891
+  "week": -0.08339289969025288
 }
