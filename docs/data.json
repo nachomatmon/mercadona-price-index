@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-27T13:16:05+01:00",
+  "captured_at": "2026-10-28T13:59:05+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -402,94 +402,102 @@
       "week": -0.0834,
       "monthly": 0.2705,
       "annual": 0.3972
+    },
+    {
+      "date": "2026-10-28T13:57:39+01:00",
+      "index": 100.4208,
+      "products": 4119,
+      "week": 0.0164,
+      "monthly": 0.2973,
+      "annual": 0.4208
     }
   ],
   "movers": [
     {
-      "name": "Mantecado casero La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.21,
-      "new_price": 0.3,
-      "change": 42.85714285714286
+      "name": "Sardina limpia sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 1.19,
+      "new_price": 0.9,
+      "change": -24.369747899159655
     },
     {
-      "name": "Hojaldrada al chocolate La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.19,
-      "new_price": 0.27,
-      "change": 42.10526315789473
+      "name": "Corvina a filetes",
+      "category": "Pescado fresco",
+      "old_price": 16.22,
+      "new_price": 19.44,
+      "change": 19.85203452527746
     },
     {
-      "name": "Alfajor de almendra La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.12,
-      "new_price": 0.17,
-      "change": 41.66666666666667
+      "name": "Corvina abierta a la espalda con espinas y con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 16.22,
+      "new_price": 19.44,
+      "change": 19.85203452527746
     },
     {
-      "name": "Cortadillo de cabello de Ángel La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.24,
+      "name": "Corvina limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 16.22,
+      "new_price": 19.44,
+      "change": 19.85203452527746
+    },
+    {
+      "name": "Lima",
+      "category": "Fruta",
+      "old_price": 0.29,
       "new_price": 0.34,
-      "change": 41.66666666666667
+      "change": 17.24137931034484
     },
     {
-      "name": "Mantecado de cacao La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.17,
-      "new_price": 0.24,
-      "change": 41.17647058823528
+      "name": "Dorada a filetes sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 5.89,
+      "new_price": 5.23,
+      "change": -11.205432937181648
     },
     {
-      "name": "Mantecado de cacao sin gluten La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.17,
-      "new_price": 0.24,
-      "change": 41.17647058823528
+      "name": "Dorada abierta a la espalda con espinas y con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 5.89,
+      "new_price": 5.23,
+      "change": -11.205432937181648
     },
     {
-      "name": "Mantecado de coco La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.17,
-      "new_price": 0.24,
-      "change": 41.17647058823528
+      "name": "Dorada abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 5.89,
+      "new_price": 5.23,
+      "change": -11.205432937181648
     },
     {
-      "name": "Mantecado de limón La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.17,
-      "new_price": 0.24,
-      "change": 41.17647058823528
+      "name": "Dorada limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 5.89,
+      "new_price": 5.23,
+      "change": -11.205432937181648
     },
     {
-      "name": "Mantecado de limón sin azúcar añadido La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.17,
-      "new_price": 0.24,
-      "change": 41.17647058823528
+      "name": "Dorada sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 5.89,
+      "new_price": 5.23,
+      "change": -11.205432937181648
     },
     {
-      "name": "Polvorón de almendra La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.17,
-      "new_price": 0.24,
-      "change": 41.17647058823528
+      "name": "Mandarina",
+      "category": "Fruta",
+      "old_price": 0.28,
+      "new_price": 0.31,
+      "change": 10.714285714285698
     },
     {
-      "name": "Rosco de vino y almendra La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.15,
-      "new_price": 0.21,
-      "change": 39.99999999999999
-    },
-    {
-      "name": "Hojaldrada La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.13,
-      "new_price": 0.18,
-      "change": 38.46153846153846
+      "name": "Mango",
+      "category": "Fruta",
+      "old_price": 1.16,
+      "new_price": 1.04,
+      "change": -10.344827586206884
     }
   ],
   "annual_partial": true,
-  "week": -0.08339289969025288
+  "week": 0.01643515842518184
 }
