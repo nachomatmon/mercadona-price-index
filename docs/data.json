@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-28T13:59:05+01:00",
+  "captured_at": "2026-10-29T14:05:41+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -410,94 +410,102 @@
       "week": 0.0164,
       "monthly": 0.2973,
       "annual": 0.4208
+    },
+    {
+      "date": "2026-10-29T14:04:25+01:00",
+      "index": 100.4136,
+      "products": 4115,
+      "week": 0.0465,
+      "monthly": 0.2863,
+      "annual": 0.4136
     }
   ],
   "movers": [
     {
+      "name": "Aguacate",
+      "category": "Fruta",
+      "old_price": 1.74,
+      "new_price": 1.18,
+      "change": -32.18390804597702
+    },
+    {
+      "name": "Lavavajillas Total Somat en gel 5 en 1",
+      "category": "Limpieza vajilla",
+      "old_price": 4.95,
+      "new_price": 3.95,
+      "change": -20.2020202020202
+    },
+    {
+      "name": "Tomate pera",
+      "category": "Verdura",
+      "old_price": 0.26,
+      "new_price": 0.29,
+      "change": 11.538461538461519
+    },
+    {
       "name": "Sardina limpia sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 0.9,
-      "change": -24.369747899159655
+      "old_price": 0.9,
+      "new_price": 0.99,
+      "change": 9.999999999999986
     },
     {
-      "name": "Corvina a filetes",
+      "name": "Sardina sin limpiar",
       "category": "Pescado fresco",
-      "old_price": 16.22,
-      "new_price": 19.44,
-      "change": 19.85203452527746
-    },
-    {
-      "name": "Corvina abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 16.22,
-      "new_price": 19.44,
-      "change": 19.85203452527746
-    },
-    {
-      "name": "Corvina limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 16.22,
-      "new_price": 19.44,
-      "change": 19.85203452527746
-    },
-    {
-      "name": "Lima",
-      "category": "Fruta",
-      "old_price": 0.29,
-      "new_price": 0.34,
-      "change": 17.24137931034484
-    },
-    {
-      "name": "Dorada a filetes sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 5.89,
-      "new_price": 5.23,
-      "change": -11.205432937181648
-    },
-    {
-      "name": "Dorada abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 5.89,
-      "new_price": 5.23,
-      "change": -11.205432937181648
-    },
-    {
-      "name": "Dorada abierta en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 5.89,
-      "new_price": 5.23,
-      "change": -11.205432937181648
-    },
-    {
-      "name": "Dorada limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 5.89,
-      "new_price": 5.23,
-      "change": -11.205432937181648
-    },
-    {
-      "name": "Dorada sin limpiar",
-      "category": "Pescado fresco",
-      "old_price": 5.89,
-      "new_price": 5.23,
-      "change": -11.205432937181648
+      "old_price": 0.9,
+      "new_price": 0.99,
+      "change": 9.999999999999986
     },
     {
       "name": "Mandarina",
       "category": "Fruta",
-      "old_price": 0.28,
-      "new_price": 0.31,
-      "change": 10.714285714285698
+      "old_price": 0.31,
+      "new_price": 0.28,
+      "change": -9.677419354838701
     },
     {
-      "name": "Mango",
-      "category": "Fruta",
-      "old_price": 1.16,
-      "new_price": 1.04,
-      "change": -10.344827586206884
+      "name": "Bacalao media pieza a rodajas",
+      "category": "Pescado fresco",
+      "old_price": 17.19,
+      "new_price": 18.7,
+      "change": 8.784176847004055
+    },
+    {
+      "name": "Bacalao media pieza abierto en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 17.19,
+      "new_price": 18.7,
+      "change": 8.784176847004055
+    },
+    {
+      "name": "Hamburguesa de cordero al romero",
+      "category": "Hamburguesas y picadas",
+      "old_price": 3.5,
+      "new_price": 3.8,
+      "change": 8.571428571428562
+    },
+    {
+      "name": "Cerveza Shandy Steinburg sabor limón",
+      "category": "Cerveza",
+      "old_price": 0.6,
+      "new_price": 0.65,
+      "change": 8.333333333333348
+    },
+    {
+      "name": "Cerveza Shandy Steinburg sabor limón",
+      "category": "Cerveza",
+      "old_price": 3.6,
+      "new_price": 3.9,
+      "change": 8.333333333333325
+    },
+    {
+      "name": "Dorada a filetes sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 5.23,
+      "new_price": 4.85,
+      "change": -7.2657743785851
     }
   ],
   "annual_partial": true,
-  "week": 0.01643515842518184
+  "week": 0.04650138621514088
 }
