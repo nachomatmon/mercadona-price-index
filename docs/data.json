@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-29T14:05:41+01:00",
+  "captured_at": "2026-10-30T13:59:31+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -418,94 +418,102 @@
       "week": 0.0465,
       "monthly": 0.2863,
       "annual": 0.4136
+    },
+    {
+      "date": "2026-10-30T13:58:00+01:00",
+      "index": 100.3652,
+      "products": 4115,
+      "week": -0.0168,
+      "monthly": 0.22,
+      "annual": 0.3652
     }
   ],
   "movers": [
     {
-      "name": "Aguacate",
-      "category": "Fruta",
-      "old_price": 1.74,
-      "new_price": 1.18,
-      "change": -32.18390804597702
+      "name": "Refresco limón Schweppes original",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 7.76,
+      "new_price": 5.2,
+      "change": -32.98969072164948
     },
     {
-      "name": "Lavavajillas Total Somat en gel 5 en 1",
-      "category": "Limpieza vajilla",
-      "old_price": 4.95,
-      "new_price": 3.95,
-      "change": -20.2020202020202
+      "name": "Hojaldrada al chocolate La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.27,
+      "new_price": 0.35,
+      "change": 29.629629629629605
     },
     {
-      "name": "Tomate pera",
-      "category": "Verdura",
-      "old_price": 0.26,
-      "new_price": 0.29,
-      "change": 11.538461538461519
+      "name": "Aperitivo de patata sabor crema agria y cebolla Pringles",
+      "category": "Patatas fritas y snacks",
+      "old_price": 2.65,
+      "new_price": 1.9,
+      "change": -28.301886792452834
+    },
+    {
+      "name": "Aperitivo de patata sabor original Pringles",
+      "category": "Patatas fritas y snacks",
+      "old_price": 2.65,
+      "new_price": 1.9,
+      "change": -28.301886792452834
+    },
+    {
+      "name": "Protegeslip Flexiform Carefree Cotton feel regular + tanga",
+      "category": "Higiene íntima",
+      "old_price": 1.55,
+      "new_price": 1.9,
+      "change": 22.580645161290303
+    },
+    {
+      "name": "Boquerón limpio sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 0.99,
+      "new_price": 1.19,
+      "change": 20.2020202020202
+    },
+    {
+      "name": "Boquerón sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 0.99,
+      "new_price": 1.19,
+      "change": 20.2020202020202
     },
     {
       "name": "Sardina limpia sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 0.9,
-      "new_price": 0.99,
-      "change": 9.999999999999986
+      "old_price": 0.99,
+      "new_price": 0.79,
+      "change": -20.2020202020202
     },
     {
       "name": "Sardina sin limpiar",
       "category": "Pescado fresco",
-      "old_price": 0.9,
-      "new_price": 0.99,
-      "change": 9.999999999999986
+      "old_price": 0.99,
+      "new_price": 0.79,
+      "change": -20.2020202020202
     },
     {
-      "name": "Mandarina",
-      "category": "Fruta",
-      "old_price": 0.31,
-      "new_price": 0.28,
-      "change": -9.677419354838701
-    },
-    {
-      "name": "Bacalao media pieza a rodajas",
-      "category": "Pescado fresco",
-      "old_price": 17.19,
-      "new_price": 18.7,
-      "change": 8.784176847004055
-    },
-    {
-      "name": "Bacalao media pieza abierto en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 17.19,
-      "new_price": 18.7,
-      "change": 8.784176847004055
-    },
-    {
-      "name": "Hamburguesa de cordero al romero",
-      "category": "Hamburguesas y picadas",
-      "old_price": 3.5,
-      "new_price": 3.8,
-      "change": 8.571428571428562
-    },
-    {
-      "name": "Cerveza Shandy Steinburg sabor limón",
+      "name": "Cerveza doble malta Voll-Damm",
       "category": "Cerveza",
-      "old_price": 0.6,
-      "new_price": 0.65,
-      "change": 8.333333333333348
+      "old_price": 6.24,
+      "new_price": 5.1,
+      "change": -18.26923076923078
     },
     {
-      "name": "Cerveza Shandy Steinburg sabor limón",
-      "category": "Cerveza",
-      "old_price": 3.6,
-      "new_price": 3.9,
-      "change": 8.333333333333325
+      "name": "Bebida Florida Sunny Delight",
+      "category": "Refresco de té y sin gas",
+      "old_price": 1.99,
+      "new_price": 1.65,
+      "change": -17.0854271356784
     },
     {
-      "name": "Dorada a filetes sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 5.23,
-      "new_price": 4.85,
-      "change": -7.2657743785851
+      "name": "Pimiento verde freír",
+      "category": "Verdura",
+      "old_price": 0.18,
+      "new_price": 0.15,
+      "change": -16.666666666666664
     }
   ],
   "annual_partial": true,
-  "week": 0.04650138621514088
+  "week": -0.01684299368480424
 }
