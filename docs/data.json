@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-30T13:59:31+01:00",
+  "captured_at": "2026-10-31T13:35:31+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -426,94 +426,102 @@
       "week": -0.0168,
       "monthly": 0.22,
       "annual": 0.3652
+    },
+    {
+      "date": "2026-10-31T13:34:03+01:00",
+      "index": 100.3497,
+      "products": 4108,
+      "week": 0.0244,
+      "monthly": 0.2068,
+      "annual": 0.3497
     }
   ],
   "movers": [
     {
-      "name": "Refresco limón Schweppes original",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 7.76,
-      "new_price": 5.2,
-      "change": -32.98969072164948
+      "name": "Col lombarda",
+      "category": "Verdura",
+      "old_price": 1.44,
+      "new_price": 2.42,
+      "change": 68.05555555555556
     },
     {
-      "name": "Hojaldrada al chocolate La Muralla",
+      "name": "Setas shiitake",
+      "category": "Verdura",
+      "old_price": 4.02,
+      "new_price": 3.22,
+      "change": -19.9004975124378
+    },
+    {
+      "name": "Alfajor de almendra La Muralla",
       "category": "Bollería envasada",
-      "old_price": 0.27,
-      "new_price": 0.35,
-      "change": 29.629629629629605
-    },
-    {
-      "name": "Aperitivo de patata sabor crema agria y cebolla Pringles",
-      "category": "Patatas fritas y snacks",
-      "old_price": 2.65,
-      "new_price": 1.9,
-      "change": -28.301886792452834
-    },
-    {
-      "name": "Aperitivo de patata sabor original Pringles",
-      "category": "Patatas fritas y snacks",
-      "old_price": 2.65,
-      "new_price": 1.9,
-      "change": -28.301886792452834
-    },
-    {
-      "name": "Protegeslip Flexiform Carefree Cotton feel regular + tanga",
-      "category": "Higiene íntima",
-      "old_price": 1.55,
-      "new_price": 1.9,
-      "change": 22.580645161290303
+      "old_price": 0.17,
+      "new_price": 0.2,
+      "change": 17.647058823529417
     },
     {
       "name": "Boquerón limpio sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 0.99,
-      "new_price": 1.19,
-      "change": 20.2020202020202
+      "old_price": 1.19,
+      "new_price": 1.39,
+      "change": 16.806722689075638
     },
     {
       "name": "Boquerón sin limpiar",
       "category": "Pescado fresco",
-      "old_price": 0.99,
-      "new_price": 1.19,
-      "change": 20.2020202020202
+      "old_price": 1.19,
+      "new_price": 1.39,
+      "change": 16.806722689075638
     },
     {
-      "name": "Sardina limpia sin cabeza",
-      "category": "Pescado fresco",
-      "old_price": 0.99,
-      "new_price": 0.79,
-      "change": -20.2020202020202
+      "name": "Champú anticaspa Citrus Fresh H&S cabello graso",
+      "category": "Champú",
+      "old_price": 3.4,
+      "new_price": 3.9,
+      "change": 14.705882352941169
     },
     {
-      "name": "Sardina sin limpiar",
-      "category": "Pescado fresco",
-      "old_price": 0.99,
-      "new_price": 0.79,
-      "change": -20.2020202020202
+      "name": "Champú anticaspa Menthol Fresh H&S",
+      "category": "Champú",
+      "old_price": 3.4,
+      "new_price": 3.9,
+      "change": 14.705882352941169
     },
     {
-      "name": "Cerveza doble malta Voll-Damm",
-      "category": "Cerveza",
-      "old_price": 6.24,
-      "new_price": 5.1,
-      "change": -18.26923076923078
+      "name": "Champú y acondicionador anticaspa Classic 2 en 1 H&S",
+      "category": "Champú",
+      "old_price": 3.4,
+      "new_price": 3.9,
+      "change": 14.705882352941169
     },
     {
-      "name": "Bebida Florida Sunny Delight",
-      "category": "Refresco de té y sin gas",
-      "old_price": 1.99,
-      "new_price": 1.65,
-      "change": -17.0854271356784
+      "name": "Recambios maquinilla de afeitar Gillette Labs Body + Intimate",
+      "category": "Afeitado y cuidado para hombre",
+      "old_price": 14.9,
+      "new_price": 16.9,
+      "change": 13.42281879194629
     },
     {
-      "name": "Pimiento verde freír",
-      "category": "Verdura",
-      "old_price": 0.18,
-      "new_price": 0.15,
-      "change": -16.666666666666664
+      "name": "Pera Ercolina",
+      "category": "Fruta",
+      "old_price": 0.23,
+      "new_price": 0.26,
+      "change": 13.043478260869556
+    },
+    {
+      "name": "Mantecado de cacao La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.24,
+      "new_price": 0.27,
+      "change": 12.500000000000021
+    },
+    {
+      "name": "Mantecado de coco La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.24,
+      "new_price": 0.27,
+      "change": 12.500000000000021
     }
   ],
   "annual_partial": true,
-  "week": -0.01684299368480424
+  "week": 0.0244401221635826
 }
