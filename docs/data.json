@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-10-31T13:35:31+01:00",
+  "captured_at": "2026-11-01T14:28:30+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -434,94 +434,102 @@
       "week": 0.0244,
       "monthly": 0.2068,
       "annual": 0.3497
+    },
+    {
+      "date": "2026-11-01T14:27:13+01:00",
+      "index": 100.3552,
+      "products": 4105,
+      "week": 0.033,
+      "monthly": -0.01,
+      "annual": 0.3552
     }
   ],
   "movers": [
     {
+      "name": "Mandarina",
+      "category": "Fruta",
+      "old_price": 0.28,
+      "new_price": 0.31,
+      "change": 10.714285714285698
+    },
+    {
       "name": "Col lombarda",
       "category": "Verdura",
-      "old_price": 1.44,
-      "new_price": 2.42,
-      "change": 68.05555555555556
+      "old_price": 2.42,
+      "new_price": 2.18,
+      "change": -9.917355371900815
     },
     {
-      "name": "Setas shiitake",
+      "name": "Tomate pera",
       "category": "Verdura",
-      "old_price": 4.02,
-      "new_price": 3.22,
-      "change": -19.9004975124378
+      "old_price": 0.26,
+      "new_price": 0.24,
+      "change": -7.692307692307699
     },
     {
-      "name": "Alfajor de almendra La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.17,
-      "new_price": 0.2,
-      "change": 17.647058823529417
-    },
-    {
-      "name": "Boquerón limpio sin cabeza",
+      "name": "Bacalao a rodajas",
       "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 1.39,
-      "change": 16.806722689075638
+      "old_price": 29.78,
+      "new_price": 28.1,
+      "change": -5.641370047011418
     },
     {
-      "name": "Boquerón sin limpiar",
+      "name": "Bacalao abierto en libro sin cabeza y sin espina",
       "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 1.39,
-      "change": 16.806722689075638
+      "old_price": 29.78,
+      "new_price": 28.1,
+      "change": -5.641370047011418
     },
     {
-      "name": "Champú anticaspa Citrus Fresh H&S cabello graso",
-      "category": "Champú",
-      "old_price": 3.4,
-      "new_price": 3.9,
-      "change": 14.705882352941169
+      "name": "Yuca",
+      "category": "Verdura",
+      "old_price": 1.98,
+      "new_price": 2.08,
+      "change": 5.050505050505061
     },
     {
-      "name": "Champú anticaspa Menthol Fresh H&S",
-      "category": "Champú",
-      "old_price": 3.4,
-      "new_price": 3.9,
-      "change": 14.705882352941169
+      "name": "Lubina a filetes sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 3.98,
+      "new_price": 4.18,
+      "change": 5.025125628140703
     },
     {
-      "name": "Champú y acondicionador anticaspa Classic 2 en 1 H&S",
-      "category": "Champú",
-      "old_price": 3.4,
-      "new_price": 3.9,
-      "change": 14.705882352941169
+      "name": "Lubina abierta a la espalda con espinas y con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 3.98,
+      "new_price": 4.18,
+      "change": 5.025125628140703
     },
     {
-      "name": "Recambios maquinilla de afeitar Gillette Labs Body + Intimate",
-      "category": "Afeitado y cuidado para hombre",
-      "old_price": 14.9,
-      "new_price": 16.9,
-      "change": 13.42281879194629
+      "name": "Lubina abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 3.98,
+      "new_price": 4.18,
+      "change": 5.025125628140703
     },
     {
-      "name": "Pera Ercolina",
+      "name": "Lubina limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 3.98,
+      "new_price": 4.18,
+      "change": 5.025125628140703
+    },
+    {
+      "name": "Lubina sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 3.98,
+      "new_price": 4.18,
+      "change": 5.025125628140703
+    },
+    {
+      "name": "Manzana roja dulce",
       "category": "Fruta",
-      "old_price": 0.23,
-      "new_price": 0.26,
-      "change": 13.043478260869556
-    },
-    {
-      "name": "Mantecado de cacao La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.24,
-      "new_price": 0.27,
-      "change": 12.500000000000021
-    },
-    {
-      "name": "Mantecado de coco La Muralla",
-      "category": "Bollería envasada",
-      "old_price": 0.24,
-      "new_price": 0.27,
-      "change": 12.500000000000021
+      "old_price": 0.4,
+      "new_price": 0.38,
+      "change": -5.000000000000004
     }
   ],
   "annual_partial": true,
-  "week": 0.0244401221635826
+  "week": 0.03304564006113253
 }
