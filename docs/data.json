@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-02T16:59:13+01:00",
+  "captured_at": "2026-11-03T15:19:02+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -450,94 +450,102 @@
       "week": -0.0757,
       "monthly": -0.0849,
       "annual": 0.2701
+    },
+    {
+      "date": "2026-11-03T15:17:46+01:00",
+      "index": 100.2226,
+      "products": 4097,
+      "week": -0.0389,
+      "monthly": -0.0044,
+      "annual": 0.2226
     }
   ],
   "movers": [
     {
-      "name": "Castañas",
-      "category": "Verdura",
-      "old_price": 2.5,
-      "new_price": 3.75,
-      "change": 50.0
+      "name": "Sardina limpia sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 0.79,
+      "new_price": 1.19,
+      "change": 50.63291139240504
     },
     {
-      "name": "Batata",
-      "category": "Verdura",
-      "old_price": 0.65,
-      "new_price": 0.97,
-      "change": 49.23076923076921
-    },
-    {
-      "name": "Maquinilla de afeitar recargable Gillette Labs Body + Intimate 2 hojas",
-      "category": "Afeitado y cuidado para hombre",
-      "old_price": 16.9,
-      "new_price": 9.7,
-      "change": -42.603550295857985
+      "name": "Sardina sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 0.79,
+      "new_price": 1.19,
+      "change": 50.63291139240504
     },
     {
       "name": "Cerveza especial San Miguel",
       "category": "Cerveza",
-      "old_price": 4.8,
-      "new_price": 6.84,
-      "change": 42.50000000000001
+      "old_price": 0.5,
+      "new_price": 0.74,
+      "change": 48.0
     },
     {
-      "name": "Barritas de avena y chocolate negro Crunchy Nature Valley",
-      "category": "Cereales",
-      "old_price": 1.95,
-      "new_price": 2.6,
-      "change": 33.33333333333335
+      "name": "Bacalao a rodajas",
+      "category": "Pescado fresco",
+      "old_price": 28.1,
+      "new_price": 40.4,
+      "change": 43.77224199288254
     },
     {
-      "name": "Coliflor",
-      "category": "Verdura",
-      "old_price": 3.18,
-      "new_price": 2.16,
-      "change": -32.07547169811321
+      "name": "Bacalao abierto en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 28.1,
+      "new_price": 40.4,
+      "change": 43.77224199288254
     },
     {
-      "name": "Fabada asturiana Litoral",
-      "category": "Platos preparados calientes",
-      "old_price": 2.6,
-      "new_price": 1.95,
-      "change": -25.0
+      "name": "Corvina a filetes",
+      "category": "Pescado fresco",
+      "old_price": 18.63,
+      "new_price": 12.65,
+      "change": -32.098765432098766
     },
     {
-      "name": "Vino tinto Sangre de Toro Bodegas Torres DO Catalunya",
-      "category": "Vino tinto",
-      "old_price": 5.05,
-      "new_price": 3.8,
-      "change": -24.752475247524753
+      "name": "Corvina abierta a la espalda con espinas y con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 18.63,
+      "new_price": 12.65,
+      "change": -32.098765432098766
     },
     {
-      "name": "Cava brut Anna Codorníu",
-      "category": "Sidra y cava",
-      "old_price": 8.0,
-      "new_price": 9.95,
-      "change": 24.374999999999993
+      "name": "Corvina limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 18.63,
+      "new_price": 12.65,
+      "change": -32.098765432098766
     },
     {
-      "name": "Calabaza cacahuete cortada a trozos",
-      "category": "Verdura",
-      "old_price": 1.82,
-      "new_price": 2.24,
-      "change": 23.076923076923084
+      "name": "Cerveza especial San Miguel",
+      "category": "Cerveza",
+      "old_price": 5.4,
+      "new_price": 6.96,
+      "change": 28.888888888888875
     },
     {
-      "name": "Fruta + leche tropical Bifrutas",
-      "category": "Fruta variada",
-      "old_price": 2.59,
-      "new_price": 2.0,
-      "change": -22.779922779922778
+      "name": "Boquerón limpio sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 1.39,
+      "new_price": 0.99,
+      "change": -28.776978417266186
     },
     {
-      "name": "Naranjas",
+      "name": "Boquerón sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 1.39,
+      "new_price": 0.99,
+      "change": -28.776978417266186
+    },
+    {
+      "name": "Banana",
       "category": "Fruta",
-      "old_price": 5.85,
-      "new_price": 4.65,
-      "change": -20.512820512820507
+      "old_price": 0.21,
+      "new_price": 0.26,
+      "change": 23.809523809523814
     }
   ],
   "annual_partial": true,
-  "week": -0.0756636156399253
+  "week": -0.03891350183249642
 }
