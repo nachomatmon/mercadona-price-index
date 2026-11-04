@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-03T15:19:02+01:00",
+  "captured_at": "2026-11-04T15:36:16+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -458,94 +458,102 @@
       "week": -0.0389,
       "monthly": -0.0044,
       "annual": 0.2226
+    },
+    {
+      "date": "2026-11-04T15:34:54+01:00",
+      "index": 100.2576,
+      "products": 4094,
+      "week": -0.0197,
+      "monthly": 0.0386,
+      "annual": 0.2576
     }
   ],
   "movers": [
     {
+      "name": "Espárragos verdes finos",
+      "category": "Verdura",
+      "old_price": 2.95,
+      "new_price": 4.0,
+      "change": 35.593220338983045
+    },
+    {
       "name": "Sardina limpia sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 0.79,
-      "new_price": 1.19,
-      "change": 50.63291139240504
+      "old_price": 1.19,
+      "new_price": 0.79,
+      "change": -33.613445378151255
     },
     {
       "name": "Sardina sin limpiar",
       "category": "Pescado fresco",
-      "old_price": 0.79,
-      "new_price": 1.19,
-      "change": 50.63291139240504
+      "old_price": 1.19,
+      "new_price": 0.79,
+      "change": -33.613445378151255
     },
     {
-      "name": "Cerveza especial San Miguel",
-      "category": "Cerveza",
-      "old_price": 0.5,
-      "new_price": 0.74,
-      "change": 48.0
+      "name": "Pimiento verde freír",
+      "category": "Verdura",
+      "old_price": 0.15,
+      "new_price": 0.18,
+      "change": 19.999999999999996
     },
     {
-      "name": "Bacalao a rodajas",
-      "category": "Pescado fresco",
-      "old_price": 28.1,
-      "new_price": 40.4,
-      "change": 43.77224199288254
+      "name": "Trozos de cordero para guisar",
+      "category": "Conejo y cordero",
+      "old_price": 6.75,
+      "new_price": 7.75,
+      "change": 14.814814814814813
     },
     {
-      "name": "Bacalao abierto en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 28.1,
-      "new_price": 40.4,
-      "change": 43.77224199288254
+      "name": "Coulant de chocolate Hacendado",
+      "category": "Gelatina y otros postres",
+      "old_price": 2.2,
+      "new_price": 2.0,
+      "change": -9.090909090909093
     },
     {
-      "name": "Corvina a filetes",
-      "category": "Pescado fresco",
-      "old_price": 18.63,
-      "new_price": 12.65,
-      "change": -32.098765432098766
-    },
-    {
-      "name": "Corvina abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 18.63,
-      "new_price": 12.65,
-      "change": -32.098765432098766
-    },
-    {
-      "name": "Corvina limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 18.63,
-      "new_price": 12.65,
-      "change": -32.098765432098766
-    },
-    {
-      "name": "Cerveza especial San Miguel",
-      "category": "Cerveza",
-      "old_price": 5.4,
-      "new_price": 6.96,
-      "change": 28.888888888888875
-    },
-    {
-      "name": "Boquerón limpio sin cabeza",
-      "category": "Pescado fresco",
-      "old_price": 1.39,
-      "new_price": 0.99,
-      "change": -28.776978417266186
-    },
-    {
-      "name": "Boquerón sin limpiar",
-      "category": "Pescado fresco",
-      "old_price": 1.39,
-      "new_price": 0.99,
-      "change": -28.776978417266186
-    },
-    {
-      "name": "Banana",
+      "name": "Naranja de mesa",
       "category": "Fruta",
-      "old_price": 0.21,
-      "new_price": 0.26,
-      "change": 23.809523809523814
+      "old_price": 0.75,
+      "new_price": 0.69,
+      "change": -8.000000000000007
+    },
+    {
+      "name": "Dorada a filetes sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 4.94,
+      "new_price": 5.32,
+      "change": 7.692307692307687
+    },
+    {
+      "name": "Dorada abierta a la espalda con espinas y con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 4.94,
+      "new_price": 5.32,
+      "change": 7.692307692307687
+    },
+    {
+      "name": "Dorada abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 4.94,
+      "new_price": 5.32,
+      "change": 7.692307692307687
+    },
+    {
+      "name": "Dorada limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 4.94,
+      "new_price": 5.32,
+      "change": 7.692307692307687
+    },
+    {
+      "name": "Dorada sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 4.94,
+      "new_price": 5.32,
+      "change": 7.692307692307687
     }
   ],
   "annual_partial": true,
-  "week": -0.03891350183249642
+  "week": -0.019723347789437184
 }
