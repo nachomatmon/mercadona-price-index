@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-04T15:36:16+01:00",
+  "captured_at": "2026-11-05T15:42:12+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -466,94 +466,102 @@
       "week": -0.0197,
       "monthly": 0.0386,
       "annual": 0.2576
+    },
+    {
+      "date": "2026-11-05T15:40:55+01:00",
+      "index": 100.2407,
+      "products": 4090,
+      "week": -0.0887,
+      "monthly": -0.0427,
+      "annual": 0.2407
     }
   ],
   "movers": [
     {
-      "name": "Espárragos verdes finos",
-      "category": "Verdura",
-      "old_price": 2.95,
-      "new_price": 4.0,
-      "change": 35.593220338983045
+      "name": "Cerveza especial San Miguel",
+      "category": "Cerveza",
+      "old_price": 0.74,
+      "new_price": 0.5,
+      "change": -32.432432432432435
     },
     {
-      "name": "Sardina limpia sin cabeza",
+      "name": "Dentífrico Blanqueante Sensodyne",
+      "category": "Higiene bucal",
+      "old_price": 3.95,
+      "new_price": 2.95,
+      "change": -25.31645569620253
+    },
+    {
+      "name": "Cerveza especial San Miguel",
+      "category": "Cerveza",
+      "old_price": 6.96,
+      "new_price": 5.4,
+      "change": -22.413793103448263
+    },
+    {
+      "name": "Bífidus natural edulcorado probióticos Activia 0% MG 0% azúcares añadidos",
+      "category": "Bífidus",
+      "old_price": 3.3,
+      "new_price": 3.99,
+      "change": 20.90909090909092
+    },
+    {
+      "name": "Bífidus natural probióticos Activia 0% MG  0% azúcares añadidos",
+      "category": "Bífidus",
+      "old_price": 3.3,
+      "new_price": 3.99,
+      "change": 20.90909090909092
+    },
+    {
+      "name": "Dentífrico Repair & Protect Sensodyne",
+      "category": "Higiene bucal",
+      "old_price": 4.95,
+      "new_price": 3.95,
+      "change": -20.2020202020202
+    },
+    {
+      "name": "Bebida láctea natural Actimel",
+      "category": "Yogures líquidos",
+      "old_price": 5.99,
+      "new_price": 4.95,
+      "change": -17.36227045075125
+    },
+    {
+      "name": "Bebida láctea natural Actimel 0% MG 0% azúcares añadidos",
+      "category": "Yogures líquidos",
+      "old_price": 5.99,
+      "new_price": 4.95,
+      "change": -17.36227045075125
+    },
+    {
+      "name": "Dentífrico Pro-Expert Oral-B sabor menta especiada",
+      "category": "Higiene bucal",
+      "old_price": 2.5,
+      "new_price": 2.85,
+      "change": 14.000000000000012
+    },
+    {
+      "name": "Gel fijador cabello Forte Deliplus fijación 3",
+      "category": "Fijación cabello",
+      "old_price": 1.5,
+      "new_price": 1.3,
+      "change": -13.33333333333333
+    },
+    {
+      "name": "Bacalao a rodajas",
       "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 0.79,
-      "change": -33.613445378151255
+      "old_price": 41.57,
+      "new_price": 36.09,
+      "change": -13.182583593937924
     },
     {
-      "name": "Sardina sin limpiar",
+      "name": "Bacalao abierto en libro sin cabeza y sin espina",
       "category": "Pescado fresco",
-      "old_price": 1.19,
-      "new_price": 0.79,
-      "change": -33.613445378151255
-    },
-    {
-      "name": "Pimiento verde freír",
-      "category": "Verdura",
-      "old_price": 0.15,
-      "new_price": 0.18,
-      "change": 19.999999999999996
-    },
-    {
-      "name": "Trozos de cordero para guisar",
-      "category": "Conejo y cordero",
-      "old_price": 6.75,
-      "new_price": 7.75,
-      "change": 14.814814814814813
-    },
-    {
-      "name": "Coulant de chocolate Hacendado",
-      "category": "Gelatina y otros postres",
-      "old_price": 2.2,
-      "new_price": 2.0,
-      "change": -9.090909090909093
-    },
-    {
-      "name": "Naranja de mesa",
-      "category": "Fruta",
-      "old_price": 0.75,
-      "new_price": 0.69,
-      "change": -8.000000000000007
-    },
-    {
-      "name": "Dorada a filetes sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 4.94,
-      "new_price": 5.32,
-      "change": 7.692307692307687
-    },
-    {
-      "name": "Dorada abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 4.94,
-      "new_price": 5.32,
-      "change": 7.692307692307687
-    },
-    {
-      "name": "Dorada abierta en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 4.94,
-      "new_price": 5.32,
-      "change": 7.692307692307687
-    },
-    {
-      "name": "Dorada limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 4.94,
-      "new_price": 5.32,
-      "change": 7.692307692307687
-    },
-    {
-      "name": "Dorada sin limpiar",
-      "category": "Pescado fresco",
-      "old_price": 4.94,
-      "new_price": 5.32,
-      "change": 7.692307692307687
+      "old_price": 41.57,
+      "new_price": 36.09,
+      "change": -13.182583593937924
     }
   ],
   "annual_partial": true,
-  "week": -0.019723347789437184
+  "week": -0.08874824405259574
 }
