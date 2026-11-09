@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-08T14:28:36+01:00",
+  "captured_at": "2026-11-09T17:24:53+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -498,94 +498,102 @@
       "week": 0.0536,
       "monthly": 0.0436,
       "annual": 0.3287
+    },
+    {
+      "date": "2026-11-09T17:23:25+01:00",
+      "index": 100.3919,
+      "products": 4082,
+      "week": 0.2205,
+      "monthly": 0.1372,
+      "annual": 0.3919
     }
   ],
   "movers": [
     {
-      "name": "Granada",
-      "category": "Fruta",
-      "old_price": 1.32,
-      "new_price": 1.38,
-      "change": 4.545454545454541
+      "name": "Queso untar light Philadelphia",
+      "category": "Queso untable, fresco y especialidades",
+      "old_price": 1.95,
+      "new_price": 2.9,
+      "change": 48.71794871794872
     },
     {
-      "name": "Salmón media pieza a rodajas",
-      "category": "Pescado fresco",
-      "old_price": 15.33,
-      "new_price": 15.99,
-      "change": 4.305283757338563
+      "name": "Queso untar original Philadelphia",
+      "category": "Queso untable, fresco y especialidades",
+      "old_price": 1.95,
+      "new_price": 2.9,
+      "change": 48.71794871794872
     },
     {
-      "name": "Salmón media pieza abierto en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 15.33,
-      "new_price": 15.99,
-      "change": 4.305283757338563
+      "name": "Refresco té sabor limón Fuze Tea",
+      "category": "Refresco de té y sin gas",
+      "old_price": 1.49,
+      "new_price": 2.09,
+      "change": 40.26845637583891
     },
     {
-      "name": "Salmón media pieza sin aletas y sin escamas",
-      "category": "Pescado fresco",
-      "old_price": 15.33,
-      "new_price": 15.99,
-      "change": 4.305283757338563
+      "name": "Cereales copos de trigo integral y arroz Special K Classic",
+      "category": "Cereales",
+      "old_price": 2.4,
+      "new_price": 3.25,
+      "change": 35.41666666666667
     },
     {
-      "name": "Pera Limonera",
-      "category": "Fruta",
-      "old_price": 0.7,
-      "new_price": 0.67,
-      "change": -4.2857142857142705
+      "name": "Café molido mezcla Marcilla gran aroma",
+      "category": "Café molido y en grano",
+      "old_price": 3.5,
+      "new_price": 4.45,
+      "change": 27.142857142857157
     },
     {
-      "name": "Corvina a filetes",
-      "category": "Pescado fresco",
-      "old_price": 11.96,
-      "new_price": 12.42,
-      "change": 3.8461538461538325
+      "name": "Café molido natural Marcilla gran aroma",
+      "category": "Café molido y en grano",
+      "old_price": 3.5,
+      "new_price": 4.45,
+      "change": 27.142857142857157
     },
     {
-      "name": "Corvina abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 11.96,
-      "new_price": 12.42,
-      "change": 3.8461538461538325
+      "name": "Bebida energética Monster Energy Ultra zero azúcar",
+      "category": "Isotónico y energético",
+      "old_price": 5.28,
+      "new_price": 6.68,
+      "change": 26.515151515151516
     },
     {
-      "name": "Corvina limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 11.96,
-      "new_price": 12.42,
-      "change": 3.8461538461538325
+      "name": "Café con leche en cápsula Dolce Gusto",
+      "category": "Café cápsula y monodosis",
+      "old_price": 3.95,
+      "new_price": 4.95,
+      "change": 25.31645569620253
     },
     {
-      "name": "Col lombarda",
-      "category": "Verdura",
-      "old_price": 1.72,
-      "new_price": 1.66,
-      "change": -3.488372093023262
+      "name": "Café en cápsula cortado Dolce Gusto",
+      "category": "Café cápsula y monodosis",
+      "old_price": 3.95,
+      "new_price": 4.95,
+      "change": 25.31645569620253
     },
     {
-      "name": "Naranja de mesa",
-      "category": "Fruta",
-      "old_price": 0.62,
-      "new_price": 0.6,
-      "change": -3.2258064516129115
+      "name": "Café en cápsula descafeinado espresso intenso Dolce Gusto",
+      "category": "Café cápsula y monodosis",
+      "old_price": 3.95,
+      "new_price": 4.95,
+      "change": 25.31645569620253
     },
     {
-      "name": "Lubina a filetes sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 4.08,
-      "new_price": 3.98,
-      "change": -2.450980392156865
+      "name": "Café en cápsula espresso intenso Dolce Gusto",
+      "category": "Café cápsula y monodosis",
+      "old_price": 3.95,
+      "new_price": 4.95,
+      "change": 25.31645569620253
     },
     {
-      "name": "Lubina abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 4.08,
-      "new_price": 3.98,
-      "change": -2.450980392156865
+      "name": "Café en cápsula ristretto napoli Dolce Gusto",
+      "category": "Café cápsula y monodosis",
+      "old_price": 3.95,
+      "new_price": 4.95,
+      "change": 25.31645569620253
     }
   ],
   "annual_partial": true,
-  "week": 0.053557894583704524
+  "week": 0.2204751610495066
 }
