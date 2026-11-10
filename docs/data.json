@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-09T17:24:53+01:00",
+  "captured_at": "2026-11-10T15:57:01+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -506,94 +506,102 @@
       "week": 0.2205,
       "monthly": 0.1372,
       "annual": 0.3919
+    },
+    {
+      "date": "2026-11-10T15:55:35+01:00",
+      "index": 100.4289,
+      "products": 4074,
+      "week": 0.1699,
+      "monthly": 0.1671,
+      "annual": 0.4289
     }
   ],
   "movers": [
     {
-      "name": "Queso untar light Philadelphia",
-      "category": "Queso untable, fresco y especialidades",
-      "old_price": 1.95,
-      "new_price": 2.9,
-      "change": 48.71794871794872
+      "name": "Cerveza Heineken",
+      "category": "Cerveza",
+      "old_price": 5.12,
+      "new_price": 6.96,
+      "change": 35.9375
     },
     {
-      "name": "Queso untar original Philadelphia",
-      "category": "Queso untable, fresco y especialidades",
-      "old_price": 1.95,
-      "new_price": 2.9,
-      "change": 48.71794871794872
+      "name": "Cerveza Heineken",
+      "category": "Cerveza",
+      "old_price": 0.68,
+      "new_price": 0.88,
+      "change": 29.411764705882337
     },
     {
-      "name": "Refresco té sabor limón Fuze Tea",
-      "category": "Refresco de té y sin gas",
-      "old_price": 1.49,
-      "new_price": 2.09,
-      "change": 40.26845637583891
+      "name": "Cerveza tostada Turia",
+      "category": "Cerveza",
+      "old_price": 8.28,
+      "new_price": 10.2,
+      "change": 23.188405797101442
     },
     {
-      "name": "Cereales copos de trigo integral y arroz Special K Classic",
-      "category": "Cereales",
-      "old_price": 2.4,
-      "new_price": 3.25,
-      "change": 35.41666666666667
+      "name": "Cerveza tostada Turia",
+      "category": "Cerveza",
+      "old_price": 0.72,
+      "new_price": 0.85,
+      "change": 18.055555555555557
     },
     {
-      "name": "Café molido mezcla Marcilla gran aroma",
-      "category": "Café molido y en grano",
-      "old_price": 3.5,
-      "new_price": 4.45,
-      "change": 27.142857142857157
+      "name": "Pera Conferencia",
+      "category": "Fruta",
+      "old_price": 0.5,
+      "new_price": 0.55,
+      "change": 10.000000000000009
     },
     {
-      "name": "Café molido natural Marcilla gran aroma",
-      "category": "Café molido y en grano",
-      "old_price": 3.5,
-      "new_price": 4.45,
-      "change": 27.142857142857157
+      "name": "Corvina a filetes",
+      "category": "Pescado fresco",
+      "old_price": 12.42,
+      "new_price": 13.57,
+      "change": 9.259259259259256
     },
     {
-      "name": "Bebida energética Monster Energy Ultra zero azúcar",
-      "category": "Isotónico y energético",
-      "old_price": 5.28,
-      "new_price": 6.68,
-      "change": 26.515151515151516
+      "name": "Corvina abierta a la espalda con espinas y con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 12.42,
+      "new_price": 13.57,
+      "change": 9.259259259259256
     },
     {
-      "name": "Café con leche en cápsula Dolce Gusto",
-      "category": "Café cápsula y monodosis",
-      "old_price": 3.95,
-      "new_price": 4.95,
-      "change": 25.31645569620253
+      "name": "Corvina limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 12.42,
+      "new_price": 13.57,
+      "change": 9.259259259259256
     },
     {
-      "name": "Café en cápsula cortado Dolce Gusto",
-      "category": "Café cápsula y monodosis",
-      "old_price": 3.95,
-      "new_price": 4.95,
-      "change": 25.31645569620253
+      "name": "Pimiento verde freír",
+      "category": "Verdura",
+      "old_price": 0.28,
+      "new_price": 0.3,
+      "change": 7.14285714285714
     },
     {
-      "name": "Café en cápsula descafeinado espresso intenso Dolce Gusto",
-      "category": "Café cápsula y monodosis",
-      "old_price": 3.95,
-      "new_price": 4.95,
-      "change": 25.31645569620253
+      "name": "Papaya",
+      "category": "Fruta",
+      "old_price": 3.1,
+      "new_price": 3.31,
+      "change": 6.774193548387086
     },
     {
-      "name": "Café en cápsula espresso intenso Dolce Gusto",
-      "category": "Café cápsula y monodosis",
-      "old_price": 3.95,
-      "new_price": 4.95,
-      "change": 25.31645569620253
+      "name": "Piña",
+      "category": "Fruta",
+      "old_price": 4.16,
+      "new_price": 4.38,
+      "change": 5.288461538461542
     },
     {
-      "name": "Café en cápsula ristretto napoli Dolce Gusto",
-      "category": "Café cápsula y monodosis",
-      "old_price": 3.95,
-      "new_price": 4.95,
-      "change": 25.31645569620253
+      "name": "Patata",
+      "category": "Verdura",
+      "old_price": 0.38,
+      "new_price": 0.36,
+      "change": -5.263157894736848
     }
   ],
   "annual_partial": true,
-  "week": 0.2204751610495066
+  "week": 0.16987211838633698
 }
