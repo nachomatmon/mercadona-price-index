@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-10T15:57:01+01:00",
+  "captured_at": "2026-11-11T15:29:05+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -514,94 +514,102 @@
       "week": 0.1699,
       "monthly": 0.1671,
       "annual": 0.4289
+    },
+    {
+      "date": "2026-11-11T15:27:41+01:00",
+      "index": 100.3925,
+      "products": 4072,
+      "week": 0.0595,
+      "monthly": 0.1027,
+      "annual": 0.3925
     }
   ],
   "movers": [
     {
-      "name": "Cerveza Heineken",
-      "category": "Cerveza",
-      "old_price": 5.12,
-      "new_price": 6.96,
-      "change": 35.9375
+      "name": "Vino blanco El Coto DO Rioja",
+      "category": "Vino blanco",
+      "old_price": 4.45,
+      "new_price": 3.95,
+      "change": -11.235955056179769
     },
     {
-      "name": "Cerveza Heineken",
-      "category": "Cerveza",
-      "old_price": 0.68,
-      "new_price": 0.88,
-      "change": 29.411764705882337
-    },
-    {
-      "name": "Cerveza tostada Turia",
-      "category": "Cerveza",
-      "old_price": 8.28,
-      "new_price": 10.2,
-      "change": 23.188405797101442
-    },
-    {
-      "name": "Cerveza tostada Turia",
-      "category": "Cerveza",
-      "old_price": 0.72,
-      "new_price": 0.85,
-      "change": 18.055555555555557
-    },
-    {
-      "name": "Pera Conferencia",
+      "name": "Lima",
       "category": "Fruta",
-      "old_price": 0.5,
-      "new_price": 0.55,
-      "change": 10.000000000000009
-    },
-    {
-      "name": "Corvina a filetes",
-      "category": "Pescado fresco",
-      "old_price": 12.42,
-      "new_price": 13.57,
-      "change": 9.259259259259256
-    },
-    {
-      "name": "Corvina abierta a la espalda con espinas y con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 12.42,
-      "new_price": 13.57,
-      "change": 9.259259259259256
-    },
-    {
-      "name": "Corvina limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 12.42,
-      "new_price": 13.57,
-      "change": 9.259259259259256
-    },
-    {
-      "name": "Pimiento verde freír",
-      "category": "Verdura",
-      "old_price": 0.28,
-      "new_price": 0.3,
-      "change": 7.14285714285714
-    },
-    {
-      "name": "Papaya",
-      "category": "Fruta",
-      "old_price": 3.1,
-      "new_price": 3.31,
-      "change": 6.774193548387086
-    },
-    {
-      "name": "Piña",
-      "category": "Fruta",
-      "old_price": 4.16,
-      "new_price": 4.38,
-      "change": 5.288461538461542
-    },
-    {
-      "name": "Patata",
-      "category": "Verdura",
       "old_price": 0.38,
-      "new_price": 0.36,
-      "change": -5.263157894736848
+      "new_price": 0.34,
+      "change": -10.526315789473683
+    },
+    {
+      "name": "Vino tinto reserva Coto de Imaz DO Rioja",
+      "category": "Vino tinto",
+      "old_price": 8.8,
+      "new_price": 7.95,
+      "change": -9.659090909090917
+    },
+    {
+      "name": "Vino tinto crianza El Coto DO Rioja",
+      "category": "Vino tinto",
+      "old_price": 6.55,
+      "new_price": 5.95,
+      "change": -9.160305343511443
+    },
+    {
+      "name": "Tomate pera",
+      "category": "Verdura",
+      "old_price": 0.22,
+      "new_price": 0.24,
+      "change": 9.090909090909083
+    },
+    {
+      "name": "Bacalao media pieza a rodajas",
+      "category": "Pescado fresco",
+      "old_price": 20.07,
+      "new_price": 18.39,
+      "change": -8.370702541106123
+    },
+    {
+      "name": "Bacalao media pieza abierto en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 20.07,
+      "new_price": 18.39,
+      "change": -8.370702541106123
+    },
+    {
+      "name": "Refresco Fanta naranja",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 3.6,
+      "new_price": 3.9,
+      "change": 8.333333333333325
+    },
+    {
+      "name": "Refresco Fanta limón",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 1.85,
+      "new_price": 1.99,
+      "change": 7.567567567567557
+    },
+    {
+      "name": "Refresco Fanta naranja",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 1.85,
+      "new_price": 1.99,
+      "change": 7.567567567567557
+    },
+    {
+      "name": "Refresco Fanta naranja zero azúcares añadidos",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 1.85,
+      "new_price": 1.99,
+      "change": 7.567567567567557
+    },
+    {
+      "name": "Granada",
+      "category": "Fruta",
+      "old_price": 1.35,
+      "new_price": 1.26,
+      "change": -6.666666666666677
     }
   ],
   "annual_partial": true,
-  "week": 0.16987211838633698
+  "week": 0.05952464415253189
 }
