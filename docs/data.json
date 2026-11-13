@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-12T16:18:55+01:00",
+  "captured_at": "2026-11-13T15:38:58+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -530,94 +530,102 @@
       "week": 0.1589,
       "monthly": 0.1176,
       "annual": 0.4112
+    },
+    {
+      "date": "2026-11-13T15:37:31+01:00",
+      "index": 100.3739,
+      "products": 4066,
+      "week": 0.0859,
+      "monthly": 0.0895,
+      "annual": 0.3739
     }
   ],
   "movers": [
     {
-      "name": "Lubina a filetes sin cabeza y sin espina",
+      "name": "Sardina limpia sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 3.98,
-      "new_price": 4.48,
-      "change": 12.56281407035178
+      "old_price": 1.19,
+      "new_price": 0.79,
+      "change": -33.613445378151255
     },
     {
-      "name": "Lubina abierta a la espalda con espinas y con cabeza",
+      "name": "Sardina sin limpiar",
       "category": "Pescado fresco",
-      "old_price": 3.98,
-      "new_price": 4.48,
-      "change": 12.56281407035178
+      "old_price": 1.19,
+      "new_price": 0.79,
+      "change": -33.613445378151255
     },
     {
-      "name": "Lubina abierta en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 3.98,
-      "new_price": 4.48,
-      "change": 12.56281407035178
+      "name": "Cerveza especial San Miguel",
+      "category": "Cerveza",
+      "old_price": 6.84,
+      "new_price": 4.8,
+      "change": -29.824561403508774
     },
     {
-      "name": "Lubina limpia con cabeza",
-      "category": "Pescado fresco",
-      "old_price": 3.98,
-      "new_price": 4.48,
-      "change": 12.56281407035178
+      "name": "Limpiamáquinas lavavajillas Finish líquido",
+      "category": "Limpieza vajilla",
+      "old_price": 3.25,
+      "new_price": 3.75,
+      "change": 15.384615384615374
     },
     {
-      "name": "Lubina sin limpiar",
+      "name": "Boquerón limpio sin cabeza",
       "category": "Pescado fresco",
-      "old_price": 3.98,
-      "new_price": 4.48,
-      "change": 12.56281407035178
+      "old_price": 1.39,
+      "new_price": 1.59,
+      "change": 14.388489208633114
     },
     {
-      "name": "Pera Ercolina",
+      "name": "Boquerón sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 1.39,
+      "new_price": 1.59,
+      "change": 14.388489208633114
+    },
+    {
+      "name": "Turrón de chocolate crujiente Hacendado",
+      "category": "Turrones",
+      "old_price": 2.25,
+      "new_price": 1.95,
+      "change": -13.33333333333333
+    },
+    {
+      "name": "Bebida espirituosa centenario Terry",
+      "category": "Licores",
+      "old_price": 8.75,
+      "new_price": 9.75,
+      "change": 11.428571428571432
+    },
+    {
+      "name": "Cerveza especial Estrella Galicia",
+      "category": "Cerveza",
+      "old_price": 8.16,
+      "new_price": 7.32,
+      "change": -10.29411764705882
+    },
+    {
+      "name": "Ginebra London Dry Gin Larios",
+      "category": "Licores",
+      "old_price": 11.95,
+      "new_price": 10.95,
+      "change": -8.368200836820083
+    },
+    {
+      "name": "Paletilla de cabrito congelada",
+      "category": "Carne",
+      "old_price": 11.69,
+      "new_price": 12.54,
+      "change": 7.271171941830623
+    },
+    {
+      "name": "Limón",
       "category": "Fruta",
-      "old_price": 0.26,
-      "new_price": 0.29,
-      "change": 11.538461538461519
-    },
-    {
-      "name": "Sepia limpia pequeña",
-      "category": "Pescado fresco",
-      "old_price": 2.93,
-      "new_price": 2.65,
-      "change": -9.55631399317407
-    },
-    {
-      "name": "Tomate pera",
-      "category": "Verdura",
-      "old_price": 0.24,
-      "new_price": 0.26,
-      "change": 8.333333333333348
-    },
-    {
-      "name": "Mandarina",
-      "category": "Fruta",
-      "old_price": 0.24,
-      "new_price": 0.22,
-      "change": -8.333333333333325
-    },
-    {
-      "name": "Colágeno soluble sabor limón Colagen",
-      "category": "Fitoterapia",
-      "old_price": 5.3,
-      "new_price": 4.9,
-      "change": -7.547169811320742
-    },
-    {
-      "name": "Pimiento verde freír",
-      "category": "Verdura",
-      "old_price": 0.3,
-      "new_price": 0.28,
-      "change": -6.666666666666654
-    },
-    {
-      "name": "Refresco lima limón Sprite",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 4.88,
-      "new_price": 5.2,
-      "change": 6.557377049180335
+      "old_price": 0.45,
+      "new_price": 0.48,
+      "change": 6.666666666666665
     }
   ],
   "annual_partial": true,
-  "week": 0.15885127447599245
+  "week": 0.08592530016194644
 }
