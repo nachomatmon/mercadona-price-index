@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-14T14:34:51+01:00",
+  "captured_at": "2026-11-15T14:58:44+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -546,94 +546,102 @@
       "week": 0.0193,
       "monthly": 0.0354,
       "annual": 0.3693
+    },
+    {
+      "date": "2026-11-15T14:57:25+01:00",
+      "index": 100.3392,
+      "products": 4064,
+      "week": -0.0346,
+      "monthly": 0.0065,
+      "annual": 0.3392
     }
   ],
   "movers": [
     {
-      "name": "Sardina limpia sin cabeza",
-      "category": "Pescado fresco",
-      "old_price": 0.79,
-      "new_price": 0.99,
-      "change": 25.31645569620253
+      "name": "Tomate pera",
+      "category": "Verdura",
+      "old_price": 0.26,
+      "new_price": 0.22,
+      "change": -15.384615384615385
     },
     {
-      "name": "Sardina sin limpiar",
-      "category": "Pescado fresco",
-      "old_price": 0.79,
-      "new_price": 0.99,
-      "change": 25.31645569620253
+      "name": "Col lombarda",
+      "category": "Verdura",
+      "old_price": 1.6,
+      "new_price": 1.78,
+      "change": 11.250000000000004
     },
     {
-      "name": "Manzana roja acidulce",
+      "name": "Pera Ercolina",
       "category": "Fruta",
-      "old_price": 0.55,
-      "new_price": 0.67,
-      "change": 21.818181818181827
+      "old_price": 0.29,
+      "new_price": 0.26,
+      "change": -10.344827586206884
     },
     {
-      "name": "Bacalao media pieza a rodajas",
-      "category": "Pescado fresco",
-      "old_price": 17.61,
-      "new_price": 16.01,
-      "change": -9.085746734809753
-    },
-    {
-      "name": "Bacalao media pieza abierto en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 17.61,
-      "new_price": 16.01,
-      "change": -9.085746734809753
-    },
-    {
-      "name": "Bacalao a rodajas",
-      "category": "Pescado fresco",
-      "old_price": 38.46,
-      "new_price": 35.01,
-      "change": -8.970358814352586
-    },
-    {
-      "name": "Bacalao abierto en libro sin cabeza y sin espina",
-      "category": "Pescado fresco",
-      "old_price": 38.46,
-      "new_price": 35.01,
-      "change": -8.970358814352586
-    },
-    {
-      "name": "Medio melón piel de sapo",
+      "name": "Banana",
       "category": "Fruta",
-      "old_price": 4.11,
-      "new_price": 3.85,
-      "change": -6.3260340632603445
-    },
-    {
-      "name": "Pomelo",
-      "category": "Fruta",
-      "old_price": 1.12,
-      "new_price": 1.19,
-      "change": 6.249999999999978
-    },
-    {
-      "name": "Pera Conferencia",
-      "category": "Fruta",
-      "old_price": 0.53,
-      "new_price": 0.5,
-      "change": -5.660377358490576
+      "old_price": 0.26,
+      "new_price": 0.28,
+      "change": 7.692307692307709
     },
     {
       "name": "Berenjena",
       "category": "Verdura",
-      "old_price": 0.95,
-      "new_price": 0.9,
-      "change": -5.263157894736836
+      "old_price": 0.9,
+      "new_price": 0.84,
+      "change": -6.666666666666677
     },
     {
-      "name": "Manzana Granny Smith",
+      "name": "Dorada a filetes sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 5.7,
+      "new_price": 5.32,
+      "change": -6.666666666666665
+    },
+    {
+      "name": "Dorada abierta a la espalda con espinas y con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 5.7,
+      "new_price": 5.32,
+      "change": -6.666666666666665
+    },
+    {
+      "name": "Dorada abierta en libro sin cabeza y sin espina",
+      "category": "Pescado fresco",
+      "old_price": 5.7,
+      "new_price": 5.32,
+      "change": -6.666666666666665
+    },
+    {
+      "name": "Dorada limpia con cabeza",
+      "category": "Pescado fresco",
+      "old_price": 5.7,
+      "new_price": 5.32,
+      "change": -6.666666666666665
+    },
+    {
+      "name": "Dorada sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 5.7,
+      "new_price": 5.32,
+      "change": -6.666666666666665
+    },
+    {
+      "name": "Yuca",
+      "category": "Verdura",
+      "old_price": 1.98,
+      "new_price": 2.11,
+      "change": 6.565656565656552
+    },
+    {
+      "name": "Plátano de Canarias IGP",
       "category": "Fruta",
-      "old_price": 0.38,
-      "new_price": 0.4,
-      "change": 5.263157894736836
+      "old_price": 0.51,
+      "new_price": 0.48,
+      "change": -5.882352941176472
     }
   ],
   "annual_partial": true,
-  "week": 0.019339273059713946
+  "week": -0.03464660463275493
 }
