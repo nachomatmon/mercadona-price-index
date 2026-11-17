@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-16T16:51:21+01:00",
+  "captured_at": "2026-11-17T17:03:35+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -562,94 +562,102 @@
       "week": -0.0528,
       "monthly": 0.0637,
       "annual": 0.3639
+    },
+    {
+      "date": "2026-11-17T17:01:55+01:00",
+      "index": 100.3688,
+      "products": 4023,
+      "week": 0.0042,
+      "monthly": 0.0547,
+      "annual": 0.3688
     }
   ],
   "movers": [
     {
-      "name": "Aperitivo de patata sabor crema agria y cebolla Pringles",
-      "category": "Patatas fritas y snacks",
-      "old_price": 1.9,
-      "new_price": 2.65,
-      "change": 39.47368421052633
+      "name": "Cerveza Heineken",
+      "category": "Cerveza",
+      "old_price": 6.96,
+      "new_price": 5.12,
+      "change": -26.436781609195403
     },
     {
-      "name": "Aperitivo de patata sabor original Pringles",
-      "category": "Patatas fritas y snacks",
-      "old_price": 1.9,
-      "new_price": 2.65,
-      "change": 39.47368421052633
+      "name": "Cerveza Estrella Damm",
+      "category": "Cerveza",
+      "old_price": 8.28,
+      "new_price": 10.44,
+      "change": 26.086956521739136
     },
     {
-      "name": "Detergente ropa todo en 1 Ariel Pods en cápsulas",
-      "category": "Detergente y suavizante ropa",
-      "old_price": 4.95,
-      "new_price": 6.9,
-      "change": 39.393939393939405
+      "name": "Cerveza Heineken",
+      "category": "Cerveza",
+      "old_price": 0.88,
+      "new_price": 0.68,
+      "change": -22.72727272727272
     },
     {
-      "name": "Calabacín verde",
-      "category": "Verdura",
-      "old_price": 0.55,
-      "new_price": 0.74,
-      "change": 34.545454545454525
+      "name": "Cerveza tostada Turia",
+      "category": "Cerveza",
+      "old_price": 10.2,
+      "new_price": 8.28,
+      "change": -18.823529411764707
     },
     {
-      "name": "Fabada asturiana Litoral",
-      "category": "Platos preparados calientes",
-      "old_price": 1.95,
-      "new_price": 2.6,
-      "change": 33.33333333333335
-    },
-    {
-      "name": "Detergente ropa todo en 1 frescor floral Ariel Pods en cápsulas",
-      "category": "Detergente y suavizante ropa",
-      "old_price": 6.9,
-      "new_price": 4.85,
-      "change": -29.71014492753624
-    },
-    {
-      "name": "Paletilla de cabrito congelada",
-      "category": "Carne",
-      "old_price": 12.54,
-      "new_price": 16.23,
-      "change": 29.42583732057418
-    },
-    {
-      "name": "Mousse de carne y pescado Gourmet Gold gato adulto Purina",
-      "category": "Gato",
-      "old_price": 3.35,
-      "new_price": 2.5,
-      "change": -25.373134328358216
-    },
-    {
-      "name": "Chocolate con leche Valor almendras enteras",
-      "category": "Chocolate",
-      "old_price": 3.95,
-      "new_price": 4.95,
-      "change": 25.31645569620253
-    },
-    {
-      "name": "Chocolate puro Valor con almendras enteras",
-      "category": "Chocolate",
-      "old_price": 3.95,
-      "new_price": 4.95,
-      "change": 25.31645569620253
-    },
-    {
-      "name": "Barritas de avena y chocolate negro Crunchy Nature Valley",
-      "category": "Cereales",
-      "old_price": 2.6,
-      "new_price": 1.95,
-      "change": -25.0
+      "name": "Cerveza Estrella Damm",
+      "category": "Cerveza",
+      "old_price": 0.75,
+      "new_price": 0.89,
+      "change": 18.666666666666675
     },
     {
       "name": "Cerveza doble malta Voll-Damm",
       "category": "Cerveza",
-      "old_price": 5.1,
-      "new_price": 6.24,
-      "change": 22.352941176470598
+      "old_price": 0.89,
+      "new_price": 1.04,
+      "change": 16.85393258426966
+    },
+    {
+      "name": "Cerveza tostada Turia",
+      "category": "Cerveza",
+      "old_price": 0.85,
+      "new_price": 0.72,
+      "change": -15.294117647058824
+    },
+    {
+      "name": "Turrón de chocolate con leche y cacahuete Hacendado con miel y caramelo troceado",
+      "category": "Turrones",
+      "old_price": 2.0,
+      "new_price": 1.85,
+      "change": -7.499999999999996
+    },
+    {
+      "name": "Bebida isotónica limón Aquarius",
+      "category": "Isotónico y energético",
+      "old_price": 7.44,
+      "new_price": 7.92,
+      "change": 6.451612903225801
+    },
+    {
+      "name": "Bebida isotónica naranja Aquarius",
+      "category": "Isotónico y energético",
+      "old_price": 7.44,
+      "new_price": 7.92,
+      "change": 6.451612903225801
+    },
+    {
+      "name": "Bebida isotónica limón Aquarius",
+      "category": "Isotónico y energético",
+      "old_price": 0.99,
+      "new_price": 1.05,
+      "change": 6.060606060606055
+    },
+    {
+      "name": "Bebida isotónica naranja Aquarius",
+      "category": "Isotónico y energético",
+      "old_price": 0.99,
+      "new_price": 1.05,
+      "change": 6.060606060606055
     }
   ],
   "annual_partial": true,
-  "week": -0.05284722290994637
+  "week": 0.004197254995233379
 }
