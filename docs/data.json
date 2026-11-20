@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-19T16:47:52+01:00",
+  "captured_at": "2026-11-20T16:30:54+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -586,94 +586,102 @@
       "week": 0.0722,
       "monthly": 0.114,
       "annual": 0.449
+    },
+    {
+      "date": "2026-11-20T16:29:09+01:00",
+      "index": 100.4526,
+      "products": 4019,
+      "week": 0.0969,
+      "monthly": 0.1159,
+      "annual": 0.4526
     }
   ],
   "movers": [
     {
-      "name": "Enjuague bucal cuidado total Listerine menta intensa",
-      "category": "Higiene bucal",
-      "old_price": 3.95,
-      "new_price": 5.15,
-      "change": 30.379746835443044
+      "name": "Tomate pera",
+      "category": "Verdura",
+      "old_price": 0.22,
+      "new_price": 0.29,
+      "change": 31.818181818181813
     },
     {
-      "name": "Enjuague bucal dientes y encías Listerine menta intensa",
-      "category": "Higiene bucal",
-      "old_price": 3.95,
-      "new_price": 5.15,
-      "change": 30.379746835443044
+      "name": "Alcachofa",
+      "category": "Verdura",
+      "old_price": 0.63,
+      "new_price": 0.78,
+      "change": 23.809523809523814
     },
     {
-      "name": "Desodorante roll-on original Dove antitranspirante",
-      "category": "Desodorante",
-      "old_price": 2.15,
-      "new_price": 2.65,
-      "change": 23.25581395348837
-    },
-    {
-      "name": "Dentífrico Max Fresh Colgate sabor menta fresca",
-      "category": "Higiene bucal",
-      "old_price": 2.85,
-      "new_price": 2.25,
-      "change": -21.052631578947366
-    },
-    {
-      "name": "Berlina rellena de crema de galleta con cobertura blanca y trozos de galleta",
-      "category": "Bollería de horno",
-      "old_price": 1.25,
-      "new_price": 1.0,
-      "change": -19.999999999999996
-    },
-    {
-      "name": "Desodorante original Dove antitranspirante",
-      "category": "Desodorante",
-      "old_price": 3.15,
-      "new_price": 3.75,
-      "change": 19.047619047619047
-    },
-    {
-      "name": "Desodorante roll-on Dry impact Nivea Men antitranspirante",
-      "category": "Desodorante",
-      "old_price": 2.1,
-      "new_price": 2.5,
-      "change": 19.047619047619047
-    },
-    {
-      "name": "Desodorante roll-on Invisible Black & White Nivea Men antitranspirante",
-      "category": "Desodorante",
-      "old_price": 2.1,
-      "new_price": 2.5,
-      "change": 19.047619047619047
-    },
-    {
-      "name": "Desodorante roll-on Invisible Black & White Nivea antitranspirante",
-      "category": "Desodorante",
-      "old_price": 2.1,
-      "new_price": 2.5,
-      "change": 19.047619047619047
-    },
-    {
-      "name": "Dentífrico Total original Colgate",
-      "category": "Higiene bucal",
-      "old_price": 2.45,
-      "new_price": 2.9,
-      "change": 18.36734693877551
+      "name": "Pimiento verde freír",
+      "category": "Verdura",
+      "old_price": 0.25,
+      "new_price": 0.28,
+      "change": 12.00000000000001
     },
     {
       "name": "Sardina sin limpiar",
       "category": "Pescado fresco",
-      "old_price": 5.0,
-      "new_price": 4.5,
-      "change": -9.999999999999998
+      "old_price": 4.5,
+      "new_price": 5.0,
+      "change": 11.111111111111116
     },
     {
       "name": "Sardina sin limpiar",
       "category": "Pescado fresco",
+      "old_price": 1.8,
+      "new_price": 2.0,
+      "change": 11.111111111111116
+    },
+    {
+      "name": "Rosco de vino y almendra La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.21,
+      "new_price": 0.19,
+      "change": -9.523809523809524
+    },
+    {
+      "name": "Cortadillo de cabello de Ángel La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.34,
+      "new_price": 0.31,
+      "change": -8.823529411764708
+    },
+    {
+      "name": "Mantecado de cacao sin gluten La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.24,
+      "new_price": 0.22,
+      "change": -8.333333333333325
+    },
+    {
+      "name": "Mantecado de canela La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.24,
+      "new_price": 0.22,
+      "change": -8.333333333333325
+    },
+    {
+      "name": "Arroz negro Hacendado ultracongelado",
+      "category": "Arroz y pasta",
       "old_price": 2.0,
-      "new_price": 1.8,
-      "change": -9.999999999999998
+      "new_price": 1.85,
+      "change": -7.499999999999996
+    },
+    {
+      "name": "Manzana roja acidulce",
+      "category": "Fruta",
+      "old_price": 0.67,
+      "new_price": 0.62,
+      "change": -7.462686567164189
+    },
+    {
+      "name": "Hojaldrada de crema La Muralla",
+      "category": "Bollería envasada",
+      "old_price": 0.27,
+      "new_price": 0.25,
+      "change": -7.407407407407418
     }
   ],
   "annual_partial": true,
-  "week": 0.07216171694199147
+  "week": 0.09688359975211824
 }
