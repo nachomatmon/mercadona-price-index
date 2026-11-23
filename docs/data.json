@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-22T15:38:14+01:00",
+  "captured_at": "2026-11-23T19:14:12+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -610,94 +610,102 @@
       "week": 0.1005,
       "monthly": 0.1129,
       "annual": 0.4495
+    },
+    {
+      "date": "2026-11-23T19:12:42+01:00",
+      "index": 100.3427,
+      "products": 4008,
+      "week": -0.0513,
+      "monthly": 0.0143,
+      "annual": 0.3427
     }
   ],
   "movers": [
     {
-      "name": "Lima",
-      "category": "Fruta",
-      "old_price": 0.34,
-      "new_price": 0.38,
-      "change": 11.764705882352944
+      "name": "Refresco limón Schweppes original",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 5.2,
+      "new_price": 7.76,
+      "change": 49.23076923076921
     },
     {
       "name": "Tomate rosa",
       "category": "Verdura",
-      "old_price": 1.05,
-      "new_price": 1.12,
-      "change": 6.666666666666665
+      "old_price": 1.12,
+      "new_price": 1.5,
+      "change": 33.928571428571416
     },
     {
-      "name": "Alcachofa",
+      "name": "Queso untar light Philadelphia",
+      "category": "Queso untable, fresco y especialidades",
+      "old_price": 2.9,
+      "new_price": 1.95,
+      "change": -32.758620689655174
+    },
+    {
+      "name": "Queso untar original Philadelphia",
+      "category": "Queso untable, fresco y especialidades",
+      "old_price": 2.9,
+      "new_price": 1.95,
+      "change": -32.758620689655174
+    },
+    {
+      "name": "Refresco Fanta limón zero azúcares añadidos",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 6.56,
+      "new_price": 4.48,
+      "change": -31.707317073170728
+    },
+    {
+      "name": "Refresco Fanta naranja zero azúcares añadidos",
+      "category": "Refresco de naranja y de limón",
+      "old_price": 6.56,
+      "new_price": 4.48,
+      "change": -31.707317073170728
+    },
+    {
+      "name": "Fruta + leche tropical Bifrutas",
+      "category": "Fruta variada",
+      "old_price": 2.0,
+      "new_price": 2.59,
+      "change": 29.499999999999993
+    },
+    {
+      "name": "Refresco Coca-Cola zero azúcar zero cafeína",
+      "category": "Refresco de cola",
+      "old_price": 1.39,
+      "new_price": 1.0,
+      "change": -28.057553956834525
+    },
+    {
+      "name": "Bombones de chocolate con leche Lindor Lindt",
+      "category": "Chocolate",
+      "old_price": 7.95,
+      "new_price": 9.95,
+      "change": 25.15723270440251
+    },
+    {
+      "name": "Brócoli",
       "category": "Verdura",
-      "old_price": 0.97,
-      "new_price": 0.92,
-      "change": -5.154639175257724
+      "old_price": 1.32,
+      "new_price": 1.0,
+      "change": -24.242424242424242
     },
     {
-      "name": "Granada",
-      "category": "Fruta",
-      "old_price": 1.26,
-      "new_price": 1.32,
-      "change": 4.761904761904767
+      "name": "Pan tostado fino con sésamo y sal marina Delicate Crisp Wasa",
+      "category": "Pan tostado y rallado",
+      "old_price": 1.8,
+      "new_price": 1.4,
+      "change": -22.222222222222232
     },
     {
-      "name": "Yuca",
-      "category": "Verdura",
-      "old_price": 2.38,
-      "new_price": 2.28,
-      "change": -4.201680672268915
-    },
-    {
-      "name": "Pera Conferencia",
-      "category": "Fruta",
-      "old_price": 0.5,
-      "new_price": 0.48,
-      "change": -4.0000000000000036
-    },
-    {
-      "name": "Plátano macho",
-      "category": "Fruta",
-      "old_price": 0.81,
-      "new_price": 0.84,
-      "change": 3.703703703703698
-    },
-    {
-      "name": "Melón piel de sapo",
-      "category": "Fruta",
-      "old_price": 6.8,
-      "new_price": 7.04,
-      "change": 3.529411764705892
-    },
-    {
-      "name": "Manzana roja acidulce",
-      "category": "Fruta",
-      "old_price": 0.6,
-      "new_price": 0.58,
-      "change": -3.3333333333333326
-    },
-    {
-      "name": "Col lombarda",
-      "category": "Verdura",
-      "old_price": 1.94,
-      "new_price": 1.88,
-      "change": -3.0927835051546393
-    },
-    {
-      "name": "Mango",
-      "category": "Fruta",
-      "old_price": 1.04,
-      "new_price": 1.07,
-      "change": 2.8846153846153966
-    },
-    {
-      "name": "Calabacín verde",
-      "category": "Verdura",
-      "old_price": 0.72,
-      "new_price": 0.74,
-      "change": 2.77777777777779
+      "name": "Refresco Coca-Cola zero azúcar",
+      "category": "Refresco de cola",
+      "old_price": 2.7,
+      "new_price": 3.3,
+      "change": 22.22222222222221
     }
   ],
   "annual_partial": true,
-  "week": 0.1005462104948549
+  "week": -0.05126351635890103
 }
