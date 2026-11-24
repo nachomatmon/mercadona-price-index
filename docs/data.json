@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-23T19:14:12+01:00",
+  "captured_at": "2026-11-24T18:49:05+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -618,94 +618,102 @@
       "week": -0.0513,
       "monthly": 0.0143,
       "annual": 0.3427
+    },
+    {
+      "date": "2026-11-24T18:47:38+01:00",
+      "index": 100.2048,
+      "products": 4008,
+      "week": -0.1624,
+      "monthly": -0.1234,
+      "annual": 0.2048
     }
   ],
   "movers": [
     {
-      "name": "Refresco limón Schweppes original",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 5.2,
-      "new_price": 7.76,
-      "change": 49.23076923076921
+      "name": "Cerveza Heineken",
+      "category": "Cerveza",
+      "old_price": 5.12,
+      "new_price": 7.36,
+      "change": 43.75
+    },
+    {
+      "name": "Cerveza Heineken",
+      "category": "Cerveza",
+      "old_price": 0.68,
+      "new_price": 0.92,
+      "change": 35.29411764705881
+    },
+    {
+      "name": "Vino blanco Viña Sol Bodegas Torres DO Catalunya",
+      "category": "Vino blanco",
+      "old_price": 6.1,
+      "new_price": 4.8,
+      "change": -21.311475409836067
+    },
+    {
+      "name": "Cerveza Estrella Damm",
+      "category": "Cerveza",
+      "old_price": 10.44,
+      "new_price": 8.28,
+      "change": -20.68965517241379
+    },
+    {
+      "name": "Bebida zumo de manzana El Lagar sin alcohol",
+      "category": "Sidra y cava",
+      "old_price": 2.5,
+      "new_price": 2.0,
+      "change": -19.999999999999996
     },
     {
       "name": "Tomate rosa",
       "category": "Verdura",
-      "old_price": 1.12,
-      "new_price": 1.5,
-      "change": 33.928571428571416
+      "old_price": 1.5,
+      "new_price": 1.8,
+      "change": 19.999999999999996
     },
     {
-      "name": "Queso untar light Philadelphia",
-      "category": "Queso untable, fresco y especialidades",
-      "old_price": 2.9,
-      "new_price": 1.95,
-      "change": -32.758620689655174
+      "name": "Cava brut Anna Codorníu",
+      "category": "Sidra y cava",
+      "old_price": 9.95,
+      "new_price": 8.0,
+      "change": -19.59798994974874
     },
     {
-      "name": "Queso untar original Philadelphia",
-      "category": "Queso untable, fresco y especialidades",
-      "old_price": 2.9,
-      "new_price": 1.95,
-      "change": -32.758620689655174
+      "name": "Cerveza Estrella Damm",
+      "category": "Cerveza",
+      "old_price": 0.89,
+      "new_price": 0.75,
+      "change": -15.73033707865169
     },
     {
-      "name": "Refresco Fanta limón zero azúcares añadidos",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 6.56,
-      "new_price": 4.48,
-      "change": -31.707317073170728
+      "name": "Cava brut nature Bach",
+      "category": "Sidra y cava",
+      "old_price": 5.45,
+      "new_price": 4.6,
+      "change": -15.596330275229365
     },
     {
-      "name": "Refresco Fanta naranja zero azúcares añadidos",
-      "category": "Refresco de naranja y de limón",
-      "old_price": 6.56,
-      "new_price": 4.48,
-      "change": -31.707317073170728
+      "name": "Cuarto cochinillo congelado",
+      "category": "Carne",
+      "old_price": 18.06,
+      "new_price": 15.26,
+      "change": -15.503875968992242
     },
     {
-      "name": "Fruta + leche tropical Bifrutas",
-      "category": "Fruta variada",
-      "old_price": 2.0,
-      "new_price": 2.59,
-      "change": 29.499999999999993
+      "name": "Lechuga Iceberg",
+      "category": "Lechuga y ensalada preparada",
+      "old_price": 1.05,
+      "new_price": 0.9,
+      "change": -14.28571428571429
     },
     {
-      "name": "Refresco Coca-Cola zero azúcar zero cafeína",
-      "category": "Refresco de cola",
-      "old_price": 1.39,
-      "new_price": 1.0,
-      "change": -28.057553956834525
-    },
-    {
-      "name": "Bombones de chocolate con leche Lindor Lindt",
-      "category": "Chocolate",
-      "old_price": 7.95,
-      "new_price": 9.95,
-      "change": 25.15723270440251
-    },
-    {
-      "name": "Brócoli",
-      "category": "Verdura",
-      "old_price": 1.32,
-      "new_price": 1.0,
-      "change": -24.242424242424242
-    },
-    {
-      "name": "Pan tostado fino con sésamo y sal marina Delicate Crisp Wasa",
-      "category": "Pan tostado y rallado",
-      "old_price": 1.8,
-      "new_price": 1.4,
-      "change": -22.222222222222232
-    },
-    {
-      "name": "Refresco Coca-Cola zero azúcar",
-      "category": "Refresco de cola",
-      "old_price": 2.7,
-      "new_price": 3.3,
-      "change": 22.22222222222221
+      "name": "Whisky escocés Red Label Johnnie Walker",
+      "category": "Licores",
+      "old_price": 15.5,
+      "new_price": 13.5,
+      "change": -12.903225806451612
     }
   ],
   "annual_partial": true,
-  "week": -0.05126351635890103
+  "week": -0.1623608558905829
 }
