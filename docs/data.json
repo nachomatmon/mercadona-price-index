@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-24T18:49:05+01:00",
+  "captured_at": "2026-11-25T18:16:55+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -626,94 +626,102 @@
       "week": -0.1624,
       "monthly": -0.1234,
       "annual": 0.2048
+    },
+    {
+      "date": "2026-11-25T18:15:16+01:00",
+      "index": 100.2291,
+      "products": 4004,
+      "week": -0.1641,
+      "monthly": -0.1014,
+      "annual": 0.2291
     }
   ],
   "movers": [
     {
-      "name": "Cerveza Heineken",
-      "category": "Cerveza",
-      "old_price": 5.12,
-      "new_price": 7.36,
-      "change": 43.75
+      "name": "Bebida láctea natural Actimel",
+      "category": "Yogures líquidos",
+      "old_price": 4.95,
+      "new_price": 5.99,
+      "change": 21.01010101010101
     },
     {
-      "name": "Cerveza Heineken",
-      "category": "Cerveza",
-      "old_price": 0.68,
-      "new_price": 0.92,
-      "change": 35.29411764705881
+      "name": "Bebida láctea natural Actimel 0% MG 0% azúcares añadidos",
+      "category": "Yogures líquidos",
+      "old_price": 4.95,
+      "new_price": 5.99,
+      "change": 21.01010101010101
     },
     {
-      "name": "Vino blanco Viña Sol Bodegas Torres DO Catalunya",
-      "category": "Vino blanco",
-      "old_price": 6.1,
-      "new_price": 4.8,
-      "change": -21.311475409836067
-    },
-    {
-      "name": "Cerveza Estrella Damm",
-      "category": "Cerveza",
-      "old_price": 10.44,
-      "new_price": 8.28,
-      "change": -20.68965517241379
-    },
-    {
-      "name": "Bebida zumo de manzana El Lagar sin alcohol",
-      "category": "Sidra y cava",
-      "old_price": 2.5,
-      "new_price": 2.0,
-      "change": -19.999999999999996
-    },
-    {
-      "name": "Tomate rosa",
-      "category": "Verdura",
-      "old_price": 1.5,
-      "new_price": 1.8,
-      "change": 19.999999999999996
-    },
-    {
-      "name": "Cava brut Anna Codorníu",
-      "category": "Sidra y cava",
-      "old_price": 9.95,
-      "new_price": 8.0,
-      "change": -19.59798994974874
-    },
-    {
-      "name": "Cerveza Estrella Damm",
-      "category": "Cerveza",
-      "old_price": 0.89,
-      "new_price": 0.75,
-      "change": -15.73033707865169
-    },
-    {
-      "name": "Cava brut nature Bach",
-      "category": "Sidra y cava",
+      "name": "Bebida láctea de fresa Danacol 0% azúcares añadidos 0% MG",
+      "category": "Yogures líquidos",
       "old_price": 5.45,
-      "new_price": 4.6,
-      "change": -15.596330275229365
+      "new_price": 5.9,
+      "change": 8.25688073394495
     },
     {
-      "name": "Cuarto cochinillo congelado",
+      "name": "Bebida láctea natural Danacol 0% azúcares añadidos 0% MG",
+      "category": "Yogures líquidos",
+      "old_price": 5.45,
+      "new_price": 5.9,
+      "change": 8.25688073394495
+    },
+    {
+      "name": "Pimiento verde freír",
+      "category": "Verdura",
+      "old_price": 0.28,
+      "new_price": 0.3,
+      "change": 7.14285714285714
+    },
+    {
+      "name": "Preparado solomillo de cerdo marinado congelado",
       "category": "Carne",
-      "old_price": 18.06,
-      "new_price": 15.26,
-      "change": -15.503875968992242
+      "old_price": 6.71,
+      "new_price": 6.24,
+      "change": -7.0044709388971675
     },
     {
-      "name": "Lechuga Iceberg",
-      "category": "Lechuga y ensalada preparada",
-      "old_price": 1.05,
-      "new_price": 0.9,
-      "change": -14.28571428571429
+      "name": "Medio melón piel de sapo",
+      "category": "Fruta",
+      "old_price": 4.11,
+      "new_price": 4.39,
+      "change": 6.812652068126512
     },
     {
-      "name": "Whisky escocés Red Label Johnnie Walker",
-      "category": "Licores",
-      "old_price": 15.5,
-      "new_price": 13.5,
-      "change": -12.903225806451612
+      "name": "Melón piel de sapo",
+      "category": "Fruta",
+      "old_price": 7.26,
+      "new_price": 7.7,
+      "change": 6.060606060606055
+    },
+    {
+      "name": "Manzana Golden",
+      "category": "Fruta",
+      "old_price": 0.42,
+      "new_price": 0.44,
+      "change": 4.761904761904767
+    },
+    {
+      "name": "Cerveza de trigo Paulaner",
+      "category": "Cerveza",
+      "old_price": 7.74,
+      "new_price": 8.1,
+      "change": 4.6511627906976605
+    },
+    {
+      "name": "Brócoli",
+      "category": "Verdura",
+      "old_price": 1.04,
+      "new_price": 1.08,
+      "change": 3.8461538461538547
+    },
+    {
+      "name": "Naranja de mesa",
+      "category": "Fruta",
+      "old_price": 0.6,
+      "new_price": 0.58,
+      "change": -3.3333333333333326
     }
   ],
   "annual_partial": true,
-  "week": -0.1623608558905829
+  "week": -0.16405898761934168
 }
