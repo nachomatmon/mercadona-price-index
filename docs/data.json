@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-26T17:57:42+01:00",
+  "captured_at": "2026-11-27T17:43:21+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -642,94 +642,102 @@
       "week": -0.2869,
       "monthly": -0.1959,
       "annual": 0.1418
+    },
+    {
+      "date": "2026-11-27T17:41:35+01:00",
+      "index": 100.1059,
+      "products": 4001,
+      "week": -0.3311,
+      "monthly": -0.234,
+      "annual": 0.1059
     }
   ],
   "movers": [
     {
-      "name": "Sorbete corporal Posidonia Deliplus",
-      "category": "Cuidado corporal",
-      "old_price": 2.9,
-      "new_price": 1.9,
-      "change": -34.48275862068966
-    },
-    {
-      "name": "Bebida energética Red Bull",
-      "category": "Isotónico y energético",
-      "old_price": 8.4,
-      "new_price": 11.04,
-      "change": 31.428571428571406
-    },
-    {
-      "name": "Lavavajillas Total Somat en gel 5 en 1",
-      "category": "Limpieza vajilla",
-      "old_price": 3.95,
-      "new_price": 4.95,
-      "change": 25.31645569620253
-    },
-    {
-      "name": "Desodorante cobalt dry Rexona Men antitranspirante",
-      "category": "Desodorante",
-      "old_price": 2.9,
-      "new_price": 2.25,
-      "change": -22.413793103448278
-    },
-    {
-      "name": "Desodorante invisible black + white Rexona antimanchas",
-      "category": "Desodorante",
-      "old_price": 2.9,
-      "new_price": 2.25,
-      "change": -22.413793103448278
-    },
-    {
-      "name": "Desodorante invisible ice fresh Rexona Men antitranspirante y antimanchas",
-      "category": "Desodorante",
-      "old_price": 2.9,
-      "new_price": 2.25,
-      "change": -22.413793103448278
-    },
-    {
-      "name": "Desodorante roll-on original Dove antitranspirante",
-      "category": "Desodorante",
-      "old_price": 2.65,
-      "new_price": 2.15,
-      "change": -18.867924528301884
-    },
-    {
-      "name": "Bífidus natural edulcorado probióticos Activia 0% MG 0% azúcares añadidos",
-      "category": "Bífidus",
-      "old_price": 3.99,
+      "name": "Agua mineral grande Viladrau",
+      "category": "Agua",
+      "old_price": 4.14,
       "new_price": 3.3,
-      "change": -17.29323308270677
+      "change": -20.28985507246377
     },
     {
-      "name": "Bífidus natural probióticos Activia 0% MG  0% azúcares añadidos",
-      "category": "Bífidus",
-      "old_price": 3.99,
-      "new_price": 3.3,
-      "change": -17.29323308270677
+      "name": "Agua mineral grande Viladrau",
+      "category": "Agua",
+      "old_price": 0.69,
+      "new_price": 0.55,
+      "change": -20.28985507246376
     },
     {
-      "name": "Colgador WC Power Activ Pino Bref",
-      "category": "Limpieza baño y WC",
-      "old_price": 2.95,
-      "new_price": 2.45,
-      "change": -16.94915254237288
-    },
-    {
-      "name": "Yogur natural Danone",
-      "category": "Yogures naturales y sabores",
+      "name": "Tónica original Schweppes",
+      "category": "Tónica y bitter",
       "old_price": 1.99,
-      "new_price": 1.7,
-      "change": -14.572864321608037
+      "new_price": 1.6,
+      "change": -19.59798994974874
     },
     {
-      "name": "Salsa Original Ligeresa",
-      "category": "Mayonesa, ketchup y mostaza",
+      "name": "Cerveza doble malta Voll-Damm",
+      "category": "Cerveza",
+      "old_price": 6.24,
+      "new_price": 5.1,
+      "change": -18.26923076923078
+    },
+    {
+      "name": "Cerveza doble malta Voll-Damm",
+      "category": "Cerveza",
+      "old_price": 1.04,
+      "new_price": 0.89,
+      "change": -14.423076923076927
+    },
+    {
+      "name": "Cerveza especial Estrella Galicia",
+      "category": "Cerveza",
+      "old_price": 8.8,
+      "new_price": 7.6,
+      "change": -13.636363636363647
+    },
+    {
+      "name": "Cerveza especial Estrella Galicia",
+      "category": "Cerveza",
+      "old_price": 0.9,
+      "new_price": 0.79,
+      "change": -12.222222222222223
+    },
+    {
+      "name": "Piruleta de chocolate Navidad Hacendado",
+      "category": "Chocolate",
+      "old_price": 1.5,
+      "new_price": 1.35,
+      "change": -9.999999999999998
+    },
+    {
+      "name": "Vino tinto tempranillo reserva Pata Negra DO Valdepeñas",
+      "category": "Vino tinto",
       "old_price": 2.5,
-      "new_price": 2.15,
-      "change": -14.000000000000002
+      "new_price": 2.25,
+      "change": -9.999999999999998
+    },
+    {
+      "name": "Bombones cereza al licor Hacendado con chocolate",
+      "category": "Chocolate",
+      "old_price": 2.2,
+      "new_price": 2.0,
+      "change": -9.090909090909093
+    },
+    {
+      "name": "Vermouth blanco Martini",
+      "category": "Licores",
+      "old_price": 11.0,
+      "new_price": 11.9,
+      "change": 8.18181818181818
+    },
+    {
+      "name": "Vermouth rojo Martini",
+      "category": "Licores",
+      "old_price": 11.0,
+      "new_price": 11.9,
+      "change": 8.18181818181818
     }
   ],
   "annual_partial": true,
-  "week": -0.28686455081137296
+  "week": -0.3311310376837753
 }
