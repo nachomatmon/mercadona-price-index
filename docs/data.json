@@ -1,6 +1,6 @@
 {
   "base_date": "2026-09-10",
-  "captured_at": "2026-11-27T17:43:21+01:00",
+  "captured_at": "2026-11-28T16:34:56+01:00",
   "zone": "CP 08028 · almacén bcn1",
   "history": [
     {
@@ -650,94 +650,102 @@
       "week": -0.3311,
       "monthly": -0.234,
       "annual": 0.1059
+    },
+    {
+      "date": "2026-11-28T16:33:27+01:00",
+      "index": 100.081,
+      "products": 3995,
+      "week": -0.3571,
+      "monthly": -0.2581,
+      "annual": 0.081
     }
   ],
   "movers": [
     {
-      "name": "Agua mineral grande Viladrau",
-      "category": "Agua",
-      "old_price": 4.14,
-      "new_price": 3.3,
-      "change": -20.28985507246377
+      "name": "Zumo de naranja recién exprimido Hacendado",
+      "category": "Naranja",
+      "old_price": 2.75,
+      "new_price": 1.95,
+      "change": -29.09090909090909
     },
     {
-      "name": "Agua mineral grande Viladrau",
-      "category": "Agua",
-      "old_price": 0.69,
-      "new_price": 0.55,
-      "change": -20.28985507246376
+      "name": "Zumo de naranja recién exprimido Hacendado",
+      "category": "Naranja",
+      "old_price": 3.95,
+      "new_price": 2.95,
+      "change": -25.31645569620253
     },
     {
-      "name": "Tónica original Schweppes",
-      "category": "Tónica y bitter",
-      "old_price": 1.99,
-      "new_price": 1.6,
-      "change": -19.59798994974874
+      "name": "Zumo de naranja recién exprimido Hacendado",
+      "category": "Naranja",
+      "old_price": 5.95,
+      "new_price": 4.95,
+      "change": -16.806722689075627
     },
     {
-      "name": "Cerveza doble malta Voll-Damm",
-      "category": "Cerveza",
-      "old_price": 6.24,
-      "new_price": 5.1,
-      "change": -18.26923076923078
+      "name": "Sardina sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 6.0,
+      "new_price": 5.0,
+      "change": -16.666666666666664
     },
     {
-      "name": "Cerveza doble malta Voll-Damm",
-      "category": "Cerveza",
-      "old_price": 1.04,
-      "new_price": 0.89,
-      "change": -14.423076923076927
-    },
-    {
-      "name": "Cerveza especial Estrella Galicia",
-      "category": "Cerveza",
-      "old_price": 8.8,
-      "new_price": 7.6,
-      "change": -13.636363636363647
-    },
-    {
-      "name": "Cerveza especial Estrella Galicia",
-      "category": "Cerveza",
-      "old_price": 0.9,
-      "new_price": 0.79,
-      "change": -12.222222222222223
-    },
-    {
-      "name": "Piruleta de chocolate Navidad Hacendado",
-      "category": "Chocolate",
-      "old_price": 1.5,
-      "new_price": 1.35,
-      "change": -9.999999999999998
-    },
-    {
-      "name": "Vino tinto tempranillo reserva Pata Negra DO Valdepeñas",
-      "category": "Vino tinto",
-      "old_price": 2.5,
-      "new_price": 2.25,
-      "change": -9.999999999999998
-    },
-    {
-      "name": "Bombones cereza al licor Hacendado con chocolate",
-      "category": "Chocolate",
-      "old_price": 2.2,
+      "name": "Sardina sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 2.4,
       "new_price": 2.0,
-      "change": -9.090909090909093
+      "change": -16.666666666666664
     },
     {
-      "name": "Vermouth blanco Martini",
-      "category": "Licores",
-      "old_price": 11.0,
-      "new_price": 11.9,
-      "change": 8.18181818181818
+      "name": "Boquerón limpio sin cabeza",
+      "category": "Pescado fresco",
+      "old_price": 3.45,
+      "new_price": 3.9,
+      "change": 13.043478260869556
     },
     {
-      "name": "Vermouth rojo Martini",
-      "category": "Licores",
-      "old_price": 11.0,
-      "new_price": 11.9,
-      "change": 8.18181818181818
+      "name": "Boquerón sin limpiar",
+      "category": "Pescado fresco",
+      "old_price": 3.0,
+      "new_price": 3.38,
+      "change": 12.666666666666671
+    },
+    {
+      "name": "Boquerón limpio sin espina",
+      "category": "Pescado fresco",
+      "old_price": 4.0,
+      "new_price": 4.4,
+      "change": 10.000000000000009
+    },
+    {
+      "name": "Granada",
+      "category": "Fruta",
+      "old_price": 1.26,
+      "new_price": 1.14,
+      "change": -9.523809523809534
+    },
+    {
+      "name": "Piña",
+      "category": "Fruta",
+      "old_price": 4.05,
+      "new_price": 3.86,
+      "change": -4.691358024691361
+    },
+    {
+      "name": "Manzana Golden",
+      "category": "Fruta",
+      "old_price": 0.44,
+      "new_price": 0.42,
+      "change": -4.545454545454552
+    },
+    {
+      "name": "Naranja de mesa",
+      "category": "Fruta",
+      "old_price": 0.58,
+      "new_price": 0.6,
+      "change": 3.4482758620689724
     }
   ],
   "annual_partial": true,
-  "week": -0.3311310376837753
+  "week": -0.35707660004339914
 }
